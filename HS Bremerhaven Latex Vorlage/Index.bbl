@@ -1,0 +1,25 @@
+\begin{thebibliography}{3}
+% this bibliography was produced with the style dinat.bst v2.5
+\makeatletter
+\newcommand{\dinatlabel}[1]%
+{\ifNAT@numbers\else\NAT@biblabelnum{#1}\hspace{2\labelsep}\fi}
+\makeatother
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax\def\url#1{\texttt{#1}}\fi
+
+\bibitem[Adler()]{wikissd}
+\dinatlabel{Adler } \textsc{Adler}, Prof.~F.:
+\newblock \emph{Corporate Identity und Corporate Design}.
+\newblock \url{http://www.adlerschmidt.de/de/wissen/ciundcd.html}
+
+\bibitem[Marquardt()]{techno}
+\dinatlabel{Marquardt } \textsc{Marquardt}, Sascha:
+\newblock \emph{CI}.
+\newblock \url{http://www.mamas-projekte.de/hochschule/?page_id=274}
+
+\bibitem[Wikipedia.de()]{cb}
+\dinatlabel{Wikipedia.de } \textsc{Wikipedia.de}:
+\newblock \emph{Corporate Identity}.
+\newblock \url{https://de.wikipedia.org/wiki/Corporate_Identity}
+
+\end{thebibliography}

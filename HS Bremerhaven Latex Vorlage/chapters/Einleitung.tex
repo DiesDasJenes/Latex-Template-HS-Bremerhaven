@@ -1,0 +1,45 @@
+\chapter{Einleitung}
+Guten Tag und Willkommen bei dieser Vorlage für eure schriftlichen Leistungsnachweise bzw. Bachelor- oder Masterbschlussarbeiten. Wir werden gemeinsam durch die Latex Vorlage durchgehen und dabei die Vorteile und Möglichkeiten von Latex ergründen. Zu erst einmal muss der Aufbau dieser Vorlage verstanden werden.
+
+\begin{itemize}
+	\item Vorlage/
+		\begin{itemize}
+			\item bib/ - Unter diesem Ordner findet ihr die Bibtex Datei welche ihr mit dem Programm Jabref bearbeiten könnt. \url{http://www.jabref.org/}. Außerdem interessant für alle \url{https://www.mendeley.com/} und \url{http://www.citeulike.org/}
+			\item chapter/ - In diesem Ordner werden sämtliche Latex .tex Dateien abgelegt in denen ihr euren Text verfasst. Ein Tipp: Verteilt die Kapitel auf verschiedene Dateien. Dies ermöglicht paralleles Arbeiten.
+			\item images/ - Wie der Name schon sagt ist dies der Ordner für Bilder aller Art. Benutzt dabei am besten .png, .svg oder .pdf da Dateiformate verlustfrei beim skalieren der Größe etc. sind.
+			\item lib/ - Hier sind sämtliche Dateien abgelegt mit denen das Dokument verändert werden kann. Wir werden diesen Ordner zu erst betrachten da dort die Metadaten zu finden sind. 
+		\end{itemize}
+\end{itemize}
+
+Wenn ihr \textbf{komplette Neulinge} in LaTeX seid schaut einmal hier vorbei: \\\url{http://latex.tugraz.at/latex/tutorial}\\
+\url{https://github.com/VoLuong/Begin-Latex-in-minutes}\\
+
+Es wird empfohlen entweder \url{www.overleaf.com} für den Browser zu nutzen oder wenn man lieber auf seinem PC arbeiten möchte, unter Windows das \url{texstudio.org} mit der Umgebung \url{miktex.org} . Die Linux Leute müssen da einfach nur sudo apt-get install texlive-full im Terminal eintippen. 
+
+Bei weiteren Fragen:\\
+\url{http://texwelt.de/wissen/fragen/11038/wie-installiere-ich-latex}
+\section{Wie beginnt man?}
+
+Ein jedes Dokument beginnt man damit, die Metadaten zu bearbeiten und das Titelblatt einzustellen. In der Index TeX Datei "'Index.tex"' findet man dazu unter dem Abschnitt TITLE-Page zwei \textbf{input} Befehle die zu den Seiten \textbf{titlepage\_alone} und \textbf{titlepage\_group} verweisen. Wie die Namen schon aussagen ist jeder der Seiten für eine Sache optimiert. Bei einer Gruppe ab drei Personen wird empfohlen die Gruppenversion zu nehmen. Die Auswahl ist natürlich jedem selbst überlassen.\\
+
+Weiter geht es zu den Metadaten in der Tex-Datei \textbf{person-configuration} in dem Ordner \emph{lib/}. Dort sollten sämtliche Informationen hinter den Befehlen angepasst werden. Die ersten Veränderungen können dann bereits auf dem Deckblatt verzeichnet werden.
+
+
+\section{Aufbau der Index Datei}
+
+Die Index-Datei mit dem gleichen Namen beinhaltet die Struktur eures Dokumentes. Sie ist eingeteilt in die Teile
+\begin{itemize}
+	\item Preamble: Hier werden die Einstellungen für das 'scrbook' übergeben. Wenn ihr eine anderes Aussehen wollt probiert stattdessen 'article'
+	\item Settings: Hier werden die Einstellungen zu Packages, Nutzerinformationen und Aussehen der Seiten geladen
+	\item Document Section: In diesem Segment wird die Abfolge des Dokumentes festgelegt. 
+	\begin{itemize}
+		\item Title-Page: Es stehen zwei Arten von Deckblättern zur Verfügung. Für Einzel- und Gruppenarbeiten.
+		\item ABSTRACT: Auf dieser Seite muss das Thema des Leistungsnachweises kurz und bündig beschrieben werden.
+		\item Explanation: In der Erklärung weist man darauf hin, dass kein Plagiat angefertigt wurde. Vergesst nicht zu unterschreiben bevor ihr abgebt.
+		\item TABLE OF CONTENTS: Unter diesem Abschnitt wird festgelegt in welcher Reihenfolge die Gliederungen geordnet werden. Dabei interessant das mit dem Befehl \emph{pagenumbering} die Nummerierung auf "'Roman"' gesetzt wird und mit \emph{setcounter} die Zählung bei 1 beginnt.
+		\item GLOSSAR: Hier sollten Fremdbegriffe welche im Dokument vorkommen mit kurzer Definition erklärt werden sodass die Abk. im Dokument benutzt werden kann.
+		\item CHAPTERS: Hier bindet ihr eure Kapitel ein.
+		\item BIBLIOGRAPHY: Literaturverzeichnis wird am besten mit Jabref gepflegt
+		\item APPENDIX: Wenn ihr einen Anhang benötigt für größere Bilder oder Diagramme, ist hier der richtige Ort dafür.
+	\end{itemize}
+\end{itemize}

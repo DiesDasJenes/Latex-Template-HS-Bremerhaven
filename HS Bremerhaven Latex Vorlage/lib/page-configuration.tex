@@ -1,0 +1,61 @@
+\pagestyle{scrheadings}
+\ihead[]{\headmark}
+\chead[]{}
+\ohead[]{}
+\ifoot[]{}
+\cfoot[]{}
+\ofoot[\pagemark]{\pagemark}
+\setheadsepline{1.0pt}
+\setfootsepline{1.0pt}
+
+\hypersetup{
+	breaklinks = {true}, %Erlaubt Zeilenumbrüche in Links
+	colorlinks = {true}, %Benutze farbige Links
+	citecolor = {DocumentLinkColor}, %Farbe für Zitate
+	linkcolor = {DocumentLinkColor}, %beeinflusst Inhaltsverzeichnis und Seitenzahlen
+	urlcolor = {DocumentLinkColor}, %Weblink-Farbe
+	pdftitle = {Konzeption und Entwicklung eines hochverfügbaren VPN-Clusters auf Basis von Debian Linux}, %Titel der Arbeit
+	pdfsubject = {Bachelor-Thesis}, %Thema der Arbeit
+	pdfauthor = {Jan Torben Bein}, %AutorIN der Arbeit
+	pdfkeywords = {Cluster HA Linux Debian OpenVPN VPN Corosync Pacemaker Heartbeat}, %Stichwörter zur Arbeit
+	pdfproducer = {pdfLaTeX}, %Erzeugt durch
+	pdfcreator = {MiKTeX}, %Erstellt mit
+	pdfstartview = {FitV},
+	pdfview = {FitH},
+	pdffitwindow = {true}
+}
+\def\UrlBreaks{\do\/\do-}
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+% Content and Stuff
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+% Fonts and Style
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+
+\addto\captionsngerman{
+	\renewcommand{\figurename}{Abb.}
+	\renewcommand{\tablename}{Tab.}
+}
+
+\setlength{\footskip}{2\baselineskip}
+
+\fussy
+
+
+%Messbox zur Druckkontrolle:
+\newcommand{\Messbox}[2]{% Parameters: #1=Breite, #2=Hoehe
+	\setlength{\unitlength}{1.0mm}%
+	\begin{picture}(#1,#2)%
+	\linethickness{0.05mm}%
+	\put(0,0){\dashbox{0.2}(#1,#2)%
+		{\parbox{#1mm}{%
+				\centering\footnotesize 
+				%{\bf MESSBOX}\\ 
+				Breite $ = #1 {\rm\ mm}$\\
+				H\"ohe $ = #2 {\rm\ mm}$
+	}}}\end{picture}
+}
+
