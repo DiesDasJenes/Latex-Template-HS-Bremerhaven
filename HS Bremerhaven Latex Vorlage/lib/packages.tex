@@ -3,32 +3,40 @@
 \usepackage{graphicx} 					% Required to insert images
 \usepackage{listings}					% Required for insertion of code
 \usepackage{courier} 					% Required for the courier font
-\usepackage[ngerman]{babel}
-\usepackage{bibgerm}
-\usepackage{wrapfig}
-\usepackage{float}
-\usepackage{microtype}
-\usepackage[utf8]{inputenc}
-\usepackage[usenames,dvipsnames]{xcolor}
-\usepackage{booktabs}
-\usepackage[T1]{fontenc}
-\usepackage[square,sort,comma,numbers]{natbib}
-\usepackage{lmodern}
+\usepackage[ngerman]{babel} % Required for german language
+\RequirePackage[ngerman=ngerman-x-latest]{hyphsubst} % Required for correct wrapping of Words
+\usepackage[utf8]{inputenc} % Required for UTF-8 based vowels like äöü
+\usepackage[T1]{fontenc} % Required for UTF-8 Fonts
+\usepackage{bibgerm} % Required for german 	bibliography style
+\usepackage{wrapfig} % Required for picture which are surrended by text
+\usepackage{float} % Required for floating pictures in text
+\usepackage{microtype} % For smaller Text http://www.khirevich.com/latex/microtype/
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for coloring text
+\usepackage{colortbl} % Required for coloring tables
+\usepackage{booktabs} % Required for indivduell horizontal lines in a table
+
+\usepackage[square,sort,comma,numbers]{natbib} % Required for Bibliographystyles like dinat
+\usepackage{lmodern} % Required to change the style of the text
+
+\usepackage{eurosym} % Required to write €
+
+\usepackage[onehalfspacing]{setspace} % Required to change linepitch
+\usepackage{acronym} % Requirede for acronym so called Glossar
+\usepackage[font=footnotesize]{caption} % Required for captions under tables and pictures
+\usepackage{url} % Required for placing URL in Text
+\usepackage{breakurl} % Other package for URL
+\usepackage{hyperref} % Package for hyperref
+\usepackage[automark]{scrpage2} % Required for headers and footers
+\usepackage{lipsum} % Required for filling sections with nonsense text. 
+\usepackage{textcomp} % Required for text symbols
+
+\usepackage{pifont} 			%% For additional special characters available by \verb#\ding{}#
+\usepackage{mathtools} % Required for math stuff
+
+% Not in Use
 % \usepackage{titlesec}
 % \usepackage{mdframed}
-\usepackage{eurosym}
 % \usepackage{calc}
 % \usepackage{colortbl}
 %\usepackage[scaled]{uarial}
-\usepackage[onehalfspacing]{setspace}
-\usepackage{acronym}
-\usepackage[font=footnotesize]{caption}
-\usepackage{url}
-\usepackage{breakurl}
-\usepackage{hyperref}
-\usepackage[automark]{scrpage2}
-\usepackage{lipsum}
-\usepackage{textcomp}
-\usepackage{xcolor,colortbl}
-\usepackage{pifont} 			%% For additional special characters available by \verb#\ding{}#
-\usepackage{mathtools}

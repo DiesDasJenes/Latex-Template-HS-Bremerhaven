@@ -78,9 +78,7 @@
 	\begin{spacing}{1.0}
  		\tableofcontents
  		\newpage 
- 		\listoffigures
- 		\listoftables
-		\lstlistoflistings
+ 		
 	\end{spacing}
 	\newpage
 
@@ -96,18 +94,22 @@
 	\setcounter{page}{1}
 	\pagenumbering{arabic}
 	\input{chapters/Einleitung}
-%	\input{chapters/drucken}
+	\input{chapters/drucken}
 	\input{chapters/mathematik}
 %	\input{chapters/Schluss}
  
 	\newpage
 
 %----------------------------------------------------------------------------------------
-%	BIBLIOGRAPHY
+%	BIBLIOGRAPHY und Listen
 %----------------------------------------------------------------------------------------
 	\begin{spacing}{1.0}
+		\listoffigures
+		\listoftables
+		\lstlistoflistings
 		\bibliography{bib/lib}
-		\bibliographystyle{dinat}
+	%	\bibliographystyle{dinat} % Sortierung der Zitate nach Aufruf im Text
+		\bibliographystyle{gerplain} % Deutscher Stil
 		\nocite{*}
 	\end{spacing}
 	\newpage
