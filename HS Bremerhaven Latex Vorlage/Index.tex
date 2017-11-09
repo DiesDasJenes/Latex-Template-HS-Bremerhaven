@@ -1,5 +1,4 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%																			     %%
 %%  This template is created by Philipp Ludewig	and its based on the       	     %%
 %%  MES template by Jan Boelmann and Shashi Kiran ShivarKumar Honnali			 %%
 %%  for further informations please contact: [Mailadress]      			         %%
@@ -10,12 +9,14 @@
 %%                                                                		         %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%   						     Preamble                                 %%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%       
-%% here the document will be defined with the settings from above
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%   						     Preamble                                      %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%       
+%% hier wird das Dokument mit den Einstellungen von oben definiert               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \documentclass[
-    13pt,                % Schriftgroesse 12pt
+   13pt,               % Schriftgroesse 13pt
    a4paper,             % Layout fuer Din A4
    oneside,             % Layout fuer einseitigen Druck
    headinclude,         % Kopfzeile wird Seiten-Layouts mit beruecksichtigt
@@ -39,17 +40,18 @@
 ]{scrbook}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%% 							Settings        							%%%%%
+%%%%% 					     Einstellungen	      							%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% This will load the parameter of the template like font, size etc.
-%% the command "\input{}" loads a file without showing it in the document.
+%% Dadurch werden die Parameter der Vorlage wie Schriftart, Größe usw. geladen.
+%% Der Befehl "\input{file} lädt eine Datei, ohne sie im Dokument anzuzeigen.
 \input{lib/templatesettings}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%% 						Documents Section       			     		%%%%%
+%%%%% 						Bereich des Dokumentes     			     		%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{document}
 %----------------------------------------------------------------------------------------
 %	TITLE-Page
@@ -100,6 +102,7 @@
 	\input{chapters/listen}
 	\input{chapters/bilder}
 	\input{chapters/mathematik}
+	\input{chapters/markdowninlatex}
 %	\input{chapters/Schluss}
  
 	\newpage
