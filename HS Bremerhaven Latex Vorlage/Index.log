@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  26 SEP 2017 16:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  28 SEP 2017 13:24
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -681,6 +681,25 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box32
 )
+
+Class scrbook Warning: Usage of package `fancyhdr' together
+(scrbook)              with a KOMA-Script class is not recommended.
+(scrbook)              I'd suggest to use 
+(scrbook)              package `scrlayer-scrpage'.
+(scrbook)              Nevertheless, using requested
+(scrbook)              package `fancyhdr' on input line 23.
+
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip54
+\f@ncyO@elh=\skip55
+\f@ncyO@erh=\skip56
+\f@ncyO@olh=\skip57
+\f@ncyO@orh=\skip58
+\f@ncyO@elf=\skip59
+\f@ncyO@erf=\skip60
+\f@ncyO@olf=\skip61
+\f@ncyO@orf=\skip62
+)
 (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
@@ -857,11 +876,7 @@ Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip54
-)
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrpage2.sty
-Package: scrpage2 2015/10/03 v3.19a KOMA-Script package (page head and foot)
-LaTeX Info: Redefining \pagemark on input line 174.
+\Hy@SectionHShift=\skip63
 )
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
@@ -1044,19 +1059,19 @@ Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Bcount=\count124
 \calc@Adimen=\dimen140
 \calc@Bdimen=\dimen141
-\calc@Askip=\skip55
-\calc@Bskip=\skip56
+\calc@Askip=\skip64
+\calc@Bskip=\skip65
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count125
-\calc@Cskip=\skip57
+\calc@Cskip=\skip66
 )
 (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/03/03 v2.15a AMS math features
-\@mathmargin=\skip58
+\@mathmargin=\skip67
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -1106,8 +1121,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 \totwidth@=\dimen149
 \lineht@=\dimen150
 \@envbody=\toks30
-\multlinegap=\skip59
-\multlinetaggap=\skip60
+\multlinegap=\skip68
+\multlinetaggap=\skip69
 \mathdisplay@stack=\toks31
 LaTeX Info: Redefining \[ on input line 2735.
 LaTeX Info: Redefining \] on input line 2736.
@@ -1118,7 +1133,7 @@ LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \g_MT_multlinerow_int=\count138
 \l_MT_multwidth_dim=\dimen151
-\origjot=\skip61
+\origjot=\skip70
 \l_MT_shortvdotswithinadjustabove_dim=\dimen152
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen153
 \l_MT_above_intertext_sep=\dimen154
@@ -1134,13 +1149,13 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 )
 (./lib/person-configuration.tex) (./lib/colors.tex)
 (./lib/page-configuration.tex
-Package hyperref Info: Option `breaklinks' set `true' on input line 26.
-Package hyperref Info: Option `colorlinks' set `true' on input line 26.
-Package hyperref Info: Option `pdffitwindow' set `true' on input line 26.
+Package hyperref Info: Option `breaklinks' set `true' on input line 35.
+Package hyperref Info: Option `colorlinks' set `true' on input line 35.
+Package hyperref Info: Option `pdffitwindow' set `true' on input line 35.
 ))
 
 LaTeX Warning: Unused global option(s):
-    [xcolor=table].
+    [plainfootsepline,xcolor=table].
 
 (./Index.aux
 
@@ -1248,17 +1263,8 @@ LaTeX Info: Redefining \nameref on input line 53.
 \@outlinefile=\write4
 \openout4 = `Index.out'.
 
-
-
-Package scrpage2 Warning: seems you are using a very small headheight.
-(scrpage2)                If you get overfull \vbox warnings at almost every
-(scrpage2)                page, you should increase headheight e.g. writing
-(scrpage2)                 \setlength{\headheight}{1.1\baselineskip}
-(scrpage2)                into the preamble of your document.
-(scrpage2)                A better solution would be to use typearea package.
-
-(./chapters/titlepage_group.tex
-<images/hs-logo.png, id=136, 501.875pt x 274.02374pt>
+ (./chapters/titlepage_group.tex
+<images/hs-logo.png, id=144, 501.875pt x 274.02374pt>
 File: images/hs-logo.png Graphic file (type png)
  <use images/hs-logo.png>
 Package pdftex.def Info: images/hs-logo.png used on input line 4.
@@ -1417,7 +1423,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<images/signatur.png, id=167, 602.25pt x 150.5625pt>
+<images/signatur.png, id=175, 602.25pt x 150.5625pt>
 File: images/signatur.png Graphic file (type png)
  <use images/signatur.png>
 Package pdftex.def Info: images/signatur.png used on input line 27.
@@ -1438,13 +1444,13 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 79
 .
  (./Index.toc
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 33.
+(babel)             in language  on input line 34.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 33.
+(babel)             in language  on input line 34.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 33.
+(babel)             in language  on input line 34.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 33.
+(babel)             in language  on input line 34.
  [1
 
 ])
@@ -1481,8 +1487,6 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              deprecated \float@addtolist interface .
 
 )
-Overfull \vbox (0.6499pt too high) has occurred while \output is active []
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 89.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1491,8 +1495,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 89.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 89.
-
-[3
+ [3
 
 ] (./chapters/Einleitung.tex
 chapter 1.
@@ -1504,9 +1507,6 @@ Package babel Info: Redefining ngerman shorthand "~
 Underfull \hbox (badness 10000) in paragraph at lines 14--16
 
  []
-
-
-Overfull \vbox (0.6499pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 19.
@@ -1539,9 +1539,6 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 29.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 29.
-
-Overfull \vbox (0.6499pt too high) has occurred while \output is active []
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 41.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1557,8 +1554,6 @@ been already used, duplicate ignored
 l.41 		\item G
               LOSSAR: Hier sollten Fremdbegriffe welche im Dokument vorkomme...
 [2]) (./chapters/drucken.tex
-Overfull \vbox (0.6499pt too high) has occurred while \output is active []
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1614,9 +1609,6 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 27.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 27.
-
-Overfull \vbox (0.6499pt too high) has occurred while \output is active []
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 50.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1641,9 +1633,6 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 75.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 75.
-
-Overfull \vbox (0.6499pt too high) has occurred while \output is active []
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 102.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1659,8 +1648,6 @@ been already used, duplicate ignored
 l.102 \item D
              er Datenträger muss so beschriftet sein, dass er der [5])
 (./chapters/strukturen-latex.tex
-Overfull \vbox (0.6499pt too high) has occurred while \output is active []
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1669,16 +1656,13 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
-
-[6]
+ [6]
 chapter 3.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 ) (./chapters/tabellen.tex
-Overfull \vbox (0.6499pt too high) has occurred while \output is active []
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1687,8 +1671,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
-
-[7
+ [7
 
 ]
 chapter 4.
@@ -1697,13 +1680,6 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 ) (./chapters/listen.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--1
-
- []
-
-
-Overfull \vbox (0.6499pt too high) has occurred while \output is active []
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1712,8 +1688,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
-
-[8
+ [8
 
 ]
 chapter 5.
@@ -1722,8 +1697,6 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 ) (./chapters/bilder.tex
-Overfull \vbox (0.6499pt too high) has occurred while \output is active []
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1732,8 +1705,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
-
-[9
+ [9
 
 ]
 chapter 6.
@@ -1742,8 +1714,6 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 ) (./chapters/mathematik.tex
-Overfull \vbox (0.6499pt too high) has occurred while \output is active []
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1752,8 +1722,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
-
-[10
+ [10
 
 ]
 chapter 7.
@@ -1769,9 +1738,6 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 34.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 34.
-
-Overfull \vbox (0.6499pt too high) has occurred while \output is active []
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 36.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1780,7 +1746,6 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 36.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 36.
-
 [11
 
 ]
@@ -1805,9 +1770,6 @@ Package babel Info: Redefining ngerman shorthand "~
 Package natbib Warning: Citation `amsldoc02' on page 12 undefined on input line
  78.
 
-
-Overfull \vbox (0.6499pt too high) has occurred while \output is active []
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 81.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1816,7 +1778,6 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 81.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 81.
-
 [12]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 96.
@@ -1826,9 +1787,6 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 121.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 121.
-
-Overfull \vbox (0.6499pt too high) has occurred while \output is active []
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 125.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1837,8 +1795,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 125.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 125.
-
-[13]
+ [13]
 
 Package natbib Warning: Citation `amsldoc02' on page 14 undefined on input line
  159.
@@ -1855,9 +1812,6 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 192.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 192.
-
-Overfull \vbox (0.6499pt too high) has occurred while \output is active []
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 196.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1866,7 +1820,6 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 196.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 196.
-
 [14]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 198.
@@ -1880,9 +1833,6 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 236.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 236.
-
-Overfull \vbox (0.6499pt too high) has occurred while \output is active []
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 240.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1891,8 +1841,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 240.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 240.
-
-[15]
+ [15]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 262.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1901,9 +1850,6 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 279.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 279.
-
-Overfull \vbox (0.6499pt too high) has occurred while \output is active []
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 287.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1912,15 +1858,12 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 287.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 287.
-
-[16]
+ [16]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 293.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 293.
 )
-Overfull \vbox (0.6499pt too high) has occurred while \output is active []
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 105.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1929,8 +1872,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 105.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 105.
-
-[17]
+ [17]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 111.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2045,8 +1987,9 @@ Class scrbook Warning: Usage of deprecated font command `\sc'!
 
 Underfull \hbox (badness 10000) in paragraph at lines 8--10
 []\T1/lmr/m/sc/13 (+20) Marquardt, Sa-scha\T1/lmss/m/n/13 (+20) : \T1/lmss/m/sl
-/13 CI\T1/lmss/m/n/13 (+20) .  [][]$\T1/lmtt/m/n/13 http : / / www\OML/lmm/m/it
-/13 :\T1/lmtt/m/n/13 mamas -[] projekte\OML/lmm/m/it/13 :\T1/lmtt/m/n/13 de /
+/13 (+20) CI\T1/lmss/m/n/13 (+20) .  [][]$\T1/lmtt/m/n/13 http : / / www\OML/lm
+m/m/it/13 :\T1/lmtt/m/n/13 mamas -[] projekte\OML/lmm/m/it/13 :\T1/lmtt/m/n/13 
+de /
  []
 
 
@@ -2065,15 +2008,13 @@ Class scrbook Warning: Usage of deprecated font command `\sc'!
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 12--14
-[]\T1/lmr/m/sc/13 (+20) Wikipedia.de\T1/lmss/m/n/13 (+20) : \T1/lmss/m/sl/13 Co
-r-po-ra-te Iden-ti-ty\T1/lmss/m/n/13 (+20) .  [][]$\T1/lmtt/m/n/13 https : / / 
-de\OML/lmm/m/it/13 :\T1/lmtt/m/n/13 wikipedia\OML/lmm/m/it/13 :\T1/lmtt/m/n/13 
-org / wiki /
+[]\T1/lmr/m/sc/13 (+20) Wikipedia.de\T1/lmss/m/n/13 (+20) : \T1/lmss/m/sl/13 (+
+20) Cor-po-ra-te Iden-ti-ty\T1/lmss/m/n/13 (+20) .  [][]$\T1/lmtt/m/n/13 https 
+: / / de\OML/lmm/m/it/13 :\T1/lmtt/m/n/13 wikipedia\OML/lmm/m/it/13 :\T1/lmtt/m
+/n/13 org / wiki /
  []
 
 )
-Overfull \vbox (0.6499pt too high) has occurred while \output is active []
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 119.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2082,8 +2023,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 119.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 119.
-
-[21
+ [21
 
 ] (./chapters/appendix.tex
 chapter A.
@@ -2132,13 +2072,10 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 Package natbib Warning: There were undefined citations.
 
 
-Package caption Warning: Unused \captionsetup[lstlisting] on input line 99.
+Package caption Warning: Unused \captionsetup[lstlisting] on input line 102.
 See the caption package documentation for explanation.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 127.
-
-Overfull \vbox (0.6499pt too high) has occurred while \output is active []
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 127.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2147,7 +2084,6 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 127.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 127.
-
 [22
 
 ]
@@ -2155,15 +2091,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 127.
  (./Index.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 127.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 127.
+Package rerunfilecheck Info: File `Index.out' has not changed.
+(rerunfilecheck)             Checksum: E433EA5ED11B0E16361D7428642D93C8;2264.
 
-
-Package rerunfilecheck Warning: File `Index.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Index.out':
-(rerunfilecheck)             Before: 58687C9E7D647D1458E107398552093F;2178
-(rerunfilecheck)             After:  E433EA5ED11B0E16361D7428642D93C8;2264.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -2178,91 +2108,37 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 127.
 ### simple group (level 1) entered at line 44 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 16632 strings out of 493029
- 256338 string characters out of 6136234
- 566933 words of memory out of 5000000
- 19538 multiletter control sequences out of 15000+600000
- 151433 words of font info for 153 fonts, out of 8000000 for 9000
+ 16519 strings out of 493029
+ 254279 string characters out of 6136234
+ 561843 words of memory out of 5000000
+ 19427 multiletter control sequences out of 15000+600000
+ 149787 words of font info for 160 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,15n,66p,572b,891s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{equation.4.2.5} has been referenced
- but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.4.2.10} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.4.2.2} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.3.7} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.3.6} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.3.5} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.3.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.3.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.3.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.3.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.2.5} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.2.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.2.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.2.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.1} has been referenced but does not exist
-, replaced by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvip
-s/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/t
-exmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-m
-athex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texlive/t
-exmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/share/texmf/fonts/type1/
-public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-r7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type
-1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmsso17.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/l
-msy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmtt12.pfb>
-Output written on Index.pdf (30 pages, 475061 bytes).
+ 47i,15n,66p,572b,872s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texm
+f/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.e
+nc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/e
+nc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr
+/share/texlive/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/share/te
+xmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/l
+mex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/publi
+c/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso
+10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fo
+nts/type1/public/lm/lmsso17.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
+Output written on Index.pdf (30 pages, 473330 bytes).
 PDF statistics:
- 518 PDF objects out of 1000 (max. 8388607)
- 454 compressed objects within 5 object streams
- 115 named destinations out of 1000 (max. 500000)
- 41747 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 504 PDF objects out of 1000 (max. 8388607)
+ 440 compressed objects within 5 object streams
+ 97 named destinations out of 1000 (max. 500000)
+ 41763 words of extra memory for PDF output out of 42996 (max. 10000000)
 
