@@ -45,11 +45,4 @@
   url    = {https://www.bremen-tourismus.de/klimahaus-8-ost},
 }
 
-@Misc{floatrow,
-  author    = {saputello},
-  title     = {Floatrow - Zwei Bilder nebeneinander},
-  timestamp = {2017-11-09},
-  url       = {http://texwelt.de/wissen/fragen/18877/zwei-bilder-nebeneinander-jeweils-mit-bildunterschrift-und-label/18882},
-}
-
 @Comment{jabref-meta: databaseType:bibtex;}

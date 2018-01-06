@@ -4,6 +4,7 @@
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Wie beginnt man?}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Aufbau der Index Datei}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Pakete und CTAN}{3}{section.1.3}
 \contentsline {chapter}{\numberline {2}Drucken der Arbeit}{4}{chapter.2}
 \contentsline {section}{\numberline {2.1}Drucken}{4}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Drucker und Papier}{4}{subsection.2.1.1}
@@ -13,26 +14,27 @@
 \contentsline {chapter}{\numberline {3}Strukturen in Latex}{7}{chapter.3}
 \contentsline {chapter}{\numberline {4}Tabellen}{8}{chapter.4}
 \contentsline {chapter}{\numberline {5}Listen}{9}{chapter.5}
-\contentsline {chapter}{\numberline {6}Bilder}{10}{chapter.6}
-\contentsline {chapter}{\numberline {7}Mathem.\ Formeln etc.}{11}{chapter.7}
-\contentsline {section}{\numberline {7.1}Mathematische Elemente im Flie\IeC {\ss }text}{11}{section.7.1}
-\contentsline {paragraph}{\nonumberline H\IeC {\"a}ufiger Fehler:}{11}{section*.9}
-\contentsline {section}{\numberline {7.2}Freigestellte Ausdr\IeC {\"u}cke}{12}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Einfache Gleichungen}{12}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Mehrzeilige Gleichungen}{12}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}Fallunterscheidungen}{13}{subsection.7.2.3}
-\contentsline {subsection}{\numberline {7.2.4}Gleichungen mit Matrizen}{14}{subsection.7.2.4}
-\contentsline {subsection}{\numberline {7.2.5}Verweise auf Gleichungen}{14}{subsection.7.2.5}
-\contentsline {section}{\numberline {7.3}Spezielle Symbole}{15}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Zahlenmengen}{15}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Operatoren}{15}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}Variable (Symbole) mit mehreren Zeichen}{15}{subsection.7.3.3}
-\contentsline {subsection}{\numberline {7.3.4}Funktionen}{16}{subsection.7.3.4}
-\contentsline {subsection}{\numberline {7.3.5}Ma\IeC {\ss }einheiten und W\IeC {\"a}hrungen}{16}{subsection.7.3.5}
-\contentsline {subsection}{\numberline {7.3.6}Kommas in Dezimalzahlen (Mathematik-Modus)}{16}{subsection.7.3.6}
-\contentsline {subsection}{\numberline {7.3.7}Mathematische Werkzeuge}{17}{subsection.7.3.7}
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{18}{chapter*.10}
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{19}{chapter*.11}
-\contentsline {chapter}{\nonumberline Listings}{20}{chapter*.12}
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{21}{chapter*.13}
-\contentsline {chapter}{\numberline {A}ToDo Liste}{22}{appendix.A}
+\contentsline {chapter}{\numberline {6}Bilder}{11}{chapter.6}
+\contentsline {chapter}{\numberline {7}Mathem.\ Formeln etc.}{14}{chapter.7}
+\contentsline {section}{\numberline {7.1}Mathematische Elemente im Flie\IeC {\ss }text}{14}{section.7.1}
+\contentsline {paragraph}{\nonumberline H\IeC {\"a}ufiger Fehler:}{14}{section*.12}
+\contentsline {section}{\numberline {7.2}Freigestellte Ausdr\IeC {\"u}cke}{15}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Einfache Gleichungen}{15}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Mehrzeilige Gleichungen}{15}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Fallunterscheidungen}{16}{subsection.7.2.3}
+\contentsline {subsection}{\numberline {7.2.4}Gleichungen mit Matrizen}{17}{subsection.7.2.4}
+\contentsline {subsection}{\numberline {7.2.5}Verweise auf Gleichungen}{17}{subsection.7.2.5}
+\contentsline {section}{\numberline {7.3}Spezielle Symbole}{18}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Zahlenmengen}{18}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Operatoren}{18}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Variable (Symbole) mit mehreren Zeichen}{18}{subsection.7.3.3}
+\contentsline {subsection}{\numberline {7.3.4}Funktionen}{19}{subsection.7.3.4}
+\contentsline {subsection}{\numberline {7.3.5}Ma\IeC {\ss }einheiten und W\IeC {\"a}hrungen}{19}{subsection.7.3.5}
+\contentsline {subsection}{\numberline {7.3.6}Kommas in Dezimalzahlen (Mathematik-Modus)}{19}{subsection.7.3.6}
+\contentsline {subsection}{\numberline {7.3.7}Mathematische Werkzeuge}{20}{subsection.7.3.7}
+\contentsline {chapter}{\numberline {8}Markdown in Latex}{21}{chapter.8}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{22}{chapter*.13}
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{23}{chapter*.14}
+\contentsline {chapter}{\nonumberline Listings}{24}{chapter*.15}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{25}{chapter*.16}
+\contentsline {chapter}{\numberline {A}ToDo Liste}{26}{appendix.A}
