@@ -10,28 +10,30 @@
 \BOOKMARK [1][-]{section.2.2}{Binden}{chapter.2}% 10
 \BOOKMARK [1][-]{section.2.3}{Elektronische Datentr\344ger \(CD-R, DVD\)}{chapter.2}% 11
 \BOOKMARK [0][-]{chapter.3}{Strukturen in Latex}{}% 12
-\BOOKMARK [0][-]{chapter.4}{Tabellen}{}% 13
-\BOOKMARK [0][-]{chapter.5}{Listen}{}% 14
-\BOOKMARK [0][-]{chapter.6}{Bilder}{}% 15
-\BOOKMARK [0][-]{chapter.7}{Mathem. Formeln etc.}{}% 16
-\BOOKMARK [1][-]{section.7.1}{Mathematische Elemente im Flie\337text}{chapter.7}% 17
-\BOOKMARK [1][-]{section.7.2}{Freigestellte Ausdr\374cke}{chapter.7}% 18
-\BOOKMARK [2][-]{subsection.7.2.1}{Einfache Gleichungen}{section.7.2}% 19
-\BOOKMARK [2][-]{subsection.7.2.2}{Mehrzeilige Gleichungen}{section.7.2}% 20
-\BOOKMARK [2][-]{subsection.7.2.3}{Fallunterscheidungen}{section.7.2}% 21
-\BOOKMARK [2][-]{subsection.7.2.4}{Gleichungen mit Matrizen}{section.7.2}% 22
-\BOOKMARK [2][-]{subsection.7.2.5}{Verweise auf Gleichungen}{section.7.2}% 23
-\BOOKMARK [1][-]{section.7.3}{Spezielle Symbole}{chapter.7}% 24
-\BOOKMARK [2][-]{subsection.7.3.1}{Zahlenmengen}{section.7.3}% 25
-\BOOKMARK [2][-]{subsection.7.3.2}{Operatoren}{section.7.3}% 26
-\BOOKMARK [2][-]{subsection.7.3.3}{Variable \(Symbole\) mit mehreren Zeichen}{section.7.3}% 27
-\BOOKMARK [2][-]{subsection.7.3.4}{Funktionen}{section.7.3}% 28
-\BOOKMARK [2][-]{subsection.7.3.5}{Ma\337einheiten und W\344hrungen}{section.7.3}% 29
-\BOOKMARK [2][-]{subsection.7.3.6}{Kommas in Dezimalzahlen \(Mathematik-Modus\)}{section.7.3}% 30
-\BOOKMARK [2][-]{subsection.7.3.7}{Mathematische Werkzeuge}{section.7.3}% 31
-\BOOKMARK [0][-]{chapter.8}{Markdown in Latex}{}% 32
-\BOOKMARK [0][-]{chapter*.13}{Abbildungsverzeichnis}{}% 33
-\BOOKMARK [0][-]{chapter*.14}{Tabellenverzeichnis}{}% 34
-\BOOKMARK [0][-]{chapter*.15}{Listings}{}% 35
-\BOOKMARK [0][-]{chapter*.16}{Literaturverzeichnis}{}% 36
-\BOOKMARK [0][-]{appendix.A}{ToDo Liste}{}% 37
+\BOOKMARK [0][-]{chapter.4}{Header und Footer}{}% 13
+\BOOKMARK [0][-]{chapter.5}{Tabellen}{}% 14
+\BOOKMARK [0][-]{chapter.6}{Listen}{}% 15
+\BOOKMARK [0][-]{chapter.7}{Bilder}{}% 16
+\BOOKMARK [0][-]{chapter.8}{Mathem. Formeln etc.}{}% 17
+\BOOKMARK [1][-]{section.8.1}{Mathematische Elemente im Flie\337text}{chapter.8}% 18
+\BOOKMARK [1][-]{section.8.2}{Freigestellte Ausdr\374cke}{chapter.8}% 19
+\BOOKMARK [2][-]{subsection.8.2.1}{Einfache Gleichungen}{section.8.2}% 20
+\BOOKMARK [2][-]{subsection.8.2.2}{Mehrzeilige Gleichungen}{section.8.2}% 21
+\BOOKMARK [2][-]{subsection.8.2.3}{Fallunterscheidungen}{section.8.2}% 22
+\BOOKMARK [2][-]{subsection.8.2.4}{Gleichungen mit Matrizen}{section.8.2}% 23
+\BOOKMARK [2][-]{subsection.8.2.5}{Verweise auf Gleichungen}{section.8.2}% 24
+\BOOKMARK [1][-]{section.8.3}{Spezielle Symbole}{chapter.8}% 25
+\BOOKMARK [2][-]{subsection.8.3.1}{Zahlenmengen}{section.8.3}% 26
+\BOOKMARK [2][-]{subsection.8.3.2}{Operatoren}{section.8.3}% 27
+\BOOKMARK [2][-]{subsection.8.3.3}{Variable \(Symbole\) mit mehreren Zeichen}{section.8.3}% 28
+\BOOKMARK [2][-]{subsection.8.3.4}{Funktionen}{section.8.3}% 29
+\BOOKMARK [2][-]{subsection.8.3.5}{Ma\337einheiten und W\344hrungen}{section.8.3}% 30
+\BOOKMARK [2][-]{subsection.8.3.6}{Kommas in Dezimalzahlen \(Mathematik-Modus\)}{section.8.3}% 31
+\BOOKMARK [2][-]{subsection.8.3.7}{Mathematische Werkzeuge}{section.8.3}% 32
+\BOOKMARK [2][-]{subsection.8.3.8}{Formelverzeichnis}{section.8.3}% 33
+\BOOKMARK [0][-]{chapter.9}{Markdown in Latex}{}% 34
+\BOOKMARK [0][-]{chapter*.15}{Abbildungsverzeichnis}{}% 35
+\BOOKMARK [0][-]{chapter*.16}{Tabellenverzeichnis}{}% 36
+\BOOKMARK [0][-]{chapter*.17}{Listings}{}% 37
+\BOOKMARK [0][-]{chapter*.18}{Literaturverzeichnis}{}% 38
+\BOOKMARK [0][-]{appendix.A}{ToDo Liste}{}% 39
