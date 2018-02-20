@@ -1,12 +1,21 @@
-\pagestyle{scrheadings}
-\ihead[]{\headmark}
-\chead[]{}
-\ohead[]{}
-\ifoot[]{}
-\cfoot[]{}
-\ofoot[\pagemark]{\pagemark}
-\setheadsepline{1.0pt}
-\setfootsepline{1.0pt}
+\pagestyle{fancy} %eigener Seitenstil
+\fancyhf{} %alle Kopf- und Fußzeilenfelder bereinigen
+\fancyhead[L]{} %Kopfzeile links
+\fancyhead[C]{} %zentrierte Kopfzeile
+\fancyhead[R]{} %Kopfzeile rechts
+\renewcommand{\headrulewidth}{1.0pt} %obere Trennlinie
+\fancyfoot[C]{\thepage} %Seitennummer
+\renewcommand{\footrulewidth}{1.0pt} %untere Trennlinie
+
+%\pagestyle{scrheadings}
+%\ihead[]{\headmark}
+%\chead[]{}
+%\ohead[]{}
+%\ifoot[]{}
+%\cfoot[]{}
+%\ofoot[\pagemark]{\pagemark}
+%\setheadsepline{1.0pt}
+%\setfootsepline{1.0pt}
 
 \hypersetup{
 	breaklinks = {true}, %Erlaubt Zeilenumbrüche in Links
@@ -58,4 +67,5 @@
 				H\"ohe $ = #2 {\rm\ mm}$
 	}}}\end{picture}
 }
+
 

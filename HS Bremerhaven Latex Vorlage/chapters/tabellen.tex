@@ -1,7 +1,233 @@
 \chapter{Tabellen}
 
-Tabellen werden in der zugehörigen Umgebung geschrieben \verb|\begin{table}\end{table}|
+Tabellen werden in der zugehörigen Umgebung geschrieben \verb|\begin{tabular}\end{tabular}|
+\begin{lstlisting}[style=LaTeX]
+\begin{tabular}{|lcr||}
+left aligned column & center column & right column \\
+\hline
+text & text & text \\
+text & text & text \\
+\end{tabular}
+\end{lstlisting}
 
+\begin{tabular}{|lcr||}
+	left aligned column & center column & right column \\
+	\hline
+	text & text & text \\
+	text & text & text \\
+\end{tabular}
+%Skipping for 1 row there is also \smallskip and \medskip
+\bigskip
+
+Der Parameter (im Beispiel |lcr|||) wird als Tabellenspezifikation bezeichnet und teilt LaTeX mit, wie viele Spalten es dort gibt.
+sind und wie sie formatiert werden sollen. Jeder Buchstabe steht für eine einzelne Spalte. Mögliche Werte sind:
+
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{ll}
+		\multicolumn{1}{c}{\textbf{Zeichen}} & \multicolumn{1}{c}{\textbf{Bedeutung}}       \\
+		l                           & linksbündige Spalte                 \\
+		c                           & zentrierte Spalte                   \\
+		r                           & rechtsbündige Spalte                \\
+		p\{'width'\} e.g. p\{5cm\}  & Absatzspalte mit definierter Breite \\
+		| (pipe character)          & vertikale Linie                     \\
+		|| (2 pipes)                & 2 vertikale Linien                 
+	\end{tabular}
+\end{table}
+
+Zellen werden durch das Zeichen \& getrennt. Eine Reihe wird durch 2 Back Slashes beendet und Horizontale Linien können mit dem Befehl \verb|\hline| eingefügt werden.
+Tabellen werden immer so formatiert, dass sie so breit sind, dass sie den gesamten Inhalt enthalten. Wenn eine Tabelle zu groß ist, druckt LaTeX überfüllte hbox Warnungen. Mögliche Lösungen sind die Verwendung des p{'width'} Spezifiziere oder anderer Pakete wie \emph{tabularx}. Eine Tabelle mit Spaltenüberschriften, die sich über mehrere Spalten erstrecken, kann mit dem Befehl \verb|\multicolumn{cols}{pos}{text}| realisiert werden.
+
+\begin{lstlisting}[style=LaTeX]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+&\multicolumn{3}{|c|}{Income Groups}\\
+\cline{2-4}
+City&Lower&Middle&Higher\\
+\hline
+City-1& 11 & 21 & 13\\
+City-2& 21 & 31 &41\\
+\hline
+\end{tabular}
+\end{center}
+\end{lstlisting}
+
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		&\multicolumn{3}{|c|}{Income Groups}\\
+		\cline{2-4}
+		City&Lower&Middle&Higher\\
+		\hline
+		City-1& 11 & 21 & 13\\
+		City-2& 21 & 31 &41\\
+		\hline
+	\end{tabular}
+\end{center}
+\bigskip
+
+Beachtet, dass der Befehl \verb|\multicolumn| drei obligatorische Argumente enthält: Das erste Argument gibt die Anzahl der Spalten, über die sich die Überschrift erstreckt, das zweite Argument spezifiziert die Position der Überschrift (l,c,r) und die drittes Argument ist der Text für die Überschrift. Eingesetzt habe ich diesen Befehl bereit bei der Tabelle darüber, um die Überschriften in den Zeilen mittig einzurücken. Der Befehl \verb|\cline{2-4}| spezifiziert die Startspalte (hier, 2) und Endspalte (hier, 4), über die eine Linie gezogen werden soll.
+
+\bigskip
+
+Um die Tabelle innerhalb der Seite anzuordnen wird noch dazu die Umgebung \emph{table} benötigt. Es lässt eine Tabelle (table) anhand verschiedener interner Regeln automatisch an einer vorteilhaften Position innerhalb des Textes platzieren. \textbf{b} steht für den unteren Rand einer Seite, \textbf{t} für den oberen Rand, \textbf{h} für die Stelle, an der die Tabelle definiert wurde, und \textbf{p} bedeutet, dass die Tabelle auf einer eigenen Seite platziert wird (ggf. zusammen mit weiteren Tabellen). Die *-Variante der Umgebung sorgt bei zweispaltigem Textsatz dafür, dass die Tabelle über beide Spalten hinweg Platz einnimmt.
+\newpage
+\begin{lstlisting}[style=LaTeX]
+\begin{table}[ht]
+\centering
+\begin{tabular}{|lcr||}
+left aligned column & center column & right column \\
+\hline
+text & text & text \\
+text & text & text \\
+\end{tabular}
+\end{table}
+\end{lstlisting}
+
+Lange Tabellen werden von LaTeX nativ unterstützt, dank der Langzeitumgebung. Leider unterstützt diese Umgebung kein Stretching (X-Spalten) über mehrere Seiten.
+
+Die Pakete von tabular stellen die Longtabu-Umgebung zur Verfügung. Es hat die meisten Eigenschaften von Tabu, mit der zusätzlichen Fähigkeit, mehrere Seiten zu überspannen.
+
+LaTeX kann mit langen Tabellen gut umgehen: Sie können eine Kopfzeile angeben, die sich auf jeder Seite wiederholt, eine Kopfzeile nur für die erste Seite und die gleiche für die Fußzeile.
+
+Es verwendet eine Syntax, die dem Paket \emph{Longtable} ähnelt, daher sollten Sie einen Blick in die Dokumentation werfen, wenn Sie mehr darüber erfahren möchten.
+
+Alternativ können Sie auch eines der folgenden Pakete \emph{supertabular} oder \emph{xtab} ausprobieren, eine erweiterte und etwas verbesserte Version von \emph{supertabular}.
+Folgendes Beispiel stammt von \url{http://users.sdsc.edu/~ssmallen/latex/longtable.html}
+
+\bigskip
+\begin{lstlisting}[style=LaTeX]
+\begin{center}
+\begin{longtable}{|l|l|l|}
+\caption[Feasible triples for a highly variable Grid]{Feasible triples for 
+highly variable Grid, MLMMH.} \label{grid_mlmmh} \\
+
+\hline \multicolumn{1}{|c|}{\textbf{Time (s)}} & \multicolumn{1}{c|}{\textbf{Triple chosen}} & \multicolumn{1}{c|}{\textbf{Other feasible triples}} \\ \hline 
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\hline \multicolumn{1}{|c|}{\textbf{Time (s)}} &
+\multicolumn{1}{c|}{\textbf{Triple chosen}} &
+\multicolumn{1}{c|}{\textbf{Other feasible triples}} \\ \hline 
+\endhead
+
+\hline \multicolumn{3}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline \hline
+\endlastfoot
+
+0 & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
+2745 & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
+5490 & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+8235 & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+10980 & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+13725 & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+.........
+\end{lstlisting}
+
+\begin{center}
+	\begin{longtable}{|l|l|l|}
+		\caption[Feasible triples for a highly variable Grid]{Feasible triples for 
+			highly variable Grid, MLMMH.} \label{grid_mlmmh} \\
+		
+		\hline \multicolumn{1}{|c|}{\textbf{Time (s)}} & \multicolumn{1}{c|}{\textbf{Triple chosen}} & \multicolumn{1}{c|}{\textbf{Other feasible triples}} \\ \hline 
+		\endfirsthead
+		
+		\multicolumn{3}{c}%
+		{{\bfseries \tablename\ \thetable{} -- Fortsetzung von vorheriger Seite}} \\
+		\hline \multicolumn{1}{|c|}{\textbf{Time (s)}} &
+		\multicolumn{1}{c|}{\textbf{Triple chosen}} &
+		\multicolumn{1}{c|}{\textbf{Other feasible triples}} \\ \hline 
+		\endhead
+		
+		\hline \multicolumn{3}{|r|}{{Fortsetzung auf der nächsten Seite}} \\ \hline
+		\endfoot
+		
+		\hline \hline
+		\endlastfoot
+		
+		0 & (1, 11, 13725) & (1, 12, 10980), (1, 13, 8235), (2, 2, 0), (3, 1, 0) \\
+		2745 & (1, 12, 10980) & (1, 13, 8235), (2, 2, 0), (2, 3, 0), (3, 1, 0) \\
+		5490 & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		8235 & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		10980 & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		13725 & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		16470 & (1, 13, 16470) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		19215 & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		21960 & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		24705 & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		27450 & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		30195 & (2, 2, 2745) & (2, 3, 0), (3, 1, 0) \\
+		32940 & (1, 13, 16470) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		35685 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		38430 & (1, 13, 10980) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		41175 & (1, 12, 13725) & (1, 13, 10980), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		43920 & (1, 13, 10980) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		46665 & (2, 2, 2745) & (2, 3, 0), (3, 1, 0) \\
+		49410 & (2, 2, 2745) & (2, 3, 0), (3, 1, 0) \\
+		52155 & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		54900 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		57645 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		60390 & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		63135 & (1, 13, 16470) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		65880 & (1, 13, 16470) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		68625 & (2, 2, 2745) & (2, 3, 0), (3, 1, 0) \\
+		71370 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		74115 & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		76860 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		79605 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		82350 & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		85095 & (1, 12, 13725) & (1, 13, 10980), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		87840 & (1, 13, 16470) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		90585 & (1, 13, 16470) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		93330 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		96075 & (1, 13, 16470) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		98820 & (1, 13, 16470) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		101565 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		104310 & (1, 13, 16470) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		107055 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		109800 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		112545 & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		115290 & (1, 13, 16470) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		118035 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		120780 & (1, 13, 16470) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		123525 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		126270 & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		129015 & (2, 2, 2745) & (2, 3, 0), (3, 1, 0) \\
+		131760 & (2, 2, 2745) & (2, 3, 0), (3, 1, 0) \\
+		134505 & (1, 13, 16470) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		137250 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		139995 & (2, 2, 2745) & (2, 3, 0), (3, 1, 0) \\
+		142740 & (2, 2, 2745) & (2, 3, 0), (3, 1, 0) \\
+		145485 & (1, 12, 16470) & (1, 13, 13725), (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		148230 & (2, 2, 2745) & (2, 3, 0), (3, 1, 0) \\
+		150975 & (1, 13, 16470) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		153720 & (1, 12, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		156465 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		159210 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		161955 & (1, 13, 16470) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+		164700 & (1, 13, 13725) & (2, 2, 2745), (2, 3, 0), (3, 1, 0) \\
+	\end{longtable}
+\end{center}
+
+Hier noch einmal das Beispiel für die Umgebung \emph{longtabu}.
+\begin{lstlisting}[style=LaTeX]
+\begin{longtabu} to \linewidth {lX[2]lXl}
+\rowfont\bfseries H1 & H2 & H3 & H4 & H5 \\ \hline 
+\endhead
+\\ \hline
+\multicolumn{5}{r}{There is more to come} \\
+\endfoot
+\\ \hline
+\endlastfoot
+% Inhalt ...
+\end{lstlisting}
+
+
+\paragraph{Einfärben von Zellen/Zeilen und Spalten}
 % Wie sehen Tabellen aus wie funktionieren sie
 % Was hat es mit ResizeBox auf sich
 % Was ist Tabular
