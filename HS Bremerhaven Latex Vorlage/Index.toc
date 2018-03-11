@@ -15,29 +15,32 @@
 \contentsline {chapter}{\numberline {4}Header und Footer}{9}{chapter.4}
 \contentsline {chapter}{\numberline {5}Tabellen}{16}{chapter.5}
 \contentsline {paragraph}{\nonumberline Einf\IeC {\"a}rben von Zellen/Zeilen und Spalten}{22}{section*.10}
-\contentsline {chapter}{\numberline {6}Listen}{23}{chapter.6}
-\contentsline {chapter}{\numberline {7}Bilder}{25}{chapter.7}
-\contentsline {chapter}{\numberline {8}Mathem.\ Formeln etc.}{28}{chapter.8}
-\contentsline {section}{\numberline {8.1}Mathematische Elemente im Flie\IeC {\ss }text}{28}{section.8.1}
-\contentsline {paragraph}{\nonumberline H\IeC {\"a}ufiger Fehler:}{28}{section*.14}
-\contentsline {section}{\numberline {8.2}Freigestellte Ausdr\IeC {\"u}cke}{29}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}Einfache Gleichungen}{29}{subsection.8.2.1}
-\contentsline {subsection}{\numberline {8.2.2}Mehrzeilige Gleichungen}{29}{subsection.8.2.2}
-\contentsline {subsection}{\numberline {8.2.3}Fallunterscheidungen}{30}{subsection.8.2.3}
-\contentsline {subsection}{\numberline {8.2.4}Gleichungen mit Matrizen}{31}{subsection.8.2.4}
-\contentsline {subsection}{\numberline {8.2.5}Verweise auf Gleichungen}{31}{subsection.8.2.5}
-\contentsline {section}{\numberline {8.3}Spezielle Symbole}{32}{section.8.3}
-\contentsline {subsection}{\numberline {8.3.1}Zahlenmengen}{32}{subsection.8.3.1}
-\contentsline {subsection}{\numberline {8.3.2}Operatoren}{32}{subsection.8.3.2}
-\contentsline {subsection}{\numberline {8.3.3}Variable (Symbole) mit mehreren Zeichen}{32}{subsection.8.3.3}
-\contentsline {subsection}{\numberline {8.3.4}Funktionen}{33}{subsection.8.3.4}
-\contentsline {subsection}{\numberline {8.3.5}Ma\IeC {\ss }einheiten und W\IeC {\"a}hrungen}{33}{subsection.8.3.5}
-\contentsline {subsection}{\numberline {8.3.6}Kommas in Dezimalzahlen (Mathematik-Modus)}{33}{subsection.8.3.6}
-\contentsline {subsection}{\numberline {8.3.7}Mathematische Werkzeuge}{34}{subsection.8.3.7}
-\contentsline {subsection}{\numberline {8.3.8}Formelverzeichnis}{34}{subsection.8.3.8}
-\contentsline {chapter}{\numberline {9}Markdown in Latex}{35}{chapter.9}
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{36}{chapter*.15}
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{37}{chapter*.16}
-\contentsline {chapter}{\nonumberline Listings}{38}{chapter*.17}
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{39}{chapter*.18}
-\contentsline {chapter}{\numberline {A}ToDo Liste}{40}{appendix.A}
+\contentsline {paragraph}{\nonumberline ResizeBox, was hat es damit auf sich?}{24}{section*.11}
+\contentsline {paragraph}{\nonumberline Tabelle im Querformat}{25}{section*.13}
+\contentsline {paragraph}{\nonumberline Zellen mit anderer Ausrichtung als die gesammte Spalte}{28}{section*.15}
+\contentsline {chapter}{\numberline {6}Listen}{29}{chapter.6}
+\contentsline {chapter}{\numberline {7}Bilder}{31}{chapter.7}
+\contentsline {chapter}{\numberline {8}Mathem.\ Formeln etc.}{34}{chapter.8}
+\contentsline {section}{\numberline {8.1}Mathematische Elemente im Flie\IeC {\ss }text}{34}{section.8.1}
+\contentsline {paragraph}{\nonumberline H\IeC {\"a}ufiger Fehler:}{34}{section*.20}
+\contentsline {section}{\numberline {8.2}Freigestellte Ausdr\IeC {\"u}cke}{35}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Einfache Gleichungen}{35}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Mehrzeilige Gleichungen}{35}{subsection.8.2.2}
+\contentsline {subsection}{\numberline {8.2.3}Fallunterscheidungen}{36}{subsection.8.2.3}
+\contentsline {subsection}{\numberline {8.2.4}Gleichungen mit Matrizen}{37}{subsection.8.2.4}
+\contentsline {subsection}{\numberline {8.2.5}Verweise auf Gleichungen}{37}{subsection.8.2.5}
+\contentsline {section}{\numberline {8.3}Spezielle Symbole}{38}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Zahlenmengen}{38}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}Operatoren}{38}{subsection.8.3.2}
+\contentsline {subsection}{\numberline {8.3.3}Variable (Symbole) mit mehreren Zeichen}{38}{subsection.8.3.3}
+\contentsline {subsection}{\numberline {8.3.4}Funktionen}{39}{subsection.8.3.4}
+\contentsline {subsection}{\numberline {8.3.5}Ma\IeC {\ss }einheiten und W\IeC {\"a}hrungen}{39}{subsection.8.3.5}
+\contentsline {subsection}{\numberline {8.3.6}Kommas in Dezimalzahlen (Mathematik-Modus)}{39}{subsection.8.3.6}
+\contentsline {subsection}{\numberline {8.3.7}Mathematische Werkzeuge}{40}{subsection.8.3.7}
+\contentsline {subsection}{\numberline {8.3.8}Formelverzeichnis}{40}{subsection.8.3.8}
+\contentsline {chapter}{\numberline {9}Markdown in Latex}{41}{chapter.9}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{42}{chapter*.21}
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{43}{chapter*.22}
+\contentsline {chapter}{\nonumberline Listings}{44}{chapter*.23}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{45}{chapter*.24}
+\contentsline {chapter}{\numberline {A}ToDo Liste}{46}{appendix.A}

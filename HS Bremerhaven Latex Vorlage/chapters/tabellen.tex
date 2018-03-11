@@ -228,12 +228,241 @@ Hier noch einmal das Beispiel für die Umgebung \emph{longtabu}.
 
 
 \paragraph{Einfärben von Zellen/Zeilen und Spalten}
-% Wie sehen Tabellen aus wie funktionieren sie
-% Was hat es mit ResizeBox auf sich
-% Was ist Tabular
-% Eine Zeile mit anderer Ausrichtung statt die Ausrichtung der Spalte
-% LongTables erklären
-% Bestimmte Seiten als Querformat
-	
-% Einfärben?
 
+Um die Lesbarkeit einer Tabelle zu erhöhen können folgende Elemente eingefärbt werden: 
+\begin{itemize}
+	\item Zeilen
+	\item Spalten
+	\item Linien
+	\item Zellen
+\end{itemize}
+
+\textbf{Einfärben von Zeilen}
+
+Dazu wird der Befehl \verb|\rowcolor| benutzt, welcher durch das Paket \emph{xcolor} bereitgestellt wird.
+
+\begin{lstlisting}[style=LaTeX]
+\documentclass{article}
+\usepackage[table]{xcolor}
+\begin{document}
+\begin{tabular}{ | l | l | l | }
+\rowcolor{green}
+A & B & C \\
+\rowcolor{red}
+D & E & F \\
+G & H & I \\
+\rowcolor{blue}
+J & K & L
+\end{tabular}
+\end{document}
+\end{lstlisting}
+
+
+\begin{tabular}{ | l | l | l | }
+	\rowcolor{green}
+	A & B & C \\
+	\rowcolor{red}
+	D & E & F \\
+	G & H & I \\
+	\rowcolor{blue}
+	J & K & L
+\end{tabular}
+
+\bigskip % Für den Abstand zur Tabelle
+
+\textbf{Einfärben von Spalten}
+Spalten können auf zwei Wegen eingefärbt werden. Der erste Weg wäre die Farbeigenschaft in den Tabellenparametern zu definieren. Der andere Weg ist dafür eine sogenannte \verb|\newcolumntype{name}| zu festzulegen.
+
+\begin{lstlisting}[style=LaTeX]
+\documentclass{article}
+\usepackage[table]{xcolor}
+% Weg 2 ColumnType anlegen
+\newcolumntype{a}{>{\columncolor{yellow}}c}
+\newcolumntype{b}{>{\columncolor{green}}c}
+\begin{document}
+% Weg 1 Farbe in den Parametern der Tabelle definieren
+\begin{tabular}{ a | >{\columncolor{red}}c | l | b }
+\hline
+A & B & C & D \\
+E & F & G & H \\
+\hline
+\end{tabular}
+\end{document}
+\end{lstlisting}
+ 
+ 
+ % Weg 2 ColumnType anlegen
+ \newcolumntype{a}{>{\columncolor{yellow}}c}
+ \newcolumntype{b}{>{\columncolor{green}}c}
+ % Weg 1 Farbe in den Parametern der Tabelle definieren
+ \begin{tabular}{ a | >{\columncolor{red}}c | l | b }
+ 	\hline
+ 	A & B & C & D \\
+ 	E & F & G & H \\
+ 	\hline
+ \end{tabular}
+
+\bigskip
+
+\textbf{Einfärben von Linien}
+Über den Befehl \verb|\arrayrulecolor{text}| können Linien einer Tabelle eingefärbt werden. Wenn man nur eine Tabelle einfärben möchte muss unter der Tabelle die Farbe wieder auf Schwarz gestellt werden. Es ist auch möglich nur einzelne Zeilen einzufärben, indem ein neuer Befehl definiert wird:\\ \verb|\newcommand\tln[1]{\arrayrulecolor{#1}\hline}|.
+
+\begin{lstlisting}[style=LaTeX]
+\documentclass{article}
+\usepackage[table]{xcolor}
+\arrayrulecolor{blue}
+\begin{document}
+\begin{tabular}{ | l | l | l | }
+\hline
+A & B & C \\
+\hline
+D & E & F\\
+\hline
+G & H & I \\
+\hline
+\end{tabular}
+\end{document}
+\end{lstlisting}
+
+\arrayrulecolor{blue}
+	\begin{tabular}{ | l | l | l | }
+		\hline
+		A & B & C \\
+		\hline
+		D & E & F\\
+		\hline
+		G & H & I \\
+		\hline
+	\end{tabular}
+
+Hier das Beispiel für die Zeilenweise Einfärbung.
+\newcommand\tln[1]{\arrayrulecolor{#1}\hline}
+\arrayrulecolor{black}
+\begin{tabular}{ | l | l | l | }
+	\hline
+	A & B & C \\ 
+	\tln{red}
+	D & E & F \\ 
+	\hline
+	G & H & I \\
+	\hline
+\end{tabular}
+\arrayrulecolor{black}
+
+\bigskip
+
+\textbf{Einfärben von einzelnen Zellen}
+Um einzelne Zellen einzufärben bedarf es dem Befehl \verb|\cellcolor{color}|, welcher ebenfalls durch das Paket \emph{xcolor} bereitgestellt wird. \LaTeX erlaubt es zudem über den Befehl \verb|\definecolor{Gray}{gray}{0.85}| oder\\ \verb|\columncolor[RGB oder HTML]{232, 232, 122 oder AAACED}| Farben zu definieren. 
+
+\begin{lstlisting}[style=LaTeX]
+\documentclass{article}
+\usepackage[table]{xcolor}
+\arrayrulecolor{blue}
+\begin{document}
+\begin{tabular}{ | l | l | l | }
+\hline
+A & B & C \\
+\hline
+D & E & \cellcolor{green}F \\
+\hline
+G & H & I \\
+\hline
+\end{tabular}
+\end{document}
+\end{lstlisting}
+
+
+\begin{tabular}{ | l | l | l | }
+	\hline
+	A & B & C \\
+	\hline
+	D & E & \cellcolor{green}F \\
+	\hline
+	G & H & I \\
+	\hline
+\end{tabular}
+\paragraph{ResizeBox, was hat es damit auf sich?}
+Wenn eine Tabelle mal nicht auf die Seite passt oder einfach zu klein ist kann diese mittels der ResizeBox oder einer ScaleBox an die Seite angepasst werden. In diesem Beispiel wird eine ResizeBox verwendet. \url{https://en.wikibooks.org/wiki/LaTeX/Tables#Resize_tables}
+
+\begin{lstlisting}[style=LaTeX]
+\begin{table}[h!]
+  \centering
+    \resizebox{\textwidth}{!}{
+      \begin{tabular}{*{14}{|c}|}%%{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+       \hline
+        One & Two &Three & Four & Five & Six & Seven & Eight & Nine & Ten & Eleven &
+        Twelve & Thirteen & Fourteen\\
+       \hline
+       \hline
+       $1.111$ & $2.222$ & $3.333$ & $4.444$ & $5.555$ & $6.666$ & $7.777$ &
+       $8.888$ & $9.999$ & $0.000$ & $1.111$ & $2.222$ & $3.333$ & $4.444$\\
+       \hline
+       \end{tabular}
+    }
+\caption{Test Table}
+\label{tab:label_test}
+\end{table}
+\end{lstlisting}
+
+	\begin{table}[h!]
+		\centering
+		\resizebox{\textwidth}{!}{
+			\begin{tabular}{*{14}{|c}|}%%{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+				\hline
+				One & Two &Three & Four & Five & Six & Seven & Eight & Nine & Ten & Eleven &
+				Twelve & Thirteen & Fourteen\\
+				\hline
+				\hline
+				$1.111$ & $2.222$ & $3.333$ & $4.444$ & $5.555$ & $6.666$ & $7.777$ &
+				$8.888$ & $9.999$ & $0.000$ & $1.111$ & $2.222$ & $3.333$ & $4.444$\\
+				\hline
+			\end{tabular}
+		}
+		\caption{Test Table}
+		\label{tab:label_test}
+	\end{table}
+\paragraph{Tabelle im Querformat}
+Manche Tabellen werden so groß, dass diese nur in einem Querformat dargestellt werden können. Im folgenden Beispiel ist die Tabelle nicht nur gedreht sondern auch zentriert und skaliert. Es folgt eine leere Seite hinter und vor einer Landscape Tabelle, da dass Paket \emph{lscape} automatisch einen Seitenumbruch einfügt. 
+\bigskip
+\begin{lstlisting}[style=LaTeX]
+\begin{landscape}
+  \begin{table}[]
+  \centering
+   \resizebox{0.5\textwidth}{!}{%
+     \begin{tabular}{lllll}
+     A	& B  & C  & D  & E  \\
+     F	& G & H & I  & J 
+     \end{tabular}%
+    }
+\caption{Eine gedrehte Tabelle. Es ist nicht nötig das Blatt zu drehen.}
+\label{tablequer}
+\end{table}
+\end{landscape}
+\end{lstlisting}
+
+
+\begin{landscape}
+	\begin{table}[]
+		\centering
+		%\resizebox{8cm}{4cm}{%
+			\begin{tabular}{l|l|l|l|l}
+			A	& B  & C  & D  & E  \\
+			F	& G & H & I  & J 
+			\end{tabular}%
+		%}
+		\caption{Eine gedrehte Tabelle. Es ist nicht nötig das Blatt zu drehen.}
+		\label{tablequer}
+	\end{table}
+\end{landscape}
+\paragraph{Zellen mit anderer Ausrichtung als die gesammte Spalte}
+Um eine Zelle mit einer anderen Ausrichtung anzulegen muss diese mit dem Befehl \\ \verb|multicolumn{anzahl}{ausrichtung}{text}| angelegt werden. Näheres darüber auf \url{http://www.weinelt.de/latex/multicolumn.html}
+\begin{table}[h]
+	\begin{tabular}{|l|r|}
+		\hline
+		Header1 & HeaderX \\ \hline
+		Item1   & X1      \\ 
+		Item2   & X2      \\ 
+		\multicolumn{1}{|r|}{Item3}   & X3      \\
+		\hline
+	\end{tabular}
+\end{table}
