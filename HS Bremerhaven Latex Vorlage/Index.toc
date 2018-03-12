@@ -38,9 +38,12 @@
 \contentsline {subsection}{\numberline {8.3.6}Kommas in Dezimalzahlen (Mathematik-Modus)}{39}{subsection.8.3.6}
 \contentsline {subsection}{\numberline {8.3.7}Mathematische Werkzeuge}{40}{subsection.8.3.7}
 \contentsline {subsection}{\numberline {8.3.8}Formelverzeichnis}{40}{subsection.8.3.8}
-\contentsline {chapter}{\numberline {9}Markdown in Latex}{41}{chapter.9}
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{42}{chapter*.21}
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{43}{chapter*.22}
-\contentsline {chapter}{\nonumberline Listings}{44}{chapter*.23}
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{45}{chapter*.24}
-\contentsline {chapter}{\numberline {A}ToDo Liste}{46}{appendix.A}
+\contentsline {chapter}{\numberline {9}Das Automatisierungswerkzeug Arara}{41}{chapter.9}
+\contentsline {chapter}{\numberline {10}Pr\IeC {\"a}sentationen erstellen mit \LaTeX }{42}{chapter.10}
+\contentsline {chapter}{\numberline {11}Diagramme und Graphen in \LaTeX }{43}{chapter.11}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{44}{chapter*.21}
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{45}{chapter*.22}
+\contentsline {chapter}{\nonumberline Listings}{46}{chapter*.23}
+\contentsline {chapter}{\nonumberline Formelverzeichnis}{47}{chapter*.24}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{48}{chapter*.25}
+\contentsline {chapter}{\numberline {A}ToDo Liste}{49}{appendix.A}

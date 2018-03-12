@@ -82,13 +82,16 @@ Hier ein Beispiel mit zwei am $=$ Zeichen ausgerichteten Gleichungen,
 f\_1 (x,y) &= \frac{1}{1-x} + y , \label{eq:f1} \\
 f\_2 (x,y) &= \frac{1}{1+y} - x , \label{eq:f2}
 \end{align}
+\formelentry{Gleichung Gesamt}
 %
 erzeugt mit der \texttt{align}-Umgebung aus dem \texttt{amsmath}-Paket:
 %
 
 \begin{align}
   f\_1 (x,y) &= \frac{1}{1-x} + y , \label{eq:f11} \\
+  \formelentry{Formel 1}
   f\_2 (x,y) &= \frac{1}{1+y} - x , \label{eq:f21}
+  \formelentry{Formel 2}
 \end{align}
 
 
@@ -152,7 +155,7 @@ das mit den folgenden Anweisungen erzeugt wurde:
 			y 
 	\end{pmatrix} ,
 \end{equation}
-
+\formelentry{Gleichung}
 %
 Ein nützliches Detail darin ist das TeX-Makro \verb!\phantom{..}! (in Zeile \ref{lin:phantom}), das sein Argument unsichtbar einfügt und hier als Platzhalter für das darüberliegende Minuszeichen verwendet wird. Alternativ zu \texttt{pmatrix} kann man mit der \texttt{bmatrix}-Umgebung Matrizen
 und Vektoren mit eckigen Klammern erzeugen.
@@ -302,4 +305,25 @@ manueller Nacharbeit) in das eigene LaTeX-Dokument übernehmen.
 
 \subsection{Formelverzeichnis}
 
+Jeder der mit Formeln arbeitet möchte auch ein Formelverzeichnis verwenden. Dies ist natürlich auch in diesem Template möglich und zwar über den Befehl \verb|\formelentry{Bezeichnung}|. Dieser kann entweder hinter die Formel geschrieben werden oder unter die verwendetet Umgebung \verb|\begin{align}Inhalt...\end{align}|. Hier ein Beispiel:
+
+\begin{lstlisting}[style=LaTeX]
+\begin{align}
+A &= X + B\\
+\formelentry{Formel 1} % Dies verlinkt auf die eine Formel
+B &= X + C\\
+\end{align}
+\formelentry{Formel 2} % Dies verlinkt auf beide Formeln 
+\end{lstlisting}
+
+Die Verlinkung des Formelverzeichnisses ist auch für die Umgebung \emph{equation} möglich. Hier Beispiel dazu: 
+
+\begin{lstlisting}[style=LaTeX]
+\begin{equation}
+C &= X + D\\
+\formelentry{Formel 3}
+\end{equation}
+\end{lstlisting}
+
+Die Idee für das Formelverzeichnis kommt von dem Blog \emph{qs-welt.de}:
 \url{http://qs-welt.de/2014/05/01/formelverzeichnis-in-latex-erstellen/}

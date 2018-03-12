@@ -68,4 +68,14 @@
 	}}}\end{picture}
 }
 
+% Für das Formelverzeichnis
+\DeclareNewTOC[%
+type=formel, 
+name={Formel},
+hang=5em,%
+listname={Formelverzeichnis}
+]{for}
 
+\newcommand*{\formelentry}[1]{%
+	\addcontentsline{for}{formel}{\protect\numberline{Formel~\theequation} #1}%
+}

@@ -58,7 +58,7 @@
   url    = {https://de.wikipedia.org/wiki/Markdown},
 }
 
-@Misc{rfc7763,
+@Misc{rfc7,
   author   = {S. Leonard},
   title    = {The text/markdown Media Type},
   abstract = {This document registers the text/markdown media type for use with Markdown, a family of plain-text formatting syntaxes that optionally can be converted to formal markup languages such as HTML.

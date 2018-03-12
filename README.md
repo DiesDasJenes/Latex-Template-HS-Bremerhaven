@@ -2,7 +2,7 @@
 Work in progress...
 
 ToDO:
- -> markdown
- -> Abbildungsverzeichnis ohne Kapitel Nummern
- -> Formelverzeichnis 
+ - Arara	
+ - Tikz
+ - Beamer
 
