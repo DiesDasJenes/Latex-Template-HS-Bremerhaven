@@ -1,34 +1,132 @@
-\begin{thebibliography}{1}
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\bibitem{wikissd}
-{\sc Adler, Prof.~Florian}: {\em Corporate Identity und Corporate Design}.
-\newblock \url{http://www.adlerschmidt.de/de/wissen/ciundcd.html}.
 
-\bibitem{jfkey}
-{\sc Kennedy, John~F.}: {\em Zitatbeispiel}.
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global}
+    \entry{jfkey}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=f5eaded7623747b999aa50a85ca8034e}{%
+           family={Kennedy},
+           familyi={K\bibinitperiod},
+           given={John\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f5eaded7623747b999aa50a85ca8034e}
+      \strng{fullhash}{f5eaded7623747b999aa50a85ca8034e}
+      \strng{bibnamehash}{f5eaded7623747b999aa50a85ca8034e}
+      \strng{authorbibnamehash}{f5eaded7623747b999aa50a85ca8034e}
+      \strng{authornamehash}{f5eaded7623747b999aa50a85ca8034e}
+      \strng{authorfullhash}{f5eaded7623747b999aa50a85ca8034e}
+      \field{labelalpha}{Ken}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Zitatbeispiel}
+    \endentry
+    \entry{rfc7763}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=9727b78b69bb2a853473d8d2bcdda5a6}{%
+           family={Leonard},
+           familyi={L\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9727b78b69bb2a853473d8d2bcdda5a6}
+      \strng{fullhash}{9727b78b69bb2a853473d8d2bcdda5a6}
+      \strng{bibnamehash}{9727b78b69bb2a853473d8d2bcdda5a6}
+      \strng{authorbibnamehash}{9727b78b69bb2a853473d8d2bcdda5a6}
+      \strng{authornamehash}{9727b78b69bb2a853473d8d2bcdda5a6}
+      \strng{authorfullhash}{9727b78b69bb2a853473d8d2bcdda5a6}
+      \field{labelalpha}{Leo}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This document registers the text/markdown media type for use with Markdown, a family of plain-text formatting syntaxes that optionally can be converted to formal markup languages such as HTML.}
+      \field{title}{The text/markdown Media Type}
+      \verb{urlraw}
+      \verb https://tools.ietf.org/html/rfc7763#section-1.3
+      \endverb
+      \verb{url}
+      \verb https://tools.ietf.org/html/rfc7763#section-1.3
+      \endverb
+    \endentry
+    \entry{floatrow}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=fd5922beea31c45c2b299b752f3eaac6}{%
+           family={saputello},
+           familyi={s\bibinitperiod}}}%
+      }
+      \strng{namehash}{fd5922beea31c45c2b299b752f3eaac6}
+      \strng{fullhash}{fd5922beea31c45c2b299b752f3eaac6}
+      \strng{bibnamehash}{fd5922beea31c45c2b299b752f3eaac6}
+      \strng{authorbibnamehash}{fd5922beea31c45c2b299b752f3eaac6}
+      \strng{authornamehash}{fd5922beea31c45c2b299b752f3eaac6}
+      \strng{authorfullhash}{fd5922beea31c45c2b299b752f3eaac6}
+      \field{labelalpha}{sap}
+      \field{sortinit}{s}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Floatrow - Zwei Bilder nebeneinander}
+      \verb{urlraw}
+      \verb http://texwelt.de/wissen/fragen/18877/zwei-bilder-nebeneinander-jeweils-mit-bildunterschrift-und-label/18882
+      \endverb
+      \verb{url}
+      \verb http://texwelt.de/wissen/fragen/18877/zwei-bilder-nebeneinander-jeweils-mit-bildunterschrift-und-label/18882
+      \endverb
+    \endentry
+    \entry{hauszpic}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=23a0256ef0bca7d509d154002ee4c4d9}{%
+           family={Vogel},
+           familyi={V\bibinitperiod},
+           given={Thilo},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{23a0256ef0bca7d509d154002ee4c4d9}
+      \strng{fullhash}{23a0256ef0bca7d509d154002ee4c4d9}
+      \strng{bibnamehash}{23a0256ef0bca7d509d154002ee4c4d9}
+      \strng{authorbibnamehash}{23a0256ef0bca7d509d154002ee4c4d9}
+      \strng{authornamehash}{23a0256ef0bca7d509d154002ee4c4d9}
+      \strng{authorfullhash}{23a0256ef0bca7d509d154002ee4c4d9}
+      \field{labelalpha}{Vog}
+      \field{sortinit}{V}
+      \field{sortinithash}{75dd7385c90b2252c3ae853a80ca853b}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://www.ee-news.ch/de/article/27484}}
+      \field{title}{Lichtografie}
+    \endentry
+  \enddatalist
+  \missing{Higham98}
+  \missing{Mermin89}
+  \missing{WikiMarkdown}
+  \missing{amsldoc02}
+\endrefsection
+\endinput
 
-\bibitem{rfc7763}
-{\sc Leonard, S.}: {\em The text/markdown Media Type}.
-
-\bibitem{techno}
-{\sc Marquardt, Sascha}: {\em CI}.
-\newblock \url{http://www.mamas-projekte.de/hochschule/?page_id=274}.
-
-\bibitem{klimahauspic}
-{\sc Meyer, Marcus}: {\em Klimahaus Bremerhaven 8Grad Ost}.
-
-\bibitem{floatrow}
-{\sc saputello}: {\em Floatrow - Zwei Bilder nebeneinander}.
-
-\bibitem{hauszpic}
-{\sc Vogel, Thilo}: {\em Lichtografie}.
-\newblock \url{http://www.ee-news.ch/de/article/27484}.
-
-\bibitem{cb}
-{\sc Wikipedia.de}: {\em Corporate Identity}.
-\newblock \url{https://de.wikipedia.org/wiki/Corporate_Identity}.
-
-\bibitem{WikiMarkdown}
-{\sc Wikipedia.de}: {\em Wikipedia Markdown}.
-
-\end{thebibliography}

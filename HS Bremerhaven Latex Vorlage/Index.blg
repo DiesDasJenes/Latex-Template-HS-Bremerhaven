@@ -1,7 +1,21 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: Index.aux
-The style file: gerplain.bst
-Database file #1: bib/lib.bib
-Warning--I didn't find a database entry for "Mermin89"
-Warning--I didn't find a database entry for "Higham98"
-Warning--I didn't find a database entry for "amsldoc02"
-(There were 3 warnings)
+[0] Config.pm:302> INFO - This is Biber 2.11
+[0] Config.pm:305> INFO - Logfile is 'Index.blg'
+[35] biber-MSWIN64:313> INFO - === 
+[64] Biber.pm:371> INFO - Reading 'Index.bcf'
+[164] Biber.pm:857> INFO - Found 8 citekeys in bib section 0
+[182] Biber.pm:3976> INFO - Processing section 0
+[199] Biber.pm:4136> INFO - Looking for bibtex format file 'bib/lib.bib' for section 0
+[202] bibtex.pm:1500> INFO - LaTeX decoding ...
+[209] bibtex.pm:1316> INFO - Found BibTeX data source 'bib/lib.bib'
+[221] Utils.pm:193> WARN - Possible typo (case mismatch) between citation and datasource keys: 'WikiMarkdown' and 'wikiMarkdown' in file 'bib/lib.bib'
+[226] Utils.pm:193> WARN - I didn't find a database entry for 'Mermin89' (section 0)
+[226] Utils.pm:193> WARN - I didn't find a database entry for 'Higham98' (section 0)
+[226] Utils.pm:193> WARN - I didn't find a database entry for 'amsldoc02' (section 0)
+[226] Utils.pm:193> WARN - I didn't find a database entry for 'WikiMarkdown' (section 0)
+[243] UCollate.pm:68> INFO - Overriding locale 'de_DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[243] UCollate.pm:68> INFO - Overriding locale 'de_DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[243] Biber.pm:3804> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de_DE'
+[243] Biber.pm:3810> INFO - No sort tailoring available for locale 'de_DE'
+[254] bbl.pm:617> INFO - Writing 'Index.bbl' with encoding 'UTF-8'
+[256] bbl.pm:720> INFO - Output to Index.bbl
+[256] Biber.pm:110> INFO - WARNINGS: 5

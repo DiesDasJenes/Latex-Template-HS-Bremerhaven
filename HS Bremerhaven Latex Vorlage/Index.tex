@@ -10,6 +10,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%   						     Arara	                                       %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%       
+%% hier wird der Ablauf des Automatisierungstools definiert			             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% arara: pdflatex: { action: nonstopmode, shell: on } 
+% arara: biber
+% arara: pdflatex: { action: nonstopmode, shell: on }
+% arara: pdflatex: { action: nonstopmode, shell: on }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%   						     Preamble                                      %%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%       
 %% hier wird das Dokument mit den Einstellungen von oben definiert               %%
@@ -26,7 +36,7 @@
 %  plainheadsepline,    % horizontale Linie auch beim plain-Style
    plainfootsepline,    % horizontale Linie auch beim plain-Style
    BCOR12mm,            % Korrektur fuer die Bindung
-   DIV17,               % DIV-Wert fuer die Erstellung des Satzspiegels, siehe scrguide
+   DIV18,               % DIV-Wert fuer die Erstellung des Satzspiegels, siehe scrguide
 %  halfparskip,         % Absatzabstand statt Absatzeinzug
    openany,             % Kapitel können auf geraden und ungeraden Seiten beginnen
    bibliography=totoc,            % Literaturverz. wird ins Inhaltsverzeichnis eingetragen
@@ -49,8 +59,15 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% 						Definition der Bibliography-Datei	     		%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\addbibresource{bib/lib.bib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% 						Bereich des Dokumentes     			     		%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{document}
 %----------------------------------------------------------------------------------------
@@ -75,18 +92,17 @@
 %----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
-	\pagenumbering{Roman} 
-	\setcounter{page}{1}
 	\begin{spacing}{1.0}
  		\tableofcontents
  		\newpage 
- 		
 	\end{spacing}
 	\newpage
 
 %----------------------------------------------------------------------------------------
 %	GLOSSAR
 %----------------------------------------------------------------------------------------
+	\pagenumbering{Roman} 
+	\setcounter{page}{1}
 	\input{chapters/glossary}
 	\newpage
 
@@ -117,12 +133,10 @@
 	\begin{spacing}{1.0}
 		\listoffigures
 		\listoftables
-		\lstlistoflistings
+		\lstlistoflistings		
 		\listofformels
-		\bibliography{bib/lib}
-	%	\bibliographystyle{dinat} % Sortierung der Zitate nach Aufruf im Text
-		\bibliographystyle{gerplain} % Deutscher Stil
-		\nocite{*}
+		\printbibliography
+	%	\nocite{*}
 	\end{spacing}
 	\newpage
 	

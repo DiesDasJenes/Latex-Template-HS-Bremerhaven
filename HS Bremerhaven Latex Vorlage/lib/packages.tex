@@ -8,31 +8,42 @@
 \RequirePackage[ngerman=ngerman-x-latest]{hyphsubst} % Required for correct wrapping of Words
 \usepackage[utf8]{inputenc} % Required for UTF-8 based vowels like äöü
 \usepackage[T1]{fontenc} % Required for UTF-8 Fonts
+\usepackage[hyphens]{url} % Required for placing URL in Text
+\usepackage[
+backend=biber,
+style=alphabetic,
+citestyle=authoryear,
+sortlocale=de_DE,
+natbib=true,
+url=true, 
+doi=true,
+eprint=false
+]{biblatex}
 \usepackage{bibgerm} % Required for german 	bibliography style
 \usepackage{wrapfig} % Required for picture which are surrended by text
 \usepackage{float} % Required for floating pictures in text
 \usepackage{microtype} % For smaller Text http://www.khirevich.com/latex/microtype/
 
+
+
 \usepackage[usenames,dvipsnames]{xcolor} % Required for coloring text
 \usepackage{colortbl} % Required for coloring tables
 \usepackage{booktabs} % Required for indivduell horizontal lines in a table
 
-\usepackage[square,sort,comma,numbers]{natbib} % Required for Bibliographystyles like dinat
+%\usepackage[square,sort,comma,numbers]{natbib} % Required for Bibliographystyles like dinat
 \usepackage{lmodern} % Required to change the style of the text
 
 \usepackage{eurosym} % Required to write €
 
 \usepackage{fancyhdr} % For Pagestyle
 \usepackage[onehalfspacing]{setspace} % Required to change linepitch
-\usepackage{acro} % Requirede for acronym so called Glossar
+
 \usepackage[font=footnotesize]{caption} % Required for captions under tables and pictures
-\usepackage[hyphens]{url} % Required for placing URL in Text
-\usepackage{breakurl} % Other package for URL
+
 \usepackage{hyperref} % Package for hyperref
-%\usepackage[automark]{scrpage2} % Required for headers and footers
 \usepackage{lipsum} % Required for filling sections with nonsense text. 
 \usepackage{textcomp} % Required for text symbols
-
+\usepackage{acronym}  % Required for Glossar
 \usepackage{pifont} 			%% For additional special characters available by \verb#\ding{}#
 \usepackage{mathtools} % Required for math stuff
 \usepackage{verbatim} % Required for writing Latex Code as Text

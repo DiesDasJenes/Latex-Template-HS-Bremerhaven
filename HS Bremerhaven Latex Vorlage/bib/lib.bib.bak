@@ -1,33 +1,4 @@
-% Encoding: windows-1252
-
-@Misc{techno,
-	Title                    = {CI},
-	
-	Author                   = {Sascha Marquardt},
-	HowPublished             = {\url{http://www.mamas-projekte.de/hochschule/?page_id=274}},
-	
-	Owner                    = {gurk},
-	Timestamp                = {02.02.2016}
-}
-@Misc{wikissd,
-	Title                    = {Corporate Identity und Corporate Design},
-	
-	Author                   = {Prof. Florian Adler},
-	HowPublished             = {\url{http://www.adlerschmidt.de/de/wissen/ciundcd.html}},
-	
-	Owner                    = {gurk},
-	Timestamp                = {02.02.2016}
-}
-@Misc{cb,
-	Title                    = {Corporate Identity},
-	
-	Author                   = {Wikipedia.de},
-	HowPublished             = {\url{https://de.wikipedia.org/wiki/Corporate_Identity}},
-	
-	Owner                    = {gurk},
-	Timestamp                = {02.02.2016}
-}
-
+% Encoding: UTF-8
 @Misc{jfkey,
   author = {John F. Kennedy},
   title  = {Zitatbeispiel},
@@ -64,6 +35,14 @@
   abstract = {This document registers the text/markdown media type for use with Markdown, a family of plain-text formatting syntaxes that optionally can be converted to formal markup languages such as HTML.
 },
   url      = {https://tools.ietf.org/html/rfc7763#section-1.3},
+}
+@Book{9783499626005,
+  title     = {Eine Kurze Geschichte Der Zeit (German Edition)},
+  publisher = {Rowohlt Taschenbuch Verlag GmbH},
+  year      = {2012},
+  author    = {Rosi McNab and A O'Brien and Stephen Hawking},
+  isbn      = {978-3-499-62600-5},
+  url       = {https://www.amazon.com/Eine-Kurze-Geschichte-Zeit-German/dp/3499626004?SubscriptionId=0JYN1NVW651KCA56C102&tag=techkie-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=3499626004},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
