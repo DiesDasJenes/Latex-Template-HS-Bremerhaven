@@ -1,5 +1,5 @@
-\select@language {ngerman}
-\select@language {ngerman}
+\babel@toc {ngerman}{}
+\babel@toc {ngerman}{}
 \contentsline {chapter}{\nonumberline Glossar}{III}{chapter*.8}
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Wie beginnt man?}{2}{section.1.1}
@@ -38,13 +38,16 @@
 \contentsline {subsection}{\numberline {8.3.6}Kommas in Dezimalzahlen (Mathematik-Modus)}{39}{subsection.8.3.6}
 \contentsline {subsection}{\numberline {8.3.7}Mathematische Werkzeuge}{40}{subsection.8.3.7}
 \contentsline {subsection}{\numberline {8.3.8}Formelverzeichnis}{40}{subsection.8.3.8}
-\contentsline {chapter}{\numberline {9}Markdown in Latex}{41}{chapter.9}
-\contentsline {chapter}{\numberline {10}Das Automatisierungswerkzeug Arara}{43}{chapter.10}
-\contentsline {chapter}{\numberline {11}Pr\IeC {\"a}sentationen erstellen mit \LaTeX }{44}{chapter.11}
-\contentsline {chapter}{\numberline {12}Diagramme und Graphen in \LaTeX }{45}{chapter.12}
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{46}{chapter*.21}
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{47}{chapter*.22}
-\contentsline {chapter}{\nonumberline Listings}{48}{chapter*.23}
-\contentsline {chapter}{\nonumberline Formelverzeichnis}{49}{chapter*.24}
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{50}{chapter*.25}
-\contentsline {chapter}{\numberline {A}ToDo Liste}{51}{appendix.A}
+\contentsline {chapter}{\numberline {9}Markdown in Latex}{42}{chapter.9}
+\contentsline {chapter}{\numberline {10}Das Automatisierungswerkzeuge f\IeC {\"u}r \LaTeX }{44}{chapter.10}
+\contentsline {section}{\numberline {10.1}Arara}{44}{section.10.1}
+\contentsline {section}{\numberline {10.2}Rubber}{44}{section.10.2}
+\contentsline {section}{\numberline {10.3}LatexMK}{44}{section.10.3}
+\contentsline {chapter}{\numberline {11}Pr\IeC {\"a}sentationen erstellen mit \LaTeX }{45}{chapter.11}
+\contentsline {chapter}{\numberline {12}Diagramme und Graphen in \LaTeX }{46}{chapter.12}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{47}{chapter*.21}
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{48}{chapter*.22}
+\contentsline {chapter}{\nonumberline Listings}{49}{chapter*.23}
+\contentsline {chapter}{\nonumberline Formelverzeichnis}{50}{chapter*.24}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{51}{chapter*.25}
+\contentsline {chapter}{\numberline {A}ToDo Liste}{52}{appendix.A}
