@@ -1,3 +1,10 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%   						     Packages                                      %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%       
+%% hier werden die verwendeten Pakete und ihre Optionen definiert. 				 %%
+%% die Veränderung der Reihenfolge wie die Pakete definiert sind wird abgeraten  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{graphicx} 					% Required to insert images
 \usepackage{longtable}					% Required for tables over several pages
 \usepackage{lscape}	
@@ -9,16 +16,28 @@
 \usepackage[utf8]{inputenc} % Required for UTF-8 based vowels like äöü
 \usepackage[T1]{fontenc} % Required for UTF-8 Fonts
 \usepackage[hyphens]{url} % Required for placing URL in Text
+
+%% BibLaTeX-settings: (see biblatex reference for further description)
+\newcommand{\mybiblatexstyle}{authoryear}
+
+\newcommand{\mybiblatexdashed}{false}  %% "true" or "false"
+%% If true: replace recurring reference authors with a dash.
+
+\newcommand{\mybiblatexbackref}{true}  %% "true" or "false"
+%% If true: create backward links from reference to citations.
 \usepackage[
-backend=biber,
-style=alphabetic,
-citestyle=authoryear,
-sortlocale=de_DE,
-natbib=true,
+backend=biber, 		%% using "biber" to compile references (instead of "biblatex")
+style=\mybiblatexstyle, 		%% see biblatex documentation
+citestyle=numeric,			%% see biblatex documentation
+sortlocale=de_DE,				%% see biblatex documentation
+dashed=\mybiblatexdashed, 		%% do *not* replace recurring reference authors with a dash
+backref=\mybiblatexbackref, 	%% create backlings from references to citations
+natbib=true, 					%% offering natbib-compatible commands
+hyperref=auto, 					%% using hyperref-package references
 url=true, 
 doi=true,
 eprint=false
-]{biblatex}
+]{biblatex}  					%% remove, if using BibTeX instead of biblatex
 \usepackage{bibgerm} % Required for german 	bibliography style
 \usepackage{wrapfig} % Required for picture which are surrended by text
 \usepackage{float} % Required for floating pictures in text

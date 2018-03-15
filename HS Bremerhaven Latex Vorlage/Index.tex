@@ -14,10 +14,17 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%       
 %% hier wird der Ablauf des Automatisierungstools definiert			             %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% arara: pdflatex: { action: nonstopmode, shell: on } 
+% arara: pdflatex  { action: nonstopmode, shell: on }
+% arara: pdflatex  { action: nonstopmode, shell: on }
 % arara: biber
-% arara: pdflatex: { action: nonstopmode, shell: on }
-% arara: pdflatex: { action: nonstopmode, shell: on }
+% arara: pdflatex  { action: nonstopmode, shell: on }
+% arara: pdflatex  { action: nonstopmode, shell: on }
+% arara: clean: { files: [ Index.aux, Index.bbl ] }
+% arara: clean: { files: [ Index.bcf, Index.cod ] } 
+% arara: clean: { files: [ Index.blg, Index.lof ] }
+% arara: clean: { files: [ Index.lot, Index.out ] } 
+% arara: clean: { files: [ Index.toc, Index.log ] } 
+% arara: clean: { files: [ Index.run.xml ] }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%   						     Preamble                                      %%%%
@@ -109,8 +116,9 @@
 %----------------------------------------------------------------------------------------
 %	CHAPTERs
 %----------------------------------------------------------------------------------------
-	\setcounter{page}{1}
-	\pagenumbering{arabic}
+%	\setcounter{page}{1}
+%	\pagenumbering{arabic}
+	\mainmatter  % isntead of the 2 lines before
 	\input{chapters/Einleitung}
 	\input{chapters/drucken}
 	\input{chapters/strukturen-latex}
@@ -119,6 +127,7 @@
 	\input{chapters/listen}
 	\input{chapters/bilder}
 	\input{chapters/mathematik}
+	\input{chapters/bibliography}
 	\input{chapters/markdowninlatex}
 	\input{chapters/arara}
 	\input{chapters/beamer}
@@ -135,8 +144,8 @@
 		\listoftables
 		\lstlistoflistings		
 		\listofformels
-		\printbibliography
-	%	\nocite{*}
+		\nocite{*}
+		\printbibliography[title={Literaturverzeichnis}] % If you are writing a german report, you can use [title={Literaturverzeichnis}] insted. 
 	\end{spacing}
 	\newpage
 	

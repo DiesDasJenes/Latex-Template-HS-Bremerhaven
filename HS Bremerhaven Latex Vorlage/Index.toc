@@ -78,28 +78,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.3.8}Formelverzeichnis}{40}{subsection.8.3.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Markdown in Latex}{42}{chapter.9}
+\contentsline {chapter}{\numberline {9}bibtex vs. biber and biblatex vs. natbib}{42}{chapter.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Das Automatisierungswerkzeuge f\IeC {\"u}r \LaTeX }{44}{chapter.10}
+\contentsline {chapter}{\numberline {10}Markdown in Latex}{43}{chapter.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.1}Arara}{44}{section.10.1}
+\contentsline {chapter}{\numberline {11}Das Automatisierungswerkzeuge f\IeC {\"u}r \LaTeX }{45}{chapter.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.2}LatexMK}{44}{section.10.2}
+\contentsline {section}{\numberline {11.1}Arara}{46}{section.11.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.3}LatexMK}{44}{section.10.3}
+\contentsline {section}{\numberline {11.2}LatexMK}{46}{section.11.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {11}Pr\IeC {\"a}sentationen erstellen mit \LaTeX }{45}{chapter.11}
+\contentsline {section}{\numberline {11.3}Rubber}{47}{section.11.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {12}Diagramme und Graphen in \LaTeX }{46}{chapter.12}
+\contentsline {chapter}{\numberline {12}Pr\IeC {\"a}sentationen erstellen mit \LaTeX }{48}{chapter.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{47}{chapter*.21}
+\contentsline {chapter}{\numberline {13}Diagramme und Graphen in \LaTeX }{49}{chapter.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{48}{chapter*.22}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{50}{chapter*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Listings}{49}{chapter*.23}
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{51}{chapter*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Formelverzeichnis}{50}{chapter*.24}
+\contentsline {chapter}{\nonumberline Listings}{52}{chapter*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literatur}{51}{chapter*.25}
+\contentsline {chapter}{\nonumberline Formelverzeichnis}{53}{chapter*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}ToDo Liste}{52}{appendix.A}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{54}{chapter*.27}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}ToDo Liste}{55}{appendix.A}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.14)  14 MAR 2018 23:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.14)  15 MAR 2018 10:39
 entering extended mode
 **Index.tex Index.tex
 (Index.tex
@@ -224,7 +224,7 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count93
 \LT@p@ftn=\toks15
 )
-Class scrbook Info: longtable captions redefined on input line 3.
+Class scrbook Info: longtable captions redefined on input line 10.
 
 ("C:\Users\Alaska\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\lscape.s
 ty"
@@ -823,7 +823,7 @@ ef"
 File: blx-dm.def 2018/03/04 v3.11 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'alphabetic.dbx' not found.
+Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count156
@@ -936,12 +936,12 @@ Package biblatex Info: ... file 'blx-natbib.def' found.
 ib.def"
 File: blx-natbib.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
 )
-Package biblatex Info: Trying to load bibliography style 'alphabetic'...
-Package biblatex Info: ... file 'alphabetic.bbx' found.
+Package biblatex Info: Trying to load bibliography style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.bbx' found.
 
-("C:\Users\Alaska\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\alph
-abetic.bbx"
-File: alphabetic.bbx 2018/03/04 v3.11 biblatex bibliography style (PK/MW)
+("C:\Users\Alaska\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\auth
+oryear.bbx"
+File: authoryear.bbx 2018/03/04 v3.11 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
@@ -951,19 +951,23 @@ File: standard.bbx 2018/03/04 v3.11 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count298
 \c@bbx:relatedtotal=\count299
 ))
-Package biblatex Info: Trying to load citation style 'authoryear'...
-Package biblatex Info: ... file 'authoryear.cbx' found.
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
 
-("C:\Users\Alaska\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\cbx\auth
-oryear.cbx"
-File: authoryear.cbx 2018/03/04 v3.11 biblatex citation style (PK/MW)
+("C:\Users\Alaska\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\cbx\nume
+ric.cbx"
+File: numeric.cbx 2018/03/04 v3.11 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
 Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
@@ -1125,7 +1129,7 @@ Class scrbook Warning: Usage of package `fancyhdr' together
 (scrbook)              `\addtokomafont' for the page style elements need
 (scrbook)              explicite user intervention to work.
 (scrbook)              Nevertheless, using requested
-(scrbook)              package `fancyhdr' on input line 39.
+(scrbook)              package `fancyhdr' on input line 58.
 
 
 ("C:\Users\Alaska\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr
@@ -1688,28 +1692,28 @@ LaTeX Warning: Unused global option(s):
 (Index.aux)
 \openout1 = `Index.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 72.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 79.
 
 ("C:\Users\Alaska\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 72.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 79.
 
 ("C:\Users\Alaska\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1765,43 +1769,14 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Index.bbl' found.
- (Index.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Higham98
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Mermin89
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                WikiMarkdown
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                amsldoc02
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
-Package biblatex Info: Reference section=0 on input line 72.
-Package biblatex Info: Reference segment=0 on input line 72.
+ (Index.bbl)
+Package biblatex Info: Reference section=0 on input line 79.
+Package biblatex Info: Reference segment=0 on input line 79.
 
 
 bibgerm.sty: babel.sty detected
 
-LaTeX Info: Redefining \microtypecontext on input line 72.
+LaTeX Info: Redefining \microtypecontext on input line 79.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1816,7 +1791,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 \AtBeginShipoutBox=\box47
-Package hyperref Info: Link coloring ON on input line 72.
+Package hyperref Info: Link coloring ON on input line 79.
 
 ("C:\Users\Alaska\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.
 sty"
@@ -1828,9 +1803,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count353
 )
-LaTeX Info: Redefining \ref on input line 72.
-LaTeX Info: Redefining \pageref on input line 72.
-LaTeX Info: Redefining \nameref on input line 72.
+LaTeX Info: Redefining \ref on input line 79.
+LaTeX Info: Redefining \pageref on input line 79.
+LaTeX Info: Redefining \nameref on input line 79.
  (Index.out) (Index.out)
 \@outlinefile=\write8
 \openout8 = `Index.out'.
@@ -1841,7 +1816,7 @@ e.sty"
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ) (chapters/titlepage_group.tex
-<images/hs-logo.png, id=187, 501.875pt x 274.02374pt>
+<images/hs-logo.png, id=191, 501.875pt x 274.02374pt>
 File: images/hs-logo.png Graphic file (type png)
 <use images/hs-logo.png>
 Package pdftex.def Info: images/hs-logo.png  used on input line 4.
@@ -1982,13 +1957,13 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 )
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 91.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 91.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 91.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 91.
 
 [4
 
@@ -2002,26 +1977,26 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<images/signatur.png, id=218, 602.25pt x 150.5625pt>
+<images/signatur.png, id=222, 602.25pt x 150.5625pt>
 File: images/signatur.png Graphic file (type png)
 <use images/signatur.png>
 Package pdftex.def Info: images/signatur.png  used on input line 27.
 (pdftex.def)             Requested size: 90.33359pt x 22.58339pt.
 )
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 97.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 97.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 97.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 97.
 
 [5
 
  <./images/signatur.png>]
-Package tocbasic Info: character protrusion at toc deactivated on input line 96
-.
+Package tocbasic Info: character protrusion at toc deactivated on input line 10
+3.
  (Index.toc
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 73.
@@ -2038,13 +2013,13 @@ Package babel Info: Redefining ngerman shorthand "~
 \openout9 = `Index.toc'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 104.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 104.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 104.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 104.
  [7] (chapters/glossary.tex
 chapter without number
 Package babel Info: Redefining ngerman shorthand "|
@@ -2068,13 +2043,13 @@ Class scrbook Warning: \float@addtolists detected!
 
 )
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 107.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 107.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 107.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 107.
+(babel)             in language  on input line 114.
  [1
 
 ] (chapters/Einleitung.tex
@@ -2120,6 +2095,7 @@ been already used, duplicate ignored
                    \relax 
 l.22 \end{itemize}
                    [1
+
 
 ]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <13> not available
@@ -2407,7 +2383,7 @@ Class scrbook Warning: deprecated old font command `\tt' used.
 (scrbook)              `\tt' yourself you should replace it, e.g., by
 (scrbook)              `\normalfont \ttfamily ' on input line 15.
 
-<examples/header-footer.pdf, id=361, 614.295pt x 794.97pt>
+<examples/header-footer.pdf, id=366, 614.295pt x 794.97pt>
 File: examples/header-footer.pdf Graphic file (type pdf)
 <use examples/header-footer.pdf>
 Package pdftex.def Info: examples/header-footer.pdf  used on input line 51.
@@ -2416,7 +2392,7 @@ File: examples/header-footer.pdf Graphic file (type pdf)
 <use examples/header-footer.pdf>
 Package pdftex.def Info: examples/header-footer.pdf  used on input line 51.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<examples/header-footer.pdf, id=364, page=1, 614.295pt x 794.97pt>
+<examples/header-footer.pdf, id=369, page=1, 614.295pt x 794.97pt>
 File: examples/header-footer.pdf Graphic file (type pdf)
 <use examples/header-footer.pdf, page 1>
 Package pdftex.def Info: examples/header-footer.pdf , page1 used on input line 
@@ -2460,7 +2436,7 @@ Package pdftex.def Info: examples/header-footer.pdf , page1 used on input line
 51.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [11 <./examples/header-footer.pdf>]
-<examples/header-footer.pdf, id=424, page=2, 614.295pt x 794.97pt>
+<examples/header-footer.pdf, id=429, page=2, 614.295pt x 794.97pt>
 File: examples/header-footer.pdf Graphic file (type pdf)
 <use examples/header-footer.pdf, page 2>
 Package pdftex.def Info: examples/header-footer.pdf , page2 used on input line 
@@ -2506,7 +2482,7 @@ Class scrbook Warning: deprecated old font command `\tt' used.
 (scrbook)              `\tt' yourself you should replace it, e.g., by
 (scrbook)              `\normalfont \ttfamily ' on input line 53.
 
-<examples/header-footer-lastpage.pdf, id=429, 614.295pt x 794.97pt>
+<examples/header-footer-lastpage.pdf, id=434, 614.295pt x 794.97pt>
 File: examples/header-footer-lastpage.pdf Graphic file (type pdf)
 <use examples/header-footer-lastpage.pdf>
 Package pdftex.def Info: examples/header-footer-lastpage.pdf  used on input lin
@@ -2517,7 +2493,7 @@ File: examples/header-footer-lastpage.pdf Graphic file (type pdf)
 Package pdftex.def Info: examples/header-footer-lastpage.pdf  used on input lin
 e 77.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<examples/header-footer-lastpage.pdf, id=432, page=1, 614.295pt x 794.97pt>
+<examples/header-footer-lastpage.pdf, id=437, page=1, 614.295pt x 794.97pt>
 File: examples/header-footer-lastpage.pdf Graphic file (type pdf)
 <use examples/header-footer-lastpage.pdf, page 1>
 Package pdftex.def Info: examples/header-footer-lastpage.pdf , page1 used on in
@@ -2561,7 +2537,7 @@ Package pdftex.def Info: examples/header-footer-lastpage.pdf , page1 used on in
 put line 77.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [14 <./examples/header-footer-lastpage.pdf>]
-<examples/header-footer-lastpage.pdf, id=471, page=2, 614.295pt x 794.97pt>
+<examples/header-footer-lastpage.pdf, id=476, page=2, 614.295pt x 794.97pt>
 File: examples/header-footer-lastpage.pdf Graphic file (type pdf)
 <use examples/header-footer-lastpage.pdf, page 2>
 Package pdftex.def Info: examples/header-footer-lastpage.pdf , page2 used on in
@@ -3062,7 +3038,7 @@ m/n/13 http : / / www\OML/lmm/m/it/13 :\T1/lmtt/m/n/13 golatex\OML/lmm/m/it/13
 :\T1/lmtt/m/n/13 de / wiki / %5Cincludegraphics$[][] 
  []
 
-<images/Haus_Z.jpeg, id=721, 154.176pt x 87.4467pt>
+<images/Haus_Z.jpeg, id=726, 154.176pt x 87.4467pt>
 File: images/Haus_Z.jpeg Graphic file (type jpg)
 <use images/Haus_Z.jpeg>
 Package pdftex.def Info: images/Haus_Z.jpeg  used on input line 20.
@@ -3103,7 +3079,7 @@ File: images/Haus_Z.jpeg Graphic file (type jpg)
 <use images/Haus_Z.jpeg>
 Package pdftex.def Info: images/Haus_Z.jpeg  used on input line 44.
 (pdftex.def)             Requested size: 154.1756pt x 87.44647pt.
-<images/Klimahaus.jpeg, id=733, 456.20438pt x 304.13625pt>
+<images/Klimahaus.jpeg, id=738, 456.20438pt x 304.13625pt>
 File: images/Klimahaus.jpeg Graphic file (type jpg)
 <use images/Klimahaus.jpeg>
 Package pdftex.def Info: images/Klimahaus.jpeg  used on input line 49.
@@ -3201,10 +3177,19 @@ Package babel Info: Redefining ngerman shorthand "~
 LaTeX Warning: Reference `eq:MyFirstEquation' on page 35 undefined on input lin
 e 67.
 
+
+LaTeX Warning: Citation 'Mermin89' on page 35 undefined on input line 70.
+
+
+LaTeX Warning: Citation 'Higham98' on page 35 undefined on input line 70.
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 72.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 72.
+
+LaTeX Warning: Citation 'amsldoc02' on page 35 undefined on input line 78.
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 81.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3231,6 +3216,10 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 124.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 124.
+
+
+LaTeX Warning: Citation 'amsldoc02' on page 37 undefined on input line 162.
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 166.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3251,7 +3240,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 199.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 199.
- [37]
+[37]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 201.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3347,7 +3336,7 @@ Class scrbook Warning: deprecated old font command `\tt' used.
 (scrbook)              `\tt' yourself you should replace it, e.g., by
 (scrbook)              `\normalfont \ttfamily ' on input line 321.
 
-) (chapters/markdowninlatex.tex
+) (chapters/bibliography.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3367,6 +3356,49 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
  [41]
 chapter 9.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+) (chapters/markdowninlatex.tex
+Overfull \hbox (25.09534pt too wide) in paragraph at lines 3--1
+[][]$\T1/lmtt/m/n/13 https : / / tex\OML/lmm/m/it/13 :\T1/lmtt/m/n/13 stackexch
+ange\OML/lmm/m/it/13 :\T1/lmtt/m/n/13 com / questions / 25701 / bibtex -[] vs -
+[] biber -[] and -[] biblatex -[]
+ []
+
+
+Overfull \hbox (18.03075pt too wide) in paragraph at lines 3--1
+\T1/lmtt/m/n/13 vs -[] natbib$[][] [][]$https : / / github\OML/lmm/m/it/13 :\T1
+/lmtt/m/n/13 com / michal -[] h21 / biblatex -[] iso690$[][] [][]$https : / / g
+ithub\OML/lmm/m/it/13 :\T1/lmtt/m/n/13 com /
+ []
+
+
+Overfull \hbox (7.86215pt too wide) in paragraph at lines 3--1
+\T1/lmtt/m/n/13 domhardt / BibLaTeX -[] DIN1505$[][] [][]$https : / / tex\OML/l
+mm/m/it/13 :\T1/lmtt/m/n/13 stackexchange\OML/lmm/m/it/13 :\T1/lmtt/m/n/13 com 
+/ questions / 124473 /
+ []
+
+
+Overfull \hbox (22.02365pt too wide) in paragraph at lines 3--1
+\T1/lmtt/m/n/13 is -[] there -[] a -[] biblatex -[] equivalent -[] for -[] the 
+-[] bibtex -[] style -[] alphadin -[] for -[] the -[] din -[]
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+[42
+
+]
+chapter 10.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3451,7 +3483,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 33.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 33.
-[42
+[43
 
 ]) (chapters/arara.tex
 Package babel Info: Redefining ngerman shorthand "|
@@ -3462,8 +3494,8 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [43]
-chapter 10.
+ [44]
+chapter 11.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3476,35 +3508,53 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <18.87335> on input line 1.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <13.48103> on input line 1.
+<images/texstudio_option_build.PNG, id=878, 748.29562pt x 22.58438pt>
+File: images/texstudio_option_build.PNG Graphic file (type png)
+<use images/texstudio_option_build.PNG>
+Package pdftex.def Info: images/texstudio_option_build.PNG  used on input line 
+6.
+(pdftex.def)             Requested size: 469.47054pt x 14.16928pt.
+<images/texstudio_optionwindow_build.PNG, id=880, 466.74374pt x 209.28188pt>
+File: images/texstudio_optionwindow_build.PNG Graphic file (type png)
+<use images/texstudio_optionwindow_build.PNG>
+Package pdftex.def Info: images/texstudio_optionwindow_build.PNG  used on input
+ line 15.
+(pdftex.def)             Requested size: 469.47054pt x 210.51398pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 3.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 3.
+(babel)             in language  on input line 21.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 26.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 26.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 26.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 26.
+[45
 
-Overfull \hbox (41.80244pt too wide) in paragraph at lines 4--7
-[][]$\T1/lmtt/m/n/13 https : / / texwelt\OML/lmm/m/it/13 :\T1/lmtt/m/n/13 de / 
-wissen / fragen / 8764 / was -[] ist -[] arara$[][] [][]$https : / / github\OML
-/lmm/m/it/13 :\T1/lmtt/m/n/13 com / cereda /
+ <./images/texstudio_option_build.PNG>]
+Overfull \hbox (7.16084pt too wide) in paragraph at lines 27--33
+\T1/lmtt/m/n/13 arara -[] in -[] texstudio -[] on -[] windows$[][] \T1/lmss/m/n
+/13 (-20) Dann lau-fen las-sen. [][]$\T1/lmtt/m/n/13 https : / / latex\OML/lmm/
+m/it/13 :\T1/lmtt/m/n/13 org / know -[] how /
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 13.
+(babel)             in language  on input line 33.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 13.
+(babel)             in language  on input line 33.
 
-Overfull \hbox (5.59053pt too wide) in paragraph at lines 15--17
+Overfull \hbox (17.96968pt too wide) in paragraph at lines 35--38
 [][]$\T1/lmtt/m/n/13 http : / / mg\OML/lmm/m/it/13 :\T1/lmtt/m/n/13 readthedocs
 \OML/lmm/m/it/13 :\T1/lmtt/m/n/13 io / latexmk\OML/lmm/m/it/13 :\T1/lmtt/m/n/13
- html$[][] [][]$http : / / ftp\OML/lmm/m/it/13 :\T1/lmtt/m/n/13 fernuni -[] hag
-en\OML/lmm/m/it/13 :\T1/lmtt/m/n/13 de / ftp -[] dir /
+ html$[][] [][]$http : / / personal\OML/lmm/m/it/13 :\T1/lmtt/m/n/13 psu\OML/lm
+m/m/it/13 :\T1/lmtt/m/n/13 edu / jcc8 / /latexmk/$[][]
  []
 
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 17.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 17.
-) (chapters/beamer.tex
-Overfull \hbox (32.6739pt too wide) in paragraph at lines 18--1
+
+Overfull \hbox (32.6739pt too wide) in paragraph at lines 35--38
 [][]$\T1/lmtt/m/n/13 http : / / ftp\OML/lmm/m/it/13 :\T1/lmtt/m/n/13 fernuni -[
 ] hagen\OML/lmm/m/it/13 :\T1/lmtt/m/n/13 de / ftp -[] dir / pub / mirrors / www
 \OML/lmm/m/it/13 :\T1/lmtt/m/n/13 ctan\OML/lmm/m/it/13 :\T1/lmtt/m/n/13 org / s
@@ -3512,6 +3562,11 @@ upport / latexmk /
  []
 
 Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 39.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 39.
+) (chapters/beamer.tex
+Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
@@ -3519,10 +3574,18 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
-[44
+ [46 <./images/texstudio_optionwindow_build.PNG>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
 
-]
-chapter 11.
+[47]
+chapter 12.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3536,53 +3599,53 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [45
+ [48
 
 ]
-chapter 12.
+chapter 13.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 )
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 128.
+(babel)             in language  on input line 137.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 128.
+(babel)             in language  on input line 137.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 128.
+(babel)             in language  on input line 137.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 128.
- [46
+(babel)             in language  on input line 137.
+ [49
 
 ]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 143.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 134.
-Package tocbasic Info: character protrusion at lof deactivated on input line 13
-4.
+(babel)             in language  on input line 143.
+Package tocbasic Info: character protrusion at lof deactivated on input line 14
+3.
  (Index.lof)
 \tf@lof=\write10
 \openout10 = `Index.lof'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 135.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 135.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 135.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 135.
- [47
+(babel)             in language  on input line 144.
+ [50
 
 ]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 135.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 135.
-Package tocbasic Info: character protrusion at lot deactivated on input line 13
-5.
+(babel)             in language  on input line 144.
+Package tocbasic Info: character protrusion at lot deactivated on input line 14
+4.
  (Index.lot)
 \tf@lot=\write11
 \openout11 = `Index.lot'.
@@ -3599,81 +3662,81 @@ Class scrbook Warning: \float@listhead detected!
 (scrbook)              Loading of package `scrhack' may help to
 (scrbook)              avoid this warning, if you are using a
 (scrbook)              a package that still implements the
-(scrbook)              deprecated \float@listhead interface  on input line 136.
+(scrbook)              deprecated \float@listhead interface  on input line 145.
 
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 145.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 145.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 145.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 136.
-[48
+(babel)             in language  on input line 145.
+[51
 
 ]
 chapter without number
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 145.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 145.
 (Index.lol)
 \tf@lol=\write12
 \openout12 = `Index.lol'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 137.
+(babel)             in language  on input line 146.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 137.
+(babel)             in language  on input line 146.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 137.
+(babel)             in language  on input line 146.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 137.
- [49
+(babel)             in language  on input line 146.
+ [52
 
 ]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 137.
+(babel)             in language  on input line 146.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 137.
-Package tocbasic Info: character protrusion at for deactivated on input line 13
-7.
+(babel)             in language  on input line 146.
+Package tocbasic Info: character protrusion at for deactivated on input line 14
+6.
  (Index.for)
 \tf@for=\write13
 \openout13 = `Index.for'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 138.
+(babel)             in language  on input line 148.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 138.
+(babel)             in language  on input line 148.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 138.
+(babel)             in language  on input line 148.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 138.
- [50
+(babel)             in language  on input line 148.
+ [53
 
 ]
 chapter without number
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 138.
+(babel)             in language  on input line 148.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 138.
+(babel)             in language  on input line 148.
 
-Overfull \hbox (71.62782pt too wide) in paragraph at lines 140--140
+Overfull \hbox (43.31546pt too wide) in paragraph at lines 148--148
 \T1/lmtt/m/n/13 wissen / fragen / 18877 / zwei -[] bilder -[] nebeneinander -[]
  jeweils -[] mit -[] bildunterschrift -[]
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 141.
+(babel)             in language  on input line 150.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 141.
+(babel)             in language  on input line 150.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 141.
+(babel)             in language  on input line 150.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 141.
-[51
+(babel)             in language  on input line 150.
+[54
 
 ] (chapters/appendix.tex
 chapter A.
@@ -3682,24 +3745,24 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 158.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 158.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 158.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 158.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 149.
- [52
+(babel)             in language  on input line 158.
+ [55
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 149.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 158.
  (Index.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 149.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 149.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 158.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 158.
 Package rerunfilecheck Info: File `Index.out' has not changed.
-(rerunfilecheck)             Checksum: 1064B7620309686B5746E17783B022CA;2979.
+(rerunfilecheck)             Checksum: BF86F81095F47F76631250EC9EDDA017;3067.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -3707,6 +3770,11 @@ LaTeX Font Warning: Size substitutions with differences
 
 
 LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                Index
+(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'Index.run.xml'.
 \openout1 = `Index.run.xml'.
@@ -3717,13 +3785,13 @@ Package logreq Info: Writing requests to 'Index.run.xml'.
 ### simple group (level 1) entered at line 44 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 28941 strings out of 493305
- 500062 string characters out of 3129367
- 1203020 words of memory out of 3000000
- 31359 multiletter control sequences out of 15000+200000
- 159207 words of font info for 170 fonts, out of 3000000 for 9000
+ 29063 strings out of 493305
+ 502566 string characters out of 3129367
+ 1205696 words of memory out of 3000000
+ 31455 multiletter control sequences out of 15000+200000
+ 159817 words of font info for 175 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
- 58i,18n,76p,8826b,4095s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 58i,18n,76p,8826b,3849s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Alaska/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dv
 ips/lm/lm-rm.enc}{C:/Users/Alaska/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/d
 vips/lm/lm-ec.enc}{C:/Users/Alaska/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/
@@ -3759,9 +3827,9 @@ ic/lm/lmsy10.pfb><C:/Users/Alaska/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 ype1/public/lm/lmsy9.pfb><C:/Users/Alaska/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/public/lm/lmtt10.pfb><C:/Users/Alaska/AppData/Local/Programs/MiKTeX 2.
 9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Index.pdf (60 pages, 946920 bytes).
+Output written on Index.pdf (63 pages, 977976 bytes).
 PDF statistics:
- 1092 PDF objects out of 1200 (max. 8388607)
- 394 named destinations out of 1000 (max. 500000)
- 45495 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1159 PDF objects out of 1200 (max. 8388607)
+ 405 named destinations out of 1000 (max. 500000)
+ 45513 words of extra memory for PDF output out of 51595 (max. 10000000)
 
