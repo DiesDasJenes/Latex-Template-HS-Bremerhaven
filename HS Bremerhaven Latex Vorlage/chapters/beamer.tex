@@ -1,4 +1,47 @@
 \chapter{Präsentationen erstellen mit \LaTeX}
+Um Präsentationen mit \LaTeX zu erstellen wird die Dokumentenklasse \emph{beamer} genutzt. In dem folgenden MINIMUM WORKING EXAMPLE (MWE) ist ein Präsentation mit einer Titelseite, Gliederung sowie zwei Seiten gezeigt. Das Endprodukt ist eine PDF. Nützliche Beispiele und Erklärungen sind unter anderem hier zu finden:
+\begin{description}
+	\item[Templates: ] \url{http://www2.informatik.uni-freiburg.de/~frank/latex-kurs/latex-kurs-3/Latex-Kurs-3.html}
+	\item[Handbuch] \url{www.tinyurl.com/beameruserguide}
+\end{description}
+\begin{lstlisting}[style=LaTeX]
+\documentclass[xcolor={table,xcdraw}]{beamer}
+%======== Define Packages ===========
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\RequirePackage[ngerman=ngerman-x-latest]{hyphsubst}
+\usepackage{eurosym}
+\usepackage{graphicx} 
+\usepackage{tabularx} 
+\usepackage{multirow}
+%======== Define Colors ===========
+\newcommand{\cfprog}{459CBF} % Programmieren
+\newcommand{\cfrallyeparty}{F8FF00} % Rallye und Weserfährenpart
+\newcommand{\cfstep}{E58E72} %  STEP-Sachen 
+\newcommand{\cfofstuff}{F8A102} % offizielle Sachen (Rektor)
+\newcommand{\cfgreeting}{34FF34} % Begrüßung SK und STEP
+%==================================	
+\begin{document}
 
-\url{http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc}
+\title{How beautiful are LateX presentations}   
+\author{Philipp Ludewig} 
+\date{\today} 
+
+\frame{\titlepage} 
+
+\frame{\frametitle{Inhaltsverzeichnis}\tableofcontents} 
+
+
+\section{Allgemeines} 
+\frame{\frametitle{Stuff} 
+somestuff
+}
+
+\frame{\frametitle{StuffStuff}
+}
+\end{document}
+\end{lstlisting}
+
+An dieser Stelle sei ebenfalls PANDOC erwähnt, dass Konvertierungswerkzeug welches bereits im Kapitel \ref{MarkdowninLatex} erklärt wurde. Es ist ebenfalls fähig aus einer Markdown Datei eine Präsentation als PDF zu erstellen. Hier ist der Link zur Anleitung: \url{http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc}
 

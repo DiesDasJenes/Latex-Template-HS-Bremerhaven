@@ -1985,10 +1985,11 @@
     <bcf:citekey order="8">Higham98</bcf:citekey>
     <bcf:citekey order="9">amsldoc02</bcf:citekey>
     <bcf:citekey order="10">amsldoc02</bcf:citekey>
-    <bcf:citekey order="11">WikiMarkdown</bcf:citekey>
-    <bcf:citekey order="11">rfc7763</bcf:citekey>
-    <bcf:citekey order="12">latexmk</bcf:citekey>
-    <bcf:citekey order="13">rubber</bcf:citekey>
+    <bcf:citekey order="11">bibvsvbib</bcf:citekey>
+    <bcf:citekey order="12">WikiMarkdown</bcf:citekey>
+    <bcf:citekey order="12">rfc7763</bcf:citekey>
+    <bcf:citekey order="13">latexmk</bcf:citekey>
+    <bcf:citekey order="14">rubber</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

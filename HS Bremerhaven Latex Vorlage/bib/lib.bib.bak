@@ -1,24 +1,29 @@
 % Encoding: UTF-8
+
 @Misc{jfkey,
   author = {John F. Kennedy},
   title  = {Zitatbeispiel},
+  year   = {2018},
 }
 
 @Misc{hauszpic,
   author       = {Thilo Vogel},
   title        = {Lichtografie},
   howpublished = {\url{http://www.ee-news.ch/de/article/27484}},
+  year         = {2018},
 }
 
 @Misc{klimahauspic,
   author = {Marcus Meyer},
   title  = {Klimahaus Bremerhaven 8Grad Ost},
+  year   = {2018},
   url    = {https://www.bremen-tourismus.de/klimahaus-8-ost},
 }
 
 @Misc{floatrow,
   author    = {saputello},
   title     = {Floatrow - Zwei Bilder nebeneinander},
+  year      = {2018},
   timestamp = {2017-11-09},
   url       = {http://texwelt.de/wissen/fragen/18877/zwei-bilder-nebeneinander-jeweils-mit-bildunterschrift-und-label/18882},
 }
@@ -26,12 +31,14 @@
 @Misc{WikiMarkdown,
   author = {Wikipedia.de},
   title  = {Wikipedia Markdown},
+  year   = {2018},
   url    = {https://de.wikipedia.org/wiki/Markdown},
 }
 
 @Misc{rfc7763,
   author   = {S. Leonard},
   title    = {The text/markdown Media Type},
+  year     = {2018},
   abstract = {This document registers the text/markdown media type for use with Markdown, a family of plain-text formatting syntaxes that optionally can be converted to formal markup languages such as HTML.
 },
   url      = {https://tools.ietf.org/html/rfc7763#section-1.3},
@@ -47,15 +54,24 @@
 
 @Electronic{latexmk,
   author = {John Collins},
+  year   = {2018},
   title  = {Latexmk. 2001},
   url    = {http://mg.readthedocs.io/latexmk.html},
 }
 
 @Electronic{rubber,
   author = {Emmanuel Beffara},
+  year   = {2018},
   title  = {Rubber},
   note   = {The tool was originally developed by Emmanuel Beffara but the development largely ceased after 2007. The current team was formed to help keep the tool up to date. 2009.},
   url    = {https://launchpad.net/rubber},
+}
+
+@Electronic{bibvsbib,
+  author = {Alan Munn},
+  year   = {2017},
+  title  = {bibtex vs. biber and biblatex vs. natbib},
+  url    = {https://tex.stackexchange.com/questions/25701/bibtex-vs-biber-and-biblatex-vs-natbib},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

@@ -1,6 +1,167 @@
 \chapter{bibtex vs. biber and biblatex vs. natbib}
 \label{bib}
-\url{https://tex.stackexchange.com/questions/25701/bibtex-vs-biber-and-biblatex-vs-natbib}
-\url{https://github.com/michal-h21/biblatex-iso690}
-\url{https://github.com/domhardt/BibLaTeX-DIN1505}
-\url{https://tex.stackexchange.com/questions/124473/is-there-a-biblatex-equivalent-for-the-bibtex-style-alphadin-for-the-din-1505}
+
+Um in \LaTeX Bibliographie und Referenzen zu benutzen gibt es verschiedene Möglichkeiten. In den vorgeschlagenen Anleitungen aus dem Kapitel \ref{Einleitung} werden diese und ihre Funktionsweise ausreichend erklärt. In diesem Kapitel soll es um die Vor- und Nachteile der verschiedenen Pakete gehen. Die Informationen für dieses Kapitel stammen aus einem tex.stackexchange.com Thread.\autocite{bibvsvbib}
+
+Für dieses Kapitel werden folgende Begriffe verwendet:
+
+\begin{itemize}
+	\item \textbf{bibtex} und \textbf{biber} sind externe Programme, die Bibliographie-Informationen verarbeiten und (grob) als Schnittstelle zwischen der .bib-Datei und LaTeX-Dokument fungieren.
+	\item \textbf{natbib} und \textbf{biblatex} sind LaTeX-Pakete, die Zitate und Bibliographien formatieren; natbib funktioniert nur mit bibtex, während biblatex (im Moment) sowohl mit bibtex als auch mit biber arbeitet.
+\end{itemize}
+
+
+\section{Natbib}
+Das natbib-Paket gibt es schon seit geraumer Zeit, und obwohl es immer noch gepflegt wird, kann man mit Fug und Recht sagen, dass es nicht weiterentwickelt wird. Es ist immer noch weit verbreitet und sehr zuverlässig. Hier ein MWE für das natbib-Paket:
+
+\begin{lstlisting}[style=LaTeX]
+\documentclass{<someclass>}
+
+\usepackage[<options>]{natbib}
+
+\begin{document}
+
+A bare citation command: \citep{<key>}.
+
+A citation command for use in the flow of text: As \citet{<key>} said \dots
+
+\bibliographystyle{<somestyle>}
+\bibliography{<mybibfile>}% Selects .bib file AND prints bibliography
+
+\end{document}
+\end{lstlisting}
+
+\textbf{Vorteile}
+
+\begin{itemize}
+	\item Es verfügt über eine breite Palette bereits entwickelter \emph{.bst}-Dateien, die mit vielen Zeitschriften und Verlagen in den Wissenschaften übereinstimmen.
+	\item Der Autor des natbib-Pakets hat ein Paket namens custom-bib geschrieben, das ein Dienstprogramm namens makebst zur Verfügung stellt. Dieses Dienstprogramm ist menügesteuert und ermöglicht es Ihnen, interaktiv benutzerdefinierte Bibliographie-Stildateien zu erstellen. Bibliographie-Stildateien, die mit makebst erzeugt wurden, sind sehr stabil und funktionieren (was angesichts der Autorenschaft nicht verwunderlich ist) sehr gut mit den Zitierbefehlen von natbib.
+	\item Der daraus resultierende Bibliographie-Code kann direkt in ein Dokument eingefügt werden (oft erforderlich für die Einreichung von Zeitschriften). Siehe Biblatex: Einreichung bei einer Zeitschrift.
+\end{itemize}
+
+\textbf{Nachteile}
+
+\begin{itemize}
+	\item Da es von bibtex abhängt, benötigt das Interface .bst-Dateien, die eine Postfix-Sprache verwenden, die für die meisten Leute schwierig zu programmieren ist. Das bedeutet, dass es schwierig sein kann, auch nur geringfügige Änderungen an einem bestehenden Stil vorzunehmen, um bestimmten Formatierungsanforderungen gerecht zu werden.
+	\item Es ist speziell für Autoren-Jahres- und (in geringerem Maße) numerische Zitierweisen konzipiert, die in den Natur- und Sozialwissenschaften üblich sind. Es ist nicht in der Lage, traditionelle Zitationsstile wie Autor/Titel- oder Fußnotenzitate und Bibliographien (einschließlich verschiedener Arten von ibid tracking) zu zitieren.
+	\item Mehrere Bibliographien in einem Dokument oder kategorisierte Bibliographien erfordern zusätzliche Pakete.
+	\item Durch die Abhängigkeit von bibtex als Backend erbt es alle seine Nachteile (siehe unten).
+\end{itemize}
+
+\textbf{Wann sollte man \emph{natbib} nutzen?}
+
+\begin{itemize}
+	\item Es existiert bereits eine.bst-Datei die verwendet werden soll;
+	\item eine Zeitschrift akzeptiert Latex Einreichungen und verlangt oder erwartet natbib. Eine solche Zeitschrift kann biblatex für die Bibliographie nicht akzeptieren.
+\end{itemize}
+
+\section{Biblatex}
+Das biblatex-Paket wird in Zusammenarbeit mit dem biber-Backend aktiv weiterentwickelt. Hier ein MWE für das biblatex-Paket:
+
+\begin{lstlisting}[style=LaTeX]
+\documentclass{<someclass>}
+\usepackage[<language options>]{babel}% Recommended
+\usepackage{csquotes}% Recommended
+\usepackage[style=<somebiblatexstyle>,<other options>]{biblatex}
+
+% \bibliography{<mybibfile>}% ONLY selects .bib file; syntax for version <= 1.1b
+\addbibresource[<options for bib resources>]{<mybibfile>.bib}% Syntax for version >= 1.2
+
+\begin{document}
+A bare citation command: \autocite{<key>}.
+A citation command for use in the flow of text: As \textcite{<key>} said \dots
+\printbibliography[<options for printing>]
+\end{document}
+\end{lstlisting}
+\newpage
+\textbf{Vorteile}
+\begin{description}
+	\item[] \emph{Zitate im geisteswissenschaftlichen Stil}
+	\begin{itemize}
+		\item \emph{biblatex} wird fast immer benötigt, wenn eines der folgenden Punkt erfüllt sind:
+		\begin{itemize}
+			\item Zitate im geisteswissenschaftlichen Stil (Autoren-Titel-Schemata; Zitate unter Verwendung von ebd. usw.)
+			\item ein wesentlich breiteres Spektrum an BibTeX-Datenbankfeldern (wiederum speziell für die Geisteswissenschaften geeignet).
+			\item Unicode-kodierte \emph{.bib}-Dateien (verwendbar mit dem \emph{biber}-Ersatz für \emph{bibtex}).
+			\item Feinsteuerung der eigenen Bibliographie-Stile mit Hilfe von regulären \LaTeX Methoden.
+		\end{itemize}
+	\end{itemize}
+	\item[] \emph{Autoren-Jahr und numerische Zitate}
+	\begin{itemize}
+		\item \emph{biblatex} bietet die gleiche Funktionalität wie \emph{natbib} für die in den Natur- und Sozialwissenschaften üblichen Autoren-Jahres- und Zahlenzitate. Es kann daher als Ersatz für \emph{natbib} verwendet werden.
+	\end{itemize}
+	\item[] \emph{Allgemeine Betrachtung}
+	\begin{itemize}
+		\item Alle Formatierungen von Zitaten und Bibliographie-Einträgen erfolgen über reguläre LaTeX-Makros. Dies hat zur Folge, dass normale LaTeX-Anwender in der Lage sind, Änderungen an bestehenden Stilen auf einfache Weise vorzunehmen. \emph{biblatex} hat auch Optionen für die meisten Modifikationen eingebaut.
+		\item Auch wenn \emph{biblatex} \emph{bibtex} als Backend verwenden kann, wird es nicht mit \emph{.bst}-Dateien formatiert, sondern nur mit \emph{bibtex} sortiert.
+		\item Mehrfachbibliographien und kategorisierte Bibliographien werden direkt unterstützt.
+	\end{itemize}
+\end{description}
+
+Wie am Ende die Referenzen im Text und das Literaturverzeichnis aussehen werden bestimmt der ausgewählte Stil bei Biblatex. Zusätzlich zu den Standardstilen, die im biblatex-Handbuch dokumentiert sind, listet \href{http://ftp.fau.de/ctan/info/translations/biblatex/de/biblatex-de-Benutzerhandbuch.pdf}{CTAN} derzeit die folgenden zusätzlichen Stilpakete für biblatex auf:
+\begin{itemize}
+	\item  \href{https://ctan.org/pkg/biblatex-abnt}{biblatex-abnt}  ABNT (Brasilianische Vereinigung der Technischen Normen) Stil für biblatex.
+	\item  \href{https://ctan.org/pkg/biblatex-apa}{biblatex-apa} APA-Stil für biblatex.
+	\item  \href{https://ctan.org/pkg/biblatex-chem}{biblatex-chem}Chemie-Stile für biblatex.
+	\item  \href{https://ctan.org/pkg/biblatex-chicago}{biblatex-chicago} Chicago style files für biblatex.
+	\item  \href{https://ctan.org/pkg/biblatex-dw}{biblatex-dw} Geisteswissenschaftliche Stile für biblatex.
+	\item  \href{https://ctan.org/pkg/biblatex-historian}{biblatex-historian} Ein Biblatex-Stil, der auf Turabian basiert.
+	\item  \href{https://ctan.org/pkg/biblatex-ieee}{biblatex-ieee} IEEE Style Dateien für biblatex.
+	\item  \href{https://ctan.org/pkg/biblatex-jura}{biblatex-jura} Biblatex Stylefiles für die deutsche Rechtsliteratur.
+	\item  \href{https://ctan.org/pkg/biblatex-mla}{biblatex-mla} MLA Style Dateien für biblatex.
+	\item  \href{https://ctan.org/pkg/biblatex-nature}{biblatex-nature} Biblatex-Unterstützung für die Zeitschrift Nature.
+	\item  \href{https://ctan.org/pkg/biblatex-philosophy}{biblatex-philosophy} Stile für die Verwendung von biblatex für die Arbeit in der Philosophie.
+	\item  \href{https://ctan.org/pkg/biblatex-science}{biblatex-science} Biblatex unterstützt die Zeitschrift Science.
+	\item  \href{https://github.com/michal-h21/biblatex-iso690}{Github-Iso690} Biblatex Support für ISO690
+	\item  \href{https://github.com/domhardt/BibLaTeX-DIN1505}{Github-DIN1505} Biblatex Support für DIN1505
+\end{itemize}
+
+Für biblatex werden viele neue Journalstile kreiert. Angesichts der Flexibilität der Anpassung von biblatex-Stilen kann es in vielen Fällen recht einfach sein, einen bestehenden Stil an den Stil einer bestimmten Zeitschrift anzupassen. Unter anderem wird auch an einer Umsetzung für \href{https://tex.stackexchange.com/questions/124473/is-there-a-biblatex-equivalent-for-the-bibtex-style-alphadin-for-the-din-1505}{alphadin} gearbeitet.
+\newline
+\textbf{Nachteile}
+
+\begin{itemize}
+	\item Zeitschriften und Verlage dürfen keine Dokumente akzeptieren, die biblatex verwenden, wenn sie einen Hausstil mit einer eigenen natbib-kompatiblen.bst-Datei haben.
+	\item Es ist nicht trivial, die von biblatex erstellten Bibliographien in ein Dokument aufzunehmen (wie es viele Verlage verlangen.) Siehe Biblatex: Einreichung bei einer Zeitschrift.	
+\end{itemize}
+
+\section{bibtex vs. biber}
+Viele der Nachteile von natbib sind eine Folge der Tatsache, dass man sich bei der Formatierung auf bibtex verlässt. Dies ist der Hauptunterschied zwischen natbib und biblatex, da letzteres, selbst wenn es bibtex als Backend verwendet, es nicht zur Formatierung, sondern nur zur Sortierung verwendet. biblatex ist aber auch für die Verwendung von biber konzipiert, einem neuen Backend, das biblatex um weitere Funktionen erweitert.
+\bigskip
+\textbf{Bibtex}
+
+\begin{description}
+	\item[] \emph{Vorteil}
+	\begin{itemize}
+		\item sehr stabil und weit verbreitet
+	\end{itemize}
+	\item[] Nachteile
+	\begin{itemize}
+		\item sehr schwer zu modifizieren, ohne eine andere Sprache zu erlernen (bei Verwendung von natbib; kein Problem bei Verwendung von biblatex)
+		\item sehr schlechte Cross-Language-Unterstützung und außereuropäische Skript-Unterstützung. Nicht-ASCII-Zeichen sollten vermieden werden. Siehe Wie man "ä" und andere Umlaute und akzentuierte Buchstaben in der Bibliographie schreibt, um Anleitungen zum Schreiben von Zeichen mit Akzenten und diakritischen Zeichen zu erhalten.
+		Biber
+	\end{itemize}
+\end{description}
+
+\textbf{biber}
+
+\begin{description}
+	\item[] \emph{Vorteile}
+	\begin{itemize}
+		\item kann mit vielen weiteren Eingabe- und Feldtypen in der.bib-Datei umgehen.
+		\item die in der Lage sind, mit UTF-8-kodierten.bib-Dateien umzugehen.
+		\item bessere Sortierkontrolle.
+	\end{itemize}
+	\item[] Nachteile
+	\begin{itemize}
+		\item Funktioniert nur mit biblatex, nicht mit natbib.
+		\item verlangsamt die Kompilierung von PDF \LaTeX Dokumenten beträchtlich
+	\end{itemize}
+\end{description}
+
+\textbf{Unterschiede zwischen.bib-Dateien}\\
+Wie zu Beginn erwähnt, neigen wir dazu, den Begriff bibtex-Datei zu verwenden, um auf die .bib-Datei selbst zu verweisen, was zu der Annahme führt, dass Werkzeuge, die .bib-Dateien manipulieren, nur für bibtex-Benutzer und nicht für biber-Benutzer verfügbar sind. Dies ist einfach nicht der Fall: Werkzeuge, welche für die Manipulation von .bib-Dateien entwickelt wurden, wie z.B. Referenzmanager und verschiedene Tools zur Generierung und Manipulation von .bib-Dateien, können verwendet werden.
+
+Es ist jedoch der Fall, dass beim Übergang zur Nutzung aller Funktionen von biber/biblatex gewisse Unterschiede in den .bib-Dateien relevant werden.
+
+Eine hilfreicher Thread zur Kompatibilität von bibtex- und biblatex-Bibliographie-Datei findet ihr hier: \href{https://tex.stackexchange.com/questions/37095/compatibility-of-bibtex-and-biblatex-bibliography-files}{Link} In diesem werden einige der Unterschiede zwischen traditionellen bibtex .bib-Dateien und .bib-Dateien, die für die Verwendung mit biber und biblatex angepasst werden näher betrachtet.

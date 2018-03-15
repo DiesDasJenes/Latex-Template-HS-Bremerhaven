@@ -3,6 +3,7 @@
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{DarkGrey}{rgb}{0.1,0.1,0.1}
 \definecolor{TitleBox}{RGB}{177,177,237}
 \definecolor{DocumentLinkColor}{rgb}{0,0,0}
 \definecolor{background}{HTML}{eeeeee}
@@ -112,6 +113,20 @@
 		includegraphics,
 		blinddocument,
 	},
+}
+
+\lstdefinestyle{Bash}
+{	language=Bash,
+	backgroundcolor=\color{DarkGrey},
+	keywordstyle=\color{BlueViolet}\bfseries,
+	commentstyle=\color{Grey},
+	stringstyle=\color{Red},
+	showstringspaces=false,
+	basicstyle=\small\color{white},
+	numbers=none,
+	captionpos=b,
+	tabsize=4,
+	breaklines=true
 }
 %===========================================
 
