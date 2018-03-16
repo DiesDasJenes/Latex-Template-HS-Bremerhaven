@@ -9,10 +9,12 @@ Willkommen zur Einführung in die Vorlage für eure schriftlichen Leistungsnachw
 			\item chapter/ - In diesem Ordner werden sämtliche Latex .tex Dateien abgelegt in denen ihr euren Text verfasst. Ein Tipp: verteilt die Kapitel und Sektionen auf verschiedene Dateien. Dies ermöglicht ein paralleles Arbeiten und erleichtert die Arbeit an längeren Texten.
 			\item images/ - Wie der Name schon sagt, ist dies der Ordner für Bilder aller Art. Benutzt dabei am besten .png, .svg oder .pdf da diese Dateiformate verlustfrei beim skalieren der Größe sind.
 			\item lib/ - Hier sind sämtliche Dateien abgelegt mit denen das Aussehen des Dokumentes verändert werden kann. 
+			\item examples/ - Hier sind verschiedene Beispiele zu Listen und Formatierungsoptionen von Kopf- und Fußzeilen gespeichert
+			\item \_markdown\_Index/ - Hier sind Dateien abgelegt, welche dafür genutzt werden um aus Markdown Dateien \LaTeX{} Dateien zu konvertieren. Diese sind aber uninteressant für den Nutzer. Näheres dazu in Kapitel \ref{MarkdowninLatex}
 		\end{itemize}
 \end{itemize}
 
-Wenn ihr \textbf{komplette Neulinge} in LaTeX seid schaut gleichzeitig hier vorbei:
+Wenn ihr \textbf{komplette Neulinge} in LaTeX seid, schaut gleichzeitig hier vorbei:
 \begin{itemize}
 	\item \url{latex.tugraz.at/latex/tutorial}
 	\item \url{github.com/VoLuong/Begin-Latex-in-minutes}
@@ -21,24 +23,28 @@ Wenn ihr \textbf{komplette Neulinge} in LaTeX seid schaut gleichzeitig hier vorb
 	\item \url{www.tu-dresden.de/mn/math/stochastik/das-institut/beschaeftigte/jan-rudl/ressourcen/dateien/latex_win/LaTeX-Kurs.pdf?lang=de}
 	\item \url{www.fernuni-hagen.de/imperia/md/content/zmi_2010/a026_latex_einf.pdf}
 \end{itemize} 
-Für alle die im Browser kollaborativ arbeiten möchten empfiehlt es sich \url{www.overleaf.com} zu nutzen. Wenn man lieber auf seinem PC arbeiten möchte, ist unter Windows die Tex-Umgebung \url{miktex.org} zu installieren. Auf dem Betriebssystem Linux muss in einem Terminal folgender Befehl eingegeben werden: "'sudo apt-get install texlive-full"'. Damit werden sämtliche Pakete und Sprachen heruntergeladen. Auf beiden Betriebssystemen bietet es sich an den Tex-Editor \emph{TexStudio} zu nutzen. Es gibt jedoch noch andere: \url{https://en.wikipedia.org/wiki/Comparison_of_TeX_editors}.
+In diesen Dokumentationen und Anleitungen werden euch die Grundlagen von \LaTeX{} erklärt. Diese solltet ihr also zuerst lesen. Ich empfehle den zweiten Link, da dort meiner Meinung nach die Grundlagen sehr anschaulich und kompakt erklärt werden. In diesem Dokument jedoch findet ihr nur Kniffe und Erklärungen zu Paketen die für euch nützlich sein könnten.
+Für alle die im Browser kollaborativ arbeiten möchten empfiehlt es sich \url{www.overleaf.com} zu nutzen. Wenn man lieber auf seinem PC arbeiten möchte, ist unter Windows die Tex-Umgebung \url{miktex.org} zu installieren. Auf dem Betriebssystem Linux muss in einem Terminal folgender Befehl eingegeben werden: "'sudo apt-get install texlive-full"'. Damit werden sämtliche Pakete und Sprachen heruntergeladen. Auf beiden Betriebssystemen bietet es sich an den Tex-Editor \emph{TeXstudio} zu nutzen. Es gibt jedoch noch andere: \url{https://en.wikipedia.org/wiki/Comparison_of_TeX_editors}.
 
 Bei weiteren Fragen oder Problemem zur Installation von Tex hier ein Link:\\
 \url{http://texwelt.de/wissen/fragen/11038/wie-installiere-ich-latex}
 
 \section{Wie beginnt man?}
 
-Ein jedes Dokument beginnt man damit, die Metadaten zu bearbeiten und das Titelblatt einzustellen. In der Index TeX Datei "'Index.tex"' findet man dazu unter dem Abschnitt TITLE-Page zwei \textbf{input} Befehle die zu den Seiten \textbf{titlepage\_alone} und \textbf{titlepage\_group} verweisen. Wie die Namen schon aussagen ist jeder der Seiten für eine Sache optimiert. Bei einer Gruppe ab drei Personen wird empfohlen die Gruppenversion zu nehmen. Die Auswahl ist natürlich jedem selbst überlassen.\\
+Ein jedes Dokument wird damit begonnen, die Metadaten zu bearbeiten und das Titelblatt einzustellen. In der Index TeX Datei "'Index.tex"' findet man dazu unter dem Abschnitt TITLE-Page zwei \textbf{input} Befehle die zu den Seiten \textbf{titlepage\_alone} und \textbf{titlepage\_group} verweisen. Wie die Namen schon aussagen ist jeder der Seiten für eine Sache optimiert. Bei einer Gruppe ab drei Personen wird empfohlen die Gruppenversion zu nehmen. Die Auswahl ist natürlich jedem selbst überlassen.\\
 
 Weiter geht es zu den Metadaten in der Tex-Datei \textbf{person-configuration} in dem Ordner \emph{lib/}. Dort sollten sämtliche Informationen hinter den Befehlen angepasst werden. Die ersten Veränderungen können dann bereits auf dem Deckblatt verzeichnet werden.
 
+Damit ihr das Bibliography-Programm \emph{Biber} standardmäßig nutzen könnt, müsst ihr in eurem Editor wie z.B. TeXstudio folgende Option konfigurieren: Optionen > TeXstudio konfigurieren > Erzeugen > Standard Bibliographieprogramm > Biber .
 
 \section{Aufbau der Index Datei}
 
 Die Index-Datei beinhaltet die Struktur des Dokumentes. Sie ist eingeteilt in die Abschnitte:
 \begin{itemize}
+	\item Arara: Hier werden die Anweisungen für das Automatisierungswerkzeug \emph{Arara} festgelegt. Standardmäßig nutzt ihr kein solches Werkzeug sondern kompiliert mit \emph{pdflatex}. Mehr dazu im Kapitel \ref{automate}
 	\item Preamble: Hier werden die Einstellungen für das 'scrbook' übergeben. Wenn ihr eine anderes Aussehen möchtet, probiert stattdessen 'article'
 	\item Einstellungen: Hier werden die Einstellungen zu Packages, Nutzerinformationen und Aussehen der Seiten geladen
+	\item Bibliography-Datei: Hier wird der Pfad zu eurer Bibliography-Datei festgelegt. Es wird Biber zum Verarbeiten von Bibliographie-Informationen genutzt. Das hat Vor- und Nachteile mehr dazu im Kapitel \ref{bib} 
 	\item Bereich des Dokumentes: In diesem Segment wird die Abfolge des Dokumentes festgelegt. 
 	\begin{itemize}
 		\item Title-Page: Es stehen zwei Arten von Deckblättern zur Verfügung. Für Einzel- und Gruppenarbeiten.
@@ -55,4 +61,4 @@ Die Index-Datei beinhaltet die Struktur des Dokumentes. Sie ist eingeteilt in di
 
 \section{Pakete und CTAN}
 
-Im Umgang mit LaTex werden sie sehr schnell auf das Problem stoßen das sie etwas tun möchten was von den in diesem Template vorhandenen Paketen nicht unterstützt wird. Um die Funktionalität hinzuzufügen suchen sie über eine Suchplattform (DuckDuckGo, Google etc.) ihrer Wahl nach dem richtigen \LaTeX Paket. In der Datei "'/lib/packages.tex"' sollten sie das Paket mittels des Befehls \verb|\usepackage{package}| einbinden. Sie können diesen Befehl überall im Dokument platzieren, der Übersicht halber sollte dies jedoch in der "'/lib/packages.tex"' geschehen. Nachdem das Paket eingebunden ist werden sie beim nächsten Compilieren ihres Dokumentes gefragt ob das Paket heruntergeladen werden soll. Bei der Installation haben sie bereits ein Repository einer unabhängigen Universität oder Hochschule ausgewählt. Jedes Paket hat ein Dokumentation, welche auf der Webseite \url{https://ctan.org} zu finden ist. Es empfiehlt sich stets die Dokumentation zu lesen, da diese meistens jede aufkommende Frage beantwortet. 
+Im Umgang mit \LaTeX{} werden sie sehr schnell auf das Problem stoßen das sie etwas tun möchten was von den in diesem Template vorhandenen Paketen nicht unterstützt wird. Um die Funktionalität hinzuzufügen suchen sie über eine Suchplattform (DuckDuckGo, Google etc.) ihrer Wahl nach dem richtigen \LaTeX{} Paket. In der Datei "'/lib/packages.tex"' sollten sie das Paket mittels des Befehls \verb|\usepackage{package}| einbinden. Sie können diesen Befehl überall im Dokument platzieren, der Übersicht halber sollte dies jedoch in der "'/lib/packages.tex"' geschehen. Nachdem das Paket eingebunden ist werden sie beim nächsten Compilieren ihres Dokumentes gefragt ob das Paket heruntergeladen werden soll. Bei der Installation haben sie bereits ein Repository einer unabhängigen Universität oder Hochschule ausgewählt. Jedes Paket hat ein Dokumentation, welche auf der Webseite \url{https://ctan.org} zu finden ist. Es empfiehlt sich stets die Dokumentation zu lesen, da diese meistens jede aufkommende Frage beantwortet. 

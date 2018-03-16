@@ -1,7 +1,7 @@
 \chapter{Tabellen}
 
 Tabellen werden in der zugehörigen Umgebung geschrieben \verb|\begin{tabular}\end{tabular}|
-\begin{lstlisting}[style=LaTeX]
+\begin{lstlisting}[style=LaTeX,caption={Einfache Tabelle},label=lst:tab1]
 \begin{tabular}{|lcr||}
 left aligned column & center column & right column \\
 \hline
@@ -38,7 +38,7 @@ sind und wie sie formatiert werden sollen. Jeder Buchstabe steht für eine einze
 Zellen werden durch das Zeichen \& getrennt. Eine Reihe wird durch 2 Back Slashes beendet und Horizontale Linien können mit dem Befehl \verb|\hline| eingefügt werden.
 Tabellen werden immer so formatiert, dass sie so breit sind, dass sie den gesamten Inhalt enthalten. Wenn eine Tabelle zu groß ist, druckt LaTeX überfüllte hbox Warnungen. Mögliche Lösungen sind die Verwendung des p{'width'} Spezifiziere oder anderer Pakete wie \emph{tabularx}. Eine Tabelle mit Spaltenüberschriften, die sich über mehrere Spalten erstrecken, kann mit dem Befehl \verb|\multicolumn{cols}{pos}{text}| realisiert werden.
 
-\begin{lstlisting}[style=LaTeX]
+\begin{lstlisting}[style=LaTeX,caption={Einfache Tabelle mit Multicolumn},label=lst:tab2]
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
 \hline
@@ -72,8 +72,8 @@ Beachtet, dass der Befehl \verb|\multicolumn| drei obligatorische Argumente enth
 \bigskip
 
 Um die Tabelle innerhalb der Seite anzuordnen wird noch dazu die Umgebung \emph{table} benötigt. Es lässt eine Tabelle (table) anhand verschiedener interner Regeln automatisch an einer vorteilhaften Position innerhalb des Textes platzieren. \textbf{b} steht für den unteren Rand einer Seite, \textbf{t} für den oberen Rand, \textbf{h} für die Stelle, an der die Tabelle definiert wurde, und \textbf{p} bedeutet, dass die Tabelle auf einer eigenen Seite platziert wird (ggf. zusammen mit weiteren Tabellen). Die *-Variante der Umgebung sorgt bei zweispaltigem Textsatz dafür, dass die Tabelle über beide Spalten hinweg Platz einnimmt.
-\newpage
-\begin{lstlisting}[style=LaTeX]
+
+\begin{lstlisting}[style=LaTeX,caption={Einfache Tabelle mit Umgebung table},label=lst:tab3]
 \begin{table}[ht]
 \centering
 \begin{tabular}{|lcr||}
@@ -97,7 +97,7 @@ Alternativ können Sie auch eines der folgenden Pakete \emph{supertabular} oder 
 Folgendes Beispiel stammt von \url{http://users.sdsc.edu/~ssmallen/latex/longtable.html}
 
 \bigskip
-\begin{lstlisting}[style=LaTeX]
+\begin{lstlisting}[style=LaTeX,caption={LongTable Beispiel für Übergroße Tabellen},label=lst:tab4]
 \begin{center}
 \begin{longtable}{|l|l|l|}
 \caption[Feasible triples for a highly variable Grid]{Feasible triples for 
@@ -214,7 +214,7 @@ highly variable Grid, MLMMH.} \label{grid_mlmmh} \\
 \end{center}
 
 Hier noch einmal das Beispiel für die Umgebung \emph{longtabu}.
-\begin{lstlisting}[style=LaTeX]
+\begin{lstlisting}[style=LaTeX,caption={Beispiel zur Umgebung: LongTabu},label=lst:tab5]
 \begin{longtabu} to \linewidth {lX[2]lXl}
 \rowfont\bfseries H1 & H2 & H3 & H4 & H5 \\ \hline 
 \endhead
@@ -241,7 +241,7 @@ Um die Lesbarkeit einer Tabelle zu erhöhen können folgende Elemente eingefärb
 
 Dazu wird der Befehl \verb|\rowcolor| benutzt, welcher durch das Paket \emph{xcolor} bereitgestellt wird.
 
-\begin{lstlisting}[style=LaTeX]
+\begin{lstlisting}[style=LaTeX,caption={Einfache Tabelle mit Einfärbung der Zeile},label=lst:tab6]
 \documentclass{article}
 \usepackage[table]{xcolor}
 \begin{document}
@@ -273,7 +273,7 @@ J & K & L
 \textbf{Einfärben von Spalten}
 Spalten können auf zwei Wegen eingefärbt werden. Der erste Weg wäre die Farbeigenschaft in den Tabellenparametern zu definieren. Der andere Weg ist dafür eine sogenannte \verb|\newcolumntype{name}| zu festzulegen.
 
-\begin{lstlisting}[style=LaTeX]
+\begin{lstlisting}[style=LaTeX,caption={Einfache Tabelle mit Einfärbung der Spalte},label=lst:tab7]
 \documentclass{article}
 \usepackage[table]{xcolor}
 % Weg 2 ColumnType anlegen
@@ -307,7 +307,7 @@ E & F & G & H \\
 \textbf{Einfärben von Linien}
 Über den Befehl \verb|\arrayrulecolor{text}| können Linien einer Tabelle eingefärbt werden. Wenn man nur eine Tabelle einfärben möchte muss unter der Tabelle die Farbe wieder auf Schwarz gestellt werden. Es ist auch möglich nur einzelne Zeilen einzufärben, indem ein neuer Befehl definiert wird:\\ \verb|\newcommand\tln[1]{\arrayrulecolor{#1}\hline}|.
 
-\begin{lstlisting}[style=LaTeX]
+\begin{lstlisting}[style=LaTeX,caption={Einfache Tabelle mit Einfärbung der Linien},label=lst:tab8]
 \documentclass{article}
 \usepackage[table]{xcolor}
 \arrayrulecolor{blue}
@@ -354,7 +354,7 @@ Hier das Beispiel für die Zeilenweise Einfärbung.
 \textbf{Einfärben von einzelnen Zellen}
 Um einzelne Zellen einzufärben bedarf es dem Befehl \verb|\cellcolor{color}|, welcher ebenfalls durch das Paket \emph{xcolor} bereitgestellt wird. \LaTeX erlaubt es zudem über den Befehl \verb|\definecolor{Gray}{gray}{0.85}| oder\\ \verb|\columncolor[RGB oder HTML]{232, 232, 122 oder AAACED}| Farben zu definieren. 
 
-\begin{lstlisting}[style=LaTeX]
+\begin{lstlisting}[style=LaTeX,caption={Einfache Tabelle mit Einfärbung von Zellen},label=lst:tab9]
 \documentclass{article}
 \usepackage[table]{xcolor}
 \arrayrulecolor{blue}
@@ -384,7 +384,7 @@ G & H & I \\
 \paragraph{ResizeBox, was hat es damit auf sich?}
 Wenn eine Tabelle mal nicht auf die Seite passt oder einfach zu klein ist kann diese mittels der ResizeBox oder einer ScaleBox an die Seite angepasst werden. In diesem Beispiel wird eine ResizeBox verwendet. \url{https://en.wikibooks.org/wiki/LaTeX/Tables#Resize_tables}
 
-\begin{lstlisting}[style=LaTeX]
+\begin{lstlisting}[style=LaTeX,caption={Beispiel für ResizeBox},label=lst:tab10]
 \begin{table}[h!]
   \centering
     \resizebox{\textwidth}{!}{
@@ -424,7 +424,7 @@ Wenn eine Tabelle mal nicht auf die Seite passt oder einfach zu klein ist kann d
 \paragraph{Tabelle im Querformat}
 Manche Tabellen werden so groß, dass diese nur in einem Querformat dargestellt werden können. Im folgenden Beispiel ist die Tabelle nicht nur gedreht sondern auch zentriert und skaliert. Es folgt eine leere Seite hinter und vor einer Landscape Tabelle, da dass Paket \emph{lscape} automatisch einen Seitenumbruch einfügt. 
 \bigskip
-\begin{lstlisting}[style=LaTeX]
+\begin{lstlisting}[style=LaTeX,caption={Einfache gedrehte Tabelle},label=lst:tab11]
 \begin{landscape}
   \begin{table}[]
   \centering

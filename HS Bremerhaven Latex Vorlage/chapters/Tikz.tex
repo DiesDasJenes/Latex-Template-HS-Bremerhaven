@@ -1,1 +1,172 @@
-\chapter{Diagramme und Graphen in \LaTeX}
+\chapter{Diagramme und Graphen in \LaTeX{}}
+Durch das Paket Tikz besitzt \LaTeX{} ein Werkzeug um alles zu Zeichnen was möglich ist, sei es Graphen, Diagramme, Bilder, Figuren, 3D-Modelle. Alles ist mit dem Paket möglich. Hier ein paar Beispiele:
+
+\begin{tikzpicture} % Beta Winkel bei einem Dreieck
+\draw
+(3,-1) coordinate (a) node[right] {A}
+-- (0,0) coordinate (b) node[left] {B}
+-- (2,2) coordinate (c) node[above right] {C}
+pic["$\beta$", draw=orange, <->, angle eccentricity=1.2, angle radius=1cm]
+{angle=a--b--c};
+\end{tikzpicture}
+\hspace{3cm}
+\begin{tikzpicture}[thick,scale=1,node distance=1cm] % Graph
+\graph[nodes={draw,circle},edges={-{Stealth[]}}] {
+	A -> ["1"] B,
+	A -> C,
+	C -> B
+};
+\end{tikzpicture}
+\bigskip
+
+\tikzset{mynode/.style={inner sep=2pt,fill,outer sep=0,circle}} % Quader mit Fläche
+\begin{tikzpicture}[scale=3,line width=1pt]
+\coordinate (1) at (0,0,0);
+\coordinate (2) at (0,1,0);
+\coordinate (3) at (1,1,0);
+\coordinate (4) at (1,0,0);
+\coordinate (5) at (0,0,1);
+\coordinate (6) at (0,1,1);
+\coordinate (7) at (1,1,1);
+\coordinate (8) at (1,0,1);
+\foreach \x in {1,2,...,8}{
+	\node[mynode] at (\x) {};
+}
+\draw (1) -- (2) -- (3) -- (4) -- cycle;
+\draw (5) -- (6) -- (7) -- (8) -- cycle;
+\draw (1) -- (5)  (2) -- (6) (3) -- (7) (4) -- (8);
+\draw[thin,fill=blue!50,opacity=0.5] (0.5,0,0) -- (0.5,0,1) -- (0.5,1,1) -- (0.5,1,0) --cycle;
+\node at (0.5,-0.2,1) {(\textit{h\,k\,l})};
+\end{tikzpicture}
+\hspace{1cm}
+\begin{tikzpicture}[scale=3,line width=1pt] % Quader mit zwei Flächen
+\coordinate (1) at (0,0,0);
+\coordinate (2) at (0,1,0);
+\coordinate (3) at (1,1,0);
+\coordinate (4) at (1,0,0);
+\coordinate (5) at (0,0,1);
+\coordinate (6) at (0,1,1);
+\coordinate (7) at (1,1,1);
+\coordinate (8) at (1,0,1);
+\foreach \x in {1,2,...,8}{
+	\node[mynode] at (\x) {};
+}
+\draw (1) -- (2) -- (3) -- (4) -- cycle;
+\draw (5) -- (6) -- (7) -- (8) -- cycle;
+\draw (1) -- (5)  (2) -- (6) (3) -- (7) (4) -- (8);
+\draw[thin,fill=blue!50,opacity=0.5] (1) -- (8) -- (6) --cycle;
+\draw[thin,fill=blue!50,opacity=0.5] (2) -- (4) -- (7) --cycle;
+\node at (0.5,-0.2,1) {(\textit{h\,k\,l})};
+\end{tikzpicture}
+
+\begin{tikzpicture} % Weiterer Graph
+\graph {
+	A -> { subgraph I_n [V= {B,C,D}] } -> E
+};
+\end{tikzpicture}
+\hspace{1cm}
+\begin{tikzpicture}[->,>=stealth',shorten >=2pt, line width=3pt,
+node distance=1cm, style ={minimum size=10mm}] % Zustandsübergangsdiagramm einer Markov-Kette
+\tikzstyle{every node}=[font=\huge]
+\node [circle, draw] (a) {1};
+\path (a) edge [loop above] (a);
+\node [circle, draw] (b) [right=of a] {2};
+\path (b) edge [loop above] (b);
+\draw[->] (a) -- (b);
+\node [circle, draw] (c) [below=of a] {3};
+\path (c) edge [loop below] (c);
+\draw[->] (a) -- (c);
+\draw[->] (b) -- (c);
+\end{tikzpicture}
+
+\newpage
+ Diagramm des Lebenszyklus der Android-Aktivität
+ \begin{center}
+ 
+
+\tikzset{%
+	>={Latex[width=2mm,length=2mm]},
+	% Specifications for style of nodes:
+	base/.style = {rectangle, rounded corners, draw=black,
+		minimum width=4cm, minimum height=1cm,
+		text centered, font=\sffamily},
+	activityStarts/.style = {base, fill=blue!30},
+	startstop/.style = {base, fill=red!30},
+	activityRuns/.style = {base, fill=green!30},
+	process/.style = {base, minimum width=2.5cm, fill=orange!15,
+		font=\ttfamily},
+}
+\begin{tikzpicture}[node distance=2cm,
+every node/.style={fill=white, font=\sffamily}, align=center]
+% Specification of nodes (position, etc.)
+\node (start)             [activityStarts]              {Activity starts};
+\node (onCreateBlock)     [process, below of=start]          {onCreate()};
+\node (onStartBlock)      [process, below of=onCreateBlock]   {onStart()};
+\node (onResumeBlock)     [process, below of=onStartBlock]   {onResume()};
+\node (activityRuns)      [activityRuns, below of=onResumeBlock]
+{Activity is running};
+\node (onPauseBlock)      [process, below of=activityRuns, yshift=-1cm]
+{onPause()};
+\node (onStopBlock)       [process, below of=onPauseBlock, yshift=-1cm]
+{onStop()};
+\node (onDestroyBlock)    [process, below of=onStopBlock, yshift=-1cm] 
+{onDestroy()};
+\node (onRestartBlock)    [process, right of=onStartBlock, xshift=4cm]
+{onRestart()};
+\node (ActivityEnds)      [startstop, left of=activityRuns, xshift=-4cm]
+{Process is killed};
+\node (ActivityDestroyed) [startstop, below of=onDestroyBlock]
+{Activity is shut down};     
+% Specification of lines between nodes specified above
+% with aditional nodes for description 
+\draw[->]             (start) -- (onCreateBlock);
+\draw[->]     (onCreateBlock) -- (onStartBlock);
+\draw[->]      (onStartBlock) -- (onResumeBlock);
+\draw[->]     (onResumeBlock) -- (activityRuns);
+\draw[->]      (activityRuns) -- node[text width=6cm]
+{Another activity comes in
+	front of the activity} (onPauseBlock);
+\draw[->]      (onPauseBlock) -- node {The activity is no longer visible}
+(onStopBlock);
+\draw[->]       (onStopBlock) -- node {The activity is shut down by
+	user or system} (onDestroyBlock);
+\draw[->]    (onRestartBlock) -- (onStartBlock);
+\draw[->]       (onStopBlock) -| node[yshift=1.25cm, text width=3cm]
+{The activity comes to the foreground}
+(onRestartBlock);
+\draw[->]    (onDestroyBlock) -- (ActivityDestroyed);
+\draw[->]      (onPauseBlock) -| node(priorityXMemory)
+{higher priority $\rightarrow$ more memory}
+(ActivityEnds);
+\draw           (onStopBlock) -| (priorityXMemory);
+\draw[->]     (ActivityEnds)  |- node [yshift=-2cm, text width=3.1cm]
+{User navigates back to the activity}
+(onCreateBlock);
+\draw[->] (onPauseBlock.east) -- ++(2.6,0) -- ++(0,2) -- ++(0,2) --                
+node[xshift=1.2cm,yshift=-1.5cm, text width=2.5cm]
+{The activity comes to the foreground}(onResumeBlock.east);
+\end{tikzpicture}
+ \end{center}
+\newpage
+Weiterführende Anleitungen und Dokumentationen zu Tikz:
+\begin{itemize}
+	\item \url{http://www.math.uni-leipzig.de/~hellmund/LaTeX/pgf-tut.pdf}
+	\item \url{https://cremeronline.com/LaTeX/minimaltikz.pdf}
+	\item \url{https://en.wikibooks.org/wiki/LaTeX/PGF/TikZ}
+	\item \url{https://www.bu.edu/math/files/2013/08/tikzpgfmanual.pdf}
+\end{itemize}
+
+Diese Dokumente zeigen was möglich ist:
+\begin{itemize}
+	\item\url{http://bit.ly/2pdUfCn}
+	\item  \url{http://bit.ly/2G19KHy}
+\end{itemize}
+
+Quellen für die Beispiele:
+\begin{itemize}
+	\item \url{http://www.texample.net/tikz/examples/tag/flowcharts/}
+	\item \url{http://bit.ly/2DxhAmL}
+	\item \url{https://tex.stackexchange.com/questions/213075/two-tikzpictures-side-by-side}
+    \item \url{http://books.goalkicker.com/LaTeXBook/}
+\end{itemize}
+

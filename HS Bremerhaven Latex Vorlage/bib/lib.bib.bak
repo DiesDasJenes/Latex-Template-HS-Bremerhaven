@@ -74,4 +74,10 @@
   url    = {https://tex.stackexchange.com/questions/25701/bibtex-vs-biber-and-biblatex-vs-natbib},
 }
 
+@Electronic{switchbiber,
+  author = {Lockstep},
+  year   = {2010},
+  url    = {https://tex.stackexchange.com/questions/5091/what-to-do-to-switch-to-biblatex},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
