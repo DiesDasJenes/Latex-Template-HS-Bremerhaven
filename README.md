@@ -14,7 +14,7 @@ Wer aber mit "git" arbeiten möchte schaut mal hier nach: http://rogerdudler.git
 Wenn ihr die .ZIP heruntergeladen habt, lest euch die Einleitung der Index.pdf durch. Damit habt ihr einen soliden Start für LaTeX.   
 ### Für Fortgeschrittene/Experten
 Ebenfalls einfach das Projekt herunterladen und die .Tex Dateien aus dem Ordner chapters/ entfernen und in der Index.tex seine eigenen Kapitel hinzufügen. 
-Das Biber genutzt wird um die Bibliographie-Informationen zu verarbeiten muss dieses noch als Standard Bibliographieprogramm eingestellt werden. Dann noch den Pfad zur .Bib Datei in der Preamble der Index.tex austauschen und es kann losgehen.
+Da Biber genutzt wird um die Bibliographie-Informationen zu verarbeiten, muss dieses noch als Standard Bibliographieprogramm eingestellt werden. Dann noch den Pfad zur .Bib Datei in der Preamble der Index.tex austauschen und es kann losgehen.
 
 ## Mitwirken
 Bitte lesen Sie die [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) für Details zu unserem Verhaltenskodex und dem Verfahren zur Einreichung von Pull-Requests an mich. Bei Fehlern eröffneen sie am besten ein Issue-Ticket.
