@@ -1,18 +1,18 @@
-\chapter{bibtex vs. biber and biblatex vs. natbib}
+\chapter{bibtex vs. biber und biblatex vs. natbib}
 \label{bib}
 
-Um in \LaTeX{} Bibliographie und Referenzen zu benutzen gibt es verschiedene Möglichkeiten. In den vorgeschlagenen Anleitungen aus dem Kapitel \ref{Einleitung} werden diese und ihre Funktionsweise ausreichend erklärt. In diesem Kapitel soll es um die Vor- und Nachteile der verschiedenen Pakete gehen. Die Informationen für dieses Kapitel stammen aus einem tex.stackexchange.com Thread.\autocite{bibvsvbib}
+Um in \LaTeX{} Bibliographie und Referenzen zu benutzen gibt es verschiedene Möglichkeiten. In den vorgeschlagenen Anleitungen aus dem Kapitel \ref{Einleitung} werden diese und ihre Funktionsweise ausreichend erklärt. In diesem soll es um die Vor- und Nachteile der verschiedenen Pakete gehen. Die Informationen für dieses Kapitel stammen aus einem tex.stackexchange.com Thread.\autocite{bibvsvbib}
 
 Für dieses Kapitel werden folgende Begriffe verwendet:
 
 \begin{itemize}
-	\item \textbf{bibtex} und \textbf{biber} sind externe Programme, die Bibliographie-Informationen verarbeiten und (grob) als Schnittstelle zwischen der .bib-Datei und LaTeX-Dokument fungieren.
-	\item \textbf{natbib} und \textbf{biblatex} sind LaTeX-Pakete, die Zitate und Bibliographien formatieren; natbib funktioniert nur mit bibtex, während biblatex (im Moment) sowohl mit bibtex als auch mit biber arbeitet.
+	\item \textbf{bibtex} und \textbf{biber} sind externe Programme, die Bibliographie-Informationen verarbeiten und (grob) als Schnittstelle zwischen der .bib-Datei und \LaTeX{} Dokument fungieren.
+	\item \textbf{natbib} und \textbf{biblatex} sind \LaTeX{} Pakete, die Zitate und Bibliographien formatieren; natbib funktioniert nur mit bibtex, während biblatex (im Moment) sowohl mit bibtex als auch mit biber arbeitet.
 \end{itemize}
 
 
 \section{Natbib}
-Das natbib-Paket gibt es schon seit geraumer Zeit, und obwohl es immer noch gepflegt wird, kann man mit Fug und Recht sagen, dass es nicht weiterentwickelt wird. Es ist immer noch weit verbreitet und sehr zuverlässig. Hier ein MWE für das natbib-Paket:
+Das natbib-Paket gibt es schon seit geraumer Zeit, und obwohl es immer noch gepflegt wird, kann man mit Fug und Recht sagen, dass es nicht weiterentwickelt wird. Es ist immer noch weit verbreitet und sehr zuverlässig. Hier ein Minimum Working Example (MWE) für das natbib-Paket:
 
 \begin{lstlisting}[style=LaTeX]
 \documentclass{<someclass>}
@@ -43,7 +43,7 @@ A citation command for use in the flow of text: As \citet{<key>} said \dots
 
 \begin{itemize}
 	\item Da es von bibtex abhängt, benötigt das Interface .bst-Dateien, die eine Postfix-Sprache verwenden, die für die meisten Leute schwierig zu programmieren ist. Das bedeutet, dass es schwierig sein kann, auch nur geringfügige Änderungen an einem bestehenden Stil vorzunehmen, um bestimmten Formatierungsanforderungen gerecht zu werden.
-	\item Es ist speziell für Autoren-Jahres- und (in geringerem Maße) numerische Zitierweisen konzipiert, die in den Natur- und Sozialwissenschaften üblich sind. Es ist nicht in der Lage, traditionelle Zitationsstile wie Autor/Titel- oder Fußnotenzitate und Bibliographien (einschließlich verschiedener Arten von ibid tracking) zu zitieren.
+	\item Es ist speziell für Autoren-, Jahres- und (in geringerem Maße) numerische Zitierweise konzipiert, die in den Natur- und Sozialwissenschaften üblich sind. Es ist nicht in der Lage, traditionelle Zitationsstile wie Autor/Titel- oder Fußnotenzitate und Bibliographien (einschließlich verschiedener Arten von ibid tracking) zu zitieren.
 	\item Mehrere Bibliographien in einem Dokument oder kategorisierte Bibliographien erfordern zusätzliche Pakete.
 	\item Durch die Abhängigkeit von bibtex als Backend erbt es alle seine Nachteile (siehe unten).
 \end{itemize}
@@ -78,7 +78,7 @@ A citation command for use in the flow of text: As \textcite{<key>} said \dots
 \begin{description}
 	\item[] \emph{Zitate im geisteswissenschaftlichen Stil}
 	\begin{itemize}
-		\item \emph{biblatex} wird fast immer benötigt, wenn eines der folgenden Punkt erfüllt sind:
+		\item \emph{biblatex} wird fast immer benötigt, wenn einer der folgenden Punkte erfüllt wird:
 		\begin{itemize}
 			\item Zitate im geisteswissenschaftlichen Stil (Autoren-Titel-Schemata; Zitate unter Verwendung von ebd. usw.)
 			\item ein wesentlich breiteres Spektrum an BibTeX-Datenbankfeldern (wiederum speziell für die Geisteswissenschaften geeignet).
@@ -118,6 +118,7 @@ Wie am Ende die Referenzen im Text und das Literaturverzeichnis aussehen werden 
 
 Für biblatex werden viele neue Journalstile kreiert. Angesichts der Flexibilität der Anpassung von biblatex-Stilen kann es in vielen Fällen recht einfach sein, einen bestehenden Stil an den Stil einer bestimmten Zeitschrift anzupassen. Unter anderem wird auch an einer Umsetzung für \href{https://tex.stackexchange.com/questions/124473/is-there-a-biblatex-equivalent-for-the-bibtex-style-alphadin-for-the-din-1505}{alphadin} gearbeitet.
 \newline
+
 \textbf{Nachteile}
 
 \begin{itemize}
@@ -126,8 +127,9 @@ Für biblatex werden viele neue Journalstile kreiert. Angesichts der Flexibilit�
 \end{itemize}
 
 \section{bibtex vs. biber}
-Viele der Nachteile von natbib sind eine Folge der Tatsache, dass man sich bei der Formatierung auf bibtex verlässt. Dies ist der Hauptunterschied zwischen natbib und biblatex, da letzteres, selbst wenn es bibtex als Backend verwendet, es nicht zur Formatierung, sondern nur zur Sortierung verwendet. biblatex ist aber auch für die Verwendung von biber konzipiert, einem neuen Backend, das biblatex um weitere Funktionen erweitert.
+Viele der Nachteile von natbib sind eine Folge der Tatsache, dass man sich bei der Formatierung auf bibtex verlässt. Dies ist der Hauptunterschied zwischen natbib und biblatex. Letzteres verwendet als Backend bibtex, jedoch nicht zur Formatierung sondern nur zur Sortierung. Biblatex ist aber auch für die Verwendung von biber konzipiert, einem neuen Backend, das biblatex um weitere Funktionen erweitert.
 \bigskip
+
 \textbf{Bibtex}
 
 \begin{description}
@@ -138,8 +140,7 @@ Viele der Nachteile von natbib sind eine Folge der Tatsache, dass man sich bei d
 	\item[] Nachteile
 	\begin{itemize}
 		\item sehr schwer zu modifizieren, ohne eine andere Sprache zu erlernen (bei Verwendung von natbib; kein Problem bei Verwendung von biblatex)
-		\item sehr schlechte Cross-Language-Unterstützung und außereuropäische Skript-Unterstützung. Nicht-ASCII-Zeichen sollten vermieden werden. Siehe Wie man "ä" und andere Umlaute und akzentuierte Buchstaben in der Bibliographie schreibt, um Anleitungen zum Schreiben von Zeichen mit Akzenten und diakritischen Zeichen zu erhalten.
-		Biber
+		\item sehr schlechte Cross-Language-Unterstützung und außereuropäische Skript-Unterstützung. Nicht-ASCII-Zeichen sollten vermieden werden. Ein Beispiel dafür sind unter anderem '"ä"' und andere Umlaute sowie akzentuierte Buchstaben. 
 	\end{itemize}
 \end{description}
 
@@ -164,4 +165,4 @@ Wie zu Beginn erwähnt, neigen wir dazu, den Begriff bibtex-Datei zu verwenden, 
 
 Es ist jedoch der Fall, dass beim Übergang zur Nutzung aller Funktionen von biber/biblatex gewisse Unterschiede in den .bib-Dateien relevant werden.
 
-Eine hilfreicher Thread zur Kompatibilität von bibtex- und biblatex-Bibliographie-Datei findet ihr hier: \href{https://tex.stackexchange.com/questions/37095/compatibility-of-bibtex-and-biblatex-bibliography-files}{Link} In diesem werden einige der Unterschiede zwischen traditionellen bibtex .bib-Dateien und .bib-Dateien, die für die Verwendung mit biber und biblatex angepasst werden näher betrachtet.
+Eine hilfreicher Thread zur Kompatibilität von bibtex- und biblatex-Bibliographie-Datei findet ihr hier \autocite{bibnatbib}. In diesem werden einige der Unterschiede zwischen traditionellen bibtex .bib-Dateien und .bib-Dateien, die für die Verwendung mit biber und biblatex angepasst werden näher betrachtet.

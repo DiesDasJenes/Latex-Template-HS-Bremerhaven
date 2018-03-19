@@ -4,7 +4,7 @@
 % Formelverzeichniss
 
 Das Formatieren von mathematischen Elementen gehört sicher zu den
-Stär\-ken von LaTeX. Man unterscheidet zwischen mathematischen Elementen
+Stärken von \LaTeX{}. Man unterscheidet zwischen mathematischen Elementen
 im Fließtext und freistehenden Gleichungen, die in der Regel
 fortlaufend nummeriert werden. Analog zu Abbildungen und Tabellen sind dadurch
 Querverweise zu Gleichungen leicht zu realisieren. Zum besseren Verständnis schaut euch neben dieser PDF auch den Quelltext in der Datei \emph{mathematik.tex} an.
@@ -26,34 +26,34 @@ im Bereich $[\frac{\bar{a}}{2}, \infty]$ alles scharf.
 Dabei sollte man unbedingt darauf achten, dass die Höhe der einzelnen Elemente im Text nicht zu groß wird. 
 
 \paragraph{Häufiger Fehler:} 
-Im Fließtext wird bei einfachen Variablen oft auf die Verwendung der richtigen, mathematischen Zeichen vergessen, wie etwa in 
+Im Fließtext wird bei einfachen Variablen oft die Verwendung der richtigen, mathematischen Zeichen vergessen, wie etwa in 
 "`X-Achse"' anstelle von "`$X$-Achse"' (\verb!$X$-Achse!).
 
 
 
 \section{Freigestellte Ausdrücke}
 
-Freigestellte mathematische Ausdrücke können in LaTeX im einfachsten Fall durch paarweise \verb!$$! \ldots \verb!$$! erzeugt werden. Das Ergebnis wird zentriert, erhält jedoch keine Numerierung. So ist z.B.\ $$ y = 4 x^2 $$ das Ergebnis von \verb!$$ y = 4 x^2 $$!.
+Freigestellte mathematische Ausdrücke können in \LaTeX{} im einfachsten Fall durch paarweise \verb!$$! \ldots \verb!$$! erzeugt werden. Das Ergebnis wird zentriert, erhält jedoch keine Numerierung. So ist z.B.\ $$ y = 4 x^2 $$ das Ergebnis von \verb!$$ y = 4 x^2 $$!.
 
 \subsection{Einfache Gleichungen} 
 
 Meistens verwendet man in solchen Fällen jedoch die \texttt{equation}-Umgebung zur Herstellung numerierter Gleichungen, auf die man im Text jederzeit verweisen kann. Zum Beispiel erzeugt
 %
-
+\begin{lstlisting}[style=Latex,caption={einfache Gleichung},label=lst:equ1]
 \begin{equation}
-  f(k) = \frac{1}{N} \sum_{i=0}^{k-1} i^2 . 
-  \label{eq:MyFirstEquation1}
+f(k) = \frac{1}{N} \sum_{i=0}^{k-1} i^2 . 
+\label{eq:MyFirstEquation1}
 \end{equation}
-
+\end{lstlisting}
 %
 die Gleichung
 %
 \begin{equation}
   f(k) = \frac{1}{N} \sum_{i=0}^{k-1} i^2 . 
-\label{eq:MyFirstEquation2}
+\label{eq:MyFirstEquation}
 \end{equation}
 %
-Mit \verb!\ref{eq:MyFirstEquation}! erhält man wie üblich die Nummer (\ref{eq:MyFirstEquation1}) dieser Gleichung (siehe dazu auch Abschn.\ \ref{sec:VerweiseAufGleichungen}). 
+Mit \verb!\ref{eq:MyFirstEquation}! erhält man wie üblich die Nummer (\ref{eq:MyFirstEquation}) dieser Gleichung (siehe dazu auch Abschn.\ \ref{sec:VerweiseAufGleichungen}). 
 Dieselbe Gleichung \emph{ohne} Numerierung kann man übrigens mit der \texttt{equation*}-Umgebung erzeugen.
 
 
@@ -63,7 +63,7 @@ Dieselbe Gleichung \emph{ohne} Numerierung kann man übrigens mit der \texttt{eq
 \setlength{\fboxsep}{2mm}
 \fbox{%
 \begin{minipage}{0.9\textwidth}
-Man beachte, dass \textbf{Gleichungen} inhaltlich ein \textbf{Teil des Texts} sind und daher neben der sprachliche \textbf{Überleitung} auch die \textbf{Punktuation} (wie in Gl.\ \ref{eq:MyFirstEquation} gezeigt) beachtet werden muss. Bei Unsicherheiten sollte man sich passende Beispiele in einem guten Mathematik\-buch ansehen.
+Man beachte, dass \textbf{Gleichungen} inhaltlich ein \textbf{Teil des Texts} sind und daher neben der sprachlicher \textbf{Überleitung} auch die \textbf{Punktuation} (wie in Gl.\ \ref{eq:MyFirstEquation} gezeigt) beachtet werden muss. Bei Unsicherheiten sollte man sich passende Beispiele in einem guten Mathematik\-buch ansehen.
 \end{minipage}}
 \end{center}
 %
@@ -71,10 +71,10 @@ Für Interessierte findet sich mehr zum Thema Mathematik und Prosa in \autocite{
 
 \subsection{Mehrzeilige Gleichungen}
 
-Für mehrzeilige Gleichungen bietet LaTeX die 
+Für mehrzeilige Gleichungen bietet \LaTeX{} die 
 \verb!eqnarray!-Umgebung, die allerdings etwas eigenwillige Zwischenräume erzeugt.
 Es empfiehlt sich, dafür gleich auf die erweiterten Möglichkeiten des \texttt{amsmath}-Pakets%
-\footnote{American Mathematical Society (AMS). \texttt{amsmath} ist Teil der LaTeX Standardinstallation und wird von \texttt{hgb.sty} bereits importiert.}
+\footnote{American Mathematical Society (AMS). \texttt{amsmath} ist Teil der \LaTeX{} Standardinstallation und wird von \texttt{hgb.sty} bereits importiert.}
 \autocite{amsldoc02} zurückzugreifen.
 Hier ein Beispiel mit zwei am $=$ Zeichen ausgerichteten Gleichungen,
 %
@@ -123,7 +123,7 @@ Man beachte dabei die Verwendung des sehr praktischen \verb!\text{..}!-Makros, m
 
 \subsection{Gleichungen mit Matrizen}
 
-Auch hier bietet \texttt{amsmath} einige Vorteile gegenüber der Verwendung der LaTeX Standardkonstrukte. Dazu ein einfaches Beispiel für die Verwendung der \texttt{pmatrix}-Umgebung für Vektoren und Matrizen,
+Auch hier bietet \texttt{amsmath} einige Vorteile gegenüber der Verwendung der \LaTeX{} Standardkonstrukte. Dazu ein einfaches Beispiel für die Verwendung der \texttt{pmatrix}-Umgebung für Vektoren und Matrizen,
 %
 \begin{equation}
 	\begin{pmatrix} x' \\ y' \end{pmatrix}
@@ -157,6 +157,7 @@ das mit den folgenden Anweisungen erzeugt wurde:
 \end{equation}
 \formelentry{Gleichung}
 %
+
 Ein nützliches Detail darin ist das TeX-Makro \verb!\phantom{..}! (in Zeile \ref{lin:phantom}), das sein Argument unsichtbar einfügt und hier als Platzhalter für das darüberliegende Minuszeichen verwendet wird. Alternativ zu \texttt{pmatrix} kann man mit der \texttt{bmatrix}-Umgebung Matrizen
 und Vektoren mit eckigen Klammern erzeugen.
 Zahlreiche weitere mathematische Konstrukte des \texttt{amsmath}-Pakets sind in \autocite{amsldoc02} beschrieben.
@@ -194,13 +195,13 @@ meistens ein Fehler in der Anordnung gemacht.
 
 \subsection{Zahlenmengen}
 Einige häufig verwendete Symbole sind leider im ursprünglichen
-mathematischen Zeichensatz von LaTeX nicht enthalten, z.B. die
+mathematischen Zeichensatz von \LaTeX{} nicht enthalten, z.B. die
 Symbole für die reellen und natürlichen Zahlen. 
 
 
 \subsection{Operatoren}
 
-In LaTeX\ sind Dutzende von mathematischen Operatoren für spezielle Anwendungen definiert. Am häufigsten werden natürlich die arithmetischen Operatoren $+$, $-$, $\cdot$ und $/$ benötigt. Ein dabei oft beobachteter Fehler (der wohl aus der Programmierpraxis resultiert) ist die Verwendung von $*$ für die einfache Multiplikation -- richtig ist $\cdot$ (\verb!\cdot!).%
+In \LaTeX{}\ sind Dutzende von mathematischen Operatoren für spezielle Anwendungen definiert. Am häufigsten werden natürlich die arithmetischen Operatoren $+$, $-$, $\cdot$ und $/$ benötigt. Ein dabei oft beobachteter Fehler (der wohl aus der Programmierpraxis resultiert) ist die Verwendung von $*$ für die einfache Multiplikation -- richtig ist $\cdot$ (\verb!\cdot!).%
 \footnote{Das Zeichen $*$ wird üblicherweise für den Faltungsoperator verwendet.}
 %
 Für Angaben wie z.B. "`ein Feld mit $25 \times 70$ Metern"' (aber auch fast \emph{nur} dafür) verwendet man sinnvollerweise den $\times$ (\verb!\times!) Operator und \emph{nicht} einfach das Textzeichen~"`x"'!
@@ -217,7 +218,7 @@ $$Scalefactor\leftarrow Scalefactor^2 \cdot 1.5 \; ,$$
 \begin{quote}
 	\verb!$Scalefactor \leftarrow Scalefactor^2! \verb!\cdot 1.5$!.
 \end{quote}
-Dabei interpretiert LaTeX allerdings die Zeichenkette "`Scalefactor"' als 11 einzelne,
+Dabei interpretiert \LaTeX{} allerdings die Zeichenkette "`Scalefactor"' als 11 einzelne,
 aufeinanderfolgende Symbole $S$, $c$, $a$, $l$, $e$, \ldots und setzt dazwischen
 entsprechende Abstände.
 \textbf{Richtig} ist, diese Buchstaben mit
@@ -232,13 +233,13 @@ Der Unterschied ist in diesem Fall deutlich sichtbar:
 \end{tabular}
 \end{center}
 %
-Grundsätzlich sollte man aber derart lange Symbolnamen aber ohnehin vermeiden und stattdessen 
+Grundsätzlich sollte man aber derart lange Symbolnamen ohnehin vermeiden und stattdessen 
 möglichst kurze (gängige) Symbole verwenden
 (z.B.\ Brennweite $f = 50 \, \mathrm{mm}$ statt $\mathit{Brennweite} = 50 \, \mathrm{mm}$).
 
 \subsection{Funktionen}
 
-Während Symbole für Variablen traditionell (und in LaTeX\ automatisch) \emph{italic} gesetzt werden, verwendet man für die Namen von Funktionen und Operatoren üblicherweise
+Während Symbole für Variablen traditionell (und in \LaTeX{}\ automatisch) \emph{italic} gesetzt werden, verwendet man für die Namen von Funktionen und Operatoren üblicherweise
 \emph{roman} als Schrifttyp, wie z.B. in
 \begin{center}
 \begin{tabular}{lcl}
@@ -275,18 +276,18 @@ Der Abstand zwischen der Zahl und der Maßeinheit ist dabei
 gewollt.
 Das \$-Zeichen erzeugt man mit \verb!\$! und
 das Euro-Symbol (\euro) mit dem Makro \verb!\euro!.%
-\footnote{Das \euro\ Zeichen ist nicht im ursprünglichen LaTeX-Zeichensatz enthalten
+\footnote{Das \euro\ Zeichen ist nicht im ursprünglichen \LaTeX{}-Zeichensatz enthalten
 sondern wird mit dem \texttt{eurosym}-Paket erzeugt.}
 
 
 \subsection{Kommas in Dezimalzahlen (Mathematik-Modus)}
 
-LaTeX\ setzt im Mathematik-Modus (also innerhalb von \verb!$$! oder in Gleichungen) nach dem angloamerikanischen Stil in Dezimalzahlen grundsätzlich den \emph{Punkt} (\verb!.!) als Trennsymbol voraus. So wird etwa mit \verb!$3.141$! normalerweise die Ausgabe "`3.141"' erzeugt. Um das in Europa übliche Komma in Dezimalzahlen zu verwenden, genügt es \emph{nicht}, einfach \verb!.! durch \verb!,! zu ersetzen. Das Komma wird in diesem Fall
+\LaTeX{}\ setzt im Mathematik-Modus (also innerhalb von \verb!$$! oder in Gleichungen) nach dem angloamerikanischen Stil in Dezimalzahlen grundsätzlich den \emph{Punkt} (\verb!.!) als Trennsymbol voraus. So wird etwa mit \verb!$3.141$! normalerweise die Ausgabe "`3.141"' erzeugt. Um das in Europa übliche Komma in Dezimalzahlen zu verwenden, genügt es \emph{nicht}, einfach \verb!.! durch \verb!,! zu ersetzen. Das Komma wird in diesem Fall
 als \textbf{Satzzeichen} interpretiert und sieht dann so aus:
 \begin{quote}
 \verb!$3,141$!	$\quad \rightarrow \quad 3,141$ 
 \end{quote}
-(man beachte den Leerraum nach dem Komma). Dieses Verhalten lässt sich in LaTeX\ zwar global umdefinieren, was aber wiederum zu einer Reihe unangenehmer Nebeneffekte führt. Eine einfache (wenn auch nicht sehr elegante) Lösung ist, Kommazahlen im Mathematik-Modus so zu schreiben:
+(man beachte den Leerraum nach dem Komma). Dieses Verhalten lässt sich in \LaTeX{}\ zwar global umdefinieren, was aber wiederum zu einer Reihe unangenehmer Nebeneffekte führt. Eine einfache (wenn auch nicht sehr elegante) Lösung ist, Kommazahlen im Mathematik-Modus so zu schreiben:
 \begin{quote}
 \verb!$3{,}141$!	$\quad \rightarrow \quad 3{,}141$
 \end{quote}
@@ -298,16 +299,16 @@ als \textbf{Satzzeichen} interpretiert und sieht dann so aus:
 Für die Erstellung komplizierter Gleichungen ist es mitunter
 hilfreich, auf spezielle Software zurückzugreifen. Unter anderem kann man
 aus dem Microsoft \emph{Equation Editor} und aus {\em
-Mathematica} auf relativ einfache Weise LaTeX-An\-wei\-sun\-gen
+Mathematica} auf relativ einfache Weise \LaTeX{}-Anweisungen
 für mathematische Gleichungen exportieren und direkt (mit etwas
-manueller Nacharbeit) in das eigene LaTeX-Dokument übernehmen.
+manueller Nacharbeit) in das eigene \LaTeX{}-Dokument übernehmen.
 
 
 \subsection{Formelverzeichnis}
 
-Jeder der mit Formeln arbeitet möchte auch ein Formelverzeichnis verwenden. Dies ist natürlich auch in diesem Template möglich und zwar über den Befehl \verb|\formelentry{Bezeichnung}|. Dieser kann entweder hinter die Formel geschrieben werden oder unter die verwendetet Umgebung \verb|\begin{align}Inhalt...\end{align}|. Hier ein Beispiel:
+Jeder der mit Formeln arbeitet möchte auch ein Formelverzeichnis verwenden. Dies ist natürlich auch in diesem Template möglich und zwar über den Befehl \verb|\formelentry{Bezeichnung}|. Dieser kann entweder hinter die Formel geschrieben werden oder unter die verwendete Umgebung \verb|\begin{align}Inhalt...\end{align}|. Hier ein Beispiel:
 
-\begin{lstlisting}[style=LaTeX]
+\begin{lstlisting}[style=Latex]
 \begin{align}
 A &= X + B\\
 \formelentry{Formel 1} % Dies verlinkt auf die eine Formel
@@ -316,9 +317,9 @@ B &= X + C\\
 \formelentry{Formel 2} % Dies verlinkt auf beide Formeln 
 \end{lstlisting}
 
-Die Verlinkung des Formelverzeichnisses ist auch für die Umgebung \emph{equation} möglich. Hier Beispiel dazu: 
+Die Verlinkung des Formelverzeichnisses ist auch für die Umgebung \emph{equation} möglich. Hier ein Beispiel dazu: 
 
-\begin{lstlisting}[style=LaTeX]
+\begin{lstlisting}[style=Latex]
 \begin{equation}
 C &= X + D\\
 \formelentry{Formel 3}
@@ -328,4 +329,4 @@ C &= X + D\\
 Die Idee für das Formelverzeichnis kommt aus diesem Blog \emph{qs-welt.de}:
 \url{http://qs-welt.de/2014/05/01/formelverzeichnis-in-latex-erstellen/}
 
-Weitere Möglichkeiten Verzeichnisse wie das Formelverzeichnis anzulegen erklärt Clemens Niederberger in seinem Blog: \url{http://www.mychemistry.eu/2017/04/define-new-floating-environment/}
+Eine weitere Möglichkeit ein Verzeichnis, wie das Formelverzeichnis, anzulegen erklärt Clemens Niederberger in seinem Blog: \url{http://www.mychemistry.eu/2017/04/define-new-floating-environment/}

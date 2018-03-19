@@ -1,10 +1,10 @@
 \chapter{Listen}
 
-Um eine Liste zu erstellen können die Umgebungen itemize, enumerate und description in \verb|\begin{}\end{}| genutzt werden. Hier ein Link zu Beispielen: \url{https://www.namsu.de/Extra/befehle/Auflistungen.html} \newline
+Um eine Liste erstellen zu können, werden die Umgebungen itemize, enumerate und description in \verb|\begin{}\end{}| genutzt. Hier ein Link zu Beispielen: \url{https://www.namsu.de/Extra/befehle/Auflistungen.html} \newline
 
-Die itemize Umgebung der Listen erstellt die Aufzählungszeichen vor den "'Items"'. Diese Zeichen können über \verb|\item[Symbol]| manuell angepasst werden. Dies kann auch durch \LaTeX umgesetzt werden. Dazu sollte das Paket "'Paralist"' verwendet werden.  
+Die itemize Umgebung der Listen erstellt die Aufzählungszeichen vor den "'Items"'. Diese Zeichen können über \verb|\item[Symbol]| manuell angepasst werden. An dieser Stelle sei das Paket "'Paralist"' erwähnt, welches die Listen Umgebungen um weitere Aufzählungsvorlagen erweitert und auch diese kompakter darstellen lässt.  
 \begin{itemize}
-	\item Ein Item mit dem Standard Punkt
+	\item Ein Item mit dem Standardpunkt
 	\item[->] Ein Item mit Pfeil
 	\begin{enumerate}
 		\item Ein Enumerate Liste innerhalb einer itemize Liste
@@ -17,16 +17,15 @@ Die itemize Umgebung der Listen erstellt die Aufzählungszeichen vor den "'Items
 \end{itemize}
 
 Das Paket \emph{Paralist} enthält einige neue Listenumgebungen. Einzel- und
-Aufzählungslisten können innerhalb von Absätzen gesetzt werden, sowie als Absätze und
-in kompakter Ausführung. Die meisten Umgebungen haben optionale Argumente
+Aufzählungslisten können innerhalb von Absätzen gesetzt werden. Die meisten Umgebungen haben optionale Argumente
 um die Aufzählungszeichen zu formatieren. Zusätzlich können die LATEX-Umgebungen aufgeschlüsselt nach itemize und enumerate erweitert werden, um ein ähnliches optionales Argument zu verwenden. \newline
 
 Hier ein paar Beispiele:
 
 \begin{enumerate}[(i)]
-	\item Dadurch kann die Umgebung die automatische weiterzählung von Listenpunkten
+	\item Dadurch kann die Umgebung die automatische Weiterzählung von Listenpunkten
 	\item Ich bin Item Nummer 2
-\end{enumerate} 
+\end{enumerate}
 
 oder 
 
@@ -35,16 +34,17 @@ oder
 	\item Auch hier geschieht es automatisch
 \end{enumerate}
 
-Listen mit weniger Platz zwischen den Zeilen (compactitem)
-Manchmal kann es vorkommen das der Abstand zwischen den Listenelementen zu groß für eine Seite ist. Um den Abstand zwischen den Listenelementen zu verkleinern kann der Befehl \verb|\begin{compactitem}\end{compactitem}| oder \emph{compactenum} verwendet werden.
+\textbf{Listen mit weniger Platz zwischen den Zeilen (compactitem)}
+
+Manchmal kann es vorkommen, dass der Abstand zwischen den Listenelementen zu groß ist für eine Seite. Um den Abstand zwischen den Listenelementen zu verkleinern kann der Befehl \verb|\begin{compactitem}\end{compactitem}| oder \emph{compactenum} verwendet werden.
  
 \begin{compactitem}
-	\item Dies ist ein Beispiel
-	\item das Listenelemente nicht so viel Platz verbrauchen müssen
+	\item Dieser Beispieltext in dieser Liste zeigt
+	\item dass Listenelemente nicht so viel Platz verbrauchen müssen
 \end{compactitem}
 
 \vspace{1cm} %Um den Zwischenraum zu erzeugen wurde \vspace genutzt. Es können cm oder pt als Wert eingesetzt werden
-Um Listen nebeneinander zu platzieren, muss auf die Tabellen Umgebung von \LaTeX zurückgegriffen werden. 
+Um Listen nebeneinander zu platzieren, muss auf Tabellen in \LaTeX{} zurückgegriffen werden. 
 
 \begin{tabular}{ll}
 	\parbox{5cm}{

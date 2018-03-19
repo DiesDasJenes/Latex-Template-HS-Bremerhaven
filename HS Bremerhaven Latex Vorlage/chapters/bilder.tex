@@ -22,9 +22,9 @@ Diese Optionen sind nur verfügbar, wenn zuvor das graphicx-Paket eingebunden wu
 	\label{fig1}
 \end{figure}
 
-\verb|\includegraphics| muss nicht zwingend in einer figure-Gleitumgebung verwendet werden, ratsam ist es aber schon, da sonst keine Bildunterschriften bzw. Bezeichner gesetzt werden können. Die Bildunterschriften haben dabei immer unter dem Bild zu sein mit einem \verb|\autocite{text}| auf den Ursprungsort des Bildes. Der Befehl \verb|\autocite{text}| greift auf die \emph{.bib} Datei über den Bibtexkey zu. Weitere Informationen zur figure-Gleitumgebung finden sie hier: \url{https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions}\newline
+\verb|\includegraphics| muss nicht zwingend in einer figure-Gleitumgebung verwendet werden. Ratsam ist es aber schon, da sonst keine Bildunterschriften bzw. Bezeichner gesetzt werden können. Die Bildunterschriften haben dabei immer unter dem Bild zu sein mit einem \verb|\autocite{text}| auf den Ursprungsort des Bildes. Der Befehl \verb|\autocite{text}| greift auf die \emph{.bib} Datei über den Bibtexkey zu. Weitere Informationen zur figure-Gleitumgebung finden sie hier: \url{https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions}\newline
 
-Auch Bilder können nebenbeinander platziert werden. Dies kann auf sehr verschiedene Weise erreicht werden: \url{http://texwelt.de/wissen/fragen/18877/zwei-bilder-nebeneinander-jeweils-mit-bildunterschrift-und-label} 
+Auch Bilder können nebeneinander platziert werden. Dies kann auf sehr verschiedene Weise erreicht werden: \url{http://texwelt.de/wissen/fragen/18877/zwei-bilder-nebeneinander-jeweils-mit-bildunterschrift-und-label} 
 
 Als Beispiel wird in diesem Dokument das Paket \emph{floatrow} genutzt.
 \begin{quote}
@@ -32,7 +32,7 @@ Als Beispiel wird in diesem Dokument das Paket \emph{floatrow} genutzt.
 	
 	Zum einen kann man mit \verb|\ffigbox| eine Abbildung zusammen mit ihrer Bildunterschrift in genau der Breite setzen, die durch die Abbildung vorgegeben wird. Das funktioniert auch dann noch, wenn die Bildunterschrift mehrzeilig wird. Dazu ist als optionales erstes Argument \verb|\FBwidth| anzugeben. Als zweites Argument wird \verb|\caption[…]{…}| zusammen mit einem ggf. zu setzenden \verb|\label{…}| angegeben. Das dritte Argument ist die Abbildung.
 	
-	Desweiteren bietet das Paket die Möglichkeit, durch \verb|\ffigbox| angegebene Abbildungen innerhalb einer floatrow-Umgebung in Spalten nebeneinander anzuordnen. Für zwei Abbildungen nebeneinander muss man die beiden durch \verb|\ffigbox| definierten Abbildungen also nur zusätzlich in eine floatrow-Umgebung packen."'\autocite{floatrow}
+	Desweiteren bietet das Paket die Möglichkeit, durch \verb|\ffigbox| angegebene Abbildungen innerhalb einer floatrow-Umgebung in Spalten nebeneinander anzuordnen. Für zwei Abbildungen nebeneinander muss man die beiden durch \verb|\ffigbox| definierten Abbildungen, also nur zusätzlich in eine floatrow-Umgebung packen."'\autocite{floatrow}
 \end{quote}
 \begin{figure}[h]
 	\centering
@@ -53,7 +53,7 @@ Als Beispiel wird in diesem Dokument das Paket \emph{floatrow} genutzt.
 Um Bilder in einem Text zu platzieren sodass das Bild davon umschlossen wird, muss eine \verb|\wrapfigure| Umbegung genutzt werden.\\
 
 \verb|\begin{wrapfigure}[Zeilen]{Position}[Ueberhang]{Breite}|\\
-Um das Margin als den weißen Rand um das Bild zu reduzieren wird der Befehl \verb|\columnsep| des Paketes genutzt. Durch den Befehl \verb|\lipsum| erzeugt man Lorem Ipsum Text.\\
+Um dass Margin, also den weißen Rand um das Bild, zu reduzieren wird der Befehl \verb|\columnsep| des Paketes genutzt. Durch das Paket Lipsum kann mit dessen Befehl \verb|\lipsum| der Fülltext Lorem Ipsum erzeugt werden.\\
 
 \lipsum[1-1]
 \begingroup

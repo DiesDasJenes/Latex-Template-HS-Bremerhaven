@@ -14,13 +14,13 @@ Willkommen zur Einführung in die Vorlage für eure schriftlichen Leistungsnachw
 		\end{itemize}
 \end{itemize}
 
-Wenn ihr \textbf{komplette Neulinge} in LaTeX seid, schaut gleichzeitig hier vorbei:
+Wenn ihr \textbf{komplette Neulinge} in \LaTeX{} seid, schaut gleichzeitig hier vorbei:
 \begin{itemize}
 	\item \url{latex.tugraz.at/latex/tutorial}
 	\item \url{github.com/VoLuong/Begin-Latex-in-minutes}
 	\item \url{texwelt.de/wissen/}
 	\item \url{www.nagel-net.de/Latex/DOKU/Latexkurs_Skript.pdf}
-	\item \url{www.tu-dresden.de/mn/math/stochastik/das-institut/beschaeftigte/jan-rudl/ressourcen/dateien/latex_win/LaTeX-Kurs.pdf?lang=de}
+	\item \url{www.tu-dresden.de/mn/math/stochastik/das-institut/beschaeftigte/jan-rudl/ressourcen/dateien/latex_win/\LaTeX{}-Kurs.pdf?lang=de}
 	\item \url{www.fernuni-hagen.de/imperia/md/content/zmi_2010/a026_latex_einf.pdf}
 \end{itemize} 
 In diesen Dokumentationen und Anleitungen werden euch die Grundlagen von \LaTeX{} erklärt. Diese solltet ihr also zuerst lesen. Ich empfehle den zweiten Link, da dort meiner Meinung nach die Grundlagen sehr anschaulich und kompakt erklärt werden. In diesem Dokument jedoch findet ihr nur Kniffe und Erklärungen zu Paketen die für euch nützlich sein könnten.
@@ -53,7 +53,7 @@ Die Index-Datei beinhaltet die Struktur des Dokumentes. Sie ist eingeteilt in di
 		\item TABLE OF CONTENTS: Unter diesem Abschnitt wird festgelegt in welcher Reihenfolge die Gliederungen geordnet werden. Dabei ist interessant, dass mit dem Befehl \emph{pagenumbering} die Nummerierung auf "'Roman"' gesetzt wird und mit \emph{setcounter} die Zählung bei 1 zurückgesetzt wird.
 		\item GLOSSAR: Hier sollten Fremdbegriffe welche im Dokument vorkommen mit kurzer Definition erklärt werden, sodass die Abkürzungen im Dokument benutzt werden kann.
 		\item CHAPTERS: Hier bindet ihr eure Kapitel und Abschnitte ein.
-		\item BIBLIOGRAPHY: Literaturverzeichnis wird am besten mit Jabref gepflegt
+		\item BIBLIOGRAPHY: Literaturverzeichnis wird am besten mit Jabref gepflegt.
 		\item APPENDIX: Wenn ihr einen Anhang benötigt für größere Bilder oder Diagramme, ist hier der richtige Ort dafür.
 	\end{itemize}
 \end{itemize}
@@ -61,4 +61,4 @@ Die Index-Datei beinhaltet die Struktur des Dokumentes. Sie ist eingeteilt in di
 
 \section{Pakete und CTAN}
 
-Im Umgang mit \LaTeX{} werden sie sehr schnell auf das Problem stoßen das sie etwas tun möchten was von den in diesem Template vorhandenen Paketen nicht unterstützt wird. Um die Funktionalität hinzuzufügen suchen sie über eine Suchplattform (DuckDuckGo, Google etc.) ihrer Wahl nach dem richtigen \LaTeX{} Paket. In der Datei "'/lib/packages.tex"' sollten sie das Paket mittels des Befehls \verb|\usepackage{package}| einbinden. Sie können diesen Befehl überall im Dokument platzieren, der Übersicht halber sollte dies jedoch in der "'/lib/packages.tex"' geschehen. Nachdem das Paket eingebunden ist werden sie beim nächsten Compilieren ihres Dokumentes gefragt ob das Paket heruntergeladen werden soll. Bei der Installation haben sie bereits ein Repository einer unabhängigen Universität oder Hochschule ausgewählt. Jedes Paket hat ein Dokumentation, welche auf der Webseite \url{https://ctan.org} zu finden ist. Es empfiehlt sich stets die Dokumentation zu lesen, da diese meistens jede aufkommende Frage beantwortet. 
+Im Umgang mit \LaTeX{} werdet ihr sehr schnell auf das Problem stoßen, dass ihr etwas tun möchtet was von den vorhandenen Paketen aus dieser Vorlage nicht unterstützt wird. Um die gewünschte Funktionalität hinzuzufügen, sucht ihr über eine Suchplattform (DuckDuckGo, Google etc.) eurer Wahl nach dem richtigen \LaTeX{} Paket. In der Datei "'/lib/packages.tex"' wird das Paket mittels des Befehls \verb|\usepackage{package-name}| eingebunden. Ihr könnt diesen Befehl aber auch überall im Dokument platzieren. Der Übersicht halber sollte dies jedoch in der "'/lib/packages.tex"' geschehen. Nachdem das Paket eingebunden ist werdet ihr beim nächsten Kompilieren ihres Dokumentes gefragt, ob das Paket heruntergeladen werden soll. Bei der Installation habt ihr bereits ein Repository einer Universität oder Hochschule ausgewählt. Aus dieser Quelle wird nun das Paket heruntergeladen. Auf der Webseite \url{https://ctan.org}, könnt ihr alle Dokumentationen zu den Paketen finden. Bei Fragen über die Verwendung des Paketes und dessen Befehle, empfiehlt es sich stets die Dokumentation zu lesen.

@@ -4,14 +4,14 @@ Markdown ist eine vereinfachte Auszeichnungssprache, die von John Gruber und Aar
 
 Die Syntax von Markdown kann hier nachgelesen werden: \url{http://markdown.de/}
 
-Warum sollte man also in \LaTeX mit Markdown schreiben? Nun dafür gibt es verschiedene Gründe. Der naheliegende ist, dass Markdown einfacher zu schreiben, zu lesen und zu lernen ist als \LaTeX.  Wie das Paket am besten anzuwenden ist erklärt diese beiden Blogpost des Overleaf Teams:
+Warum sollte man also in \LaTeX{} mit Markdown schreiben? Nun dafür gibt es verschiedene Gründe. Der naheliegenste ist, dass Markdown einfacher zu schreiben, zu lesen und zu lernen ist als \LaTeX.  Wie das Paket am besten anzuwenden ist, erklären diese beiden Blogpost des Overleaf Teams:
 
 \begin{markdown}
  * \url{https://www.overleaf.com/blog/441-how-to-write-in-markdown-on-overleaf}
  * \url{https://www.overleaf.com/blog/501-markdown-into-latex-with-style} 
 \end{markdown}
 
-In diesem Beispiel wird eine Liste in Markdown sowie in \LaTeX über das Pakte \emph{markdown} realisiert. Es kann außerdem eine Markdown Datei über den Befehl \verb|\markdownInput{example.md| eingefügt werden. Wenn ihr wissen möchtet wie Markdown aussieht schaut einfach in die \emph{chapters/MDexample.md}.
+In diesem Beispiel wird eine Liste in Markdown sowie in \LaTeX{} über das Pakte \emph{markdown} realisiert. Es kann außerdem eine Markdown Datei über den Befehl \verb|\markdownInput{example.md| eingefügt werden. Wenn ihr wissen möchtet wie Markdown aussieht, schaut einfach in die \emph{chapters/MDexample.md}.
 \begin{lstlisting}[style=LaTeX]
 \begin{itemize}
 \item A
@@ -29,5 +29,5 @@ In diesem Beispiel wird eine Liste in Markdown sowie in \LaTeX über das Pakte \
 \end{lstlisting}
 
 
-Es geht jedoch auch anders und zwar mit der Applikation \textbf{Pandoc}, welches sich selbst als das Schweizer Taschenmesser der Markdown Konverter bezeichnet. Um Markdown auf diese Weise zu nutzen, muss noch Pandoc installiert werden. Die Installationanleitung befindet sich auf deren Homepage \url{http://pandoc.org/installing.html}. Der Arbeitsweg hierbei ist, dass die Dateien in Markdown geschrieben werden und dann mit Pandoc über eine Shell zu \LaTeX oder sogar sofort zu einer PDF umgewandelt werden. Dies kann man natürlich auch automatisieren indem man Bash einsetzt. Für Anfänger der Computer Wissenschaften ist dies aber erstmal nicht zu empfehlen. Eine Erklärung wie man Pandoc nutzen sollte findet ihr hier: \url{http://tech.lauritz.me/easy-latex-with-markdown-pandoc/} und unter diesem Link \url{http://pandoc.org/MANUAL.pdf}.  
+Es geht jedoch auch anders und zwar mit der Applikation \textbf{Pandoc}, welches sich selbst als das Schweizer Taschenmesser der Markdown Konverter bezeichnet. Um Markdown auf diese Weise zu nutzen, muss noch Pandoc installiert werden. Die Installationanleitung befindet sich auf deren Homepage \url{http://pandoc.org/installing.html}. Der Arbeitsweg hierbei ist, dass die Dateien in Markdown geschrieben werden und dann mit Pandoc über eine Shell zu \LaTeX{} oder sogar sofort zu einer PDF umgewandelt werden. Dies kann man natürlich auch automatisieren indem man Bash einsetzt. Für Anfänger der Computer Wissenschaften ist dies aber erstmal nicht zu empfehlen. Eine Erklärung wie man Pandoc nutzen sollte findet ihr hier: \url{http://tech.lauritz.me/easy-latex-with-markdown-pandoc/} und unter diesem Link \url{http://pandoc.org/MANUAL.pdf}.  
 
